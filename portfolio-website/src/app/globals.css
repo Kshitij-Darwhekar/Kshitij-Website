@@ -25,3 +25,8 @@
     )
     rgb(var(--background-start-rgb));
 } */
+
+@font-face {
+  font-family: "burton";
+  src: url('../../public/Burtons.otf');
+}
