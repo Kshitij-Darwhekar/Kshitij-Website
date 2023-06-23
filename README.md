@@ -6,6 +6,7 @@ This is a portfolio website built using Next.js and Tailwind CSS. It showcases m
 
 - [Features](#features)
 - [Technologies](#technologies)
+- [Images](#images)
 - [Getting Started](#getting-started)
 - [Project Structure](#project-structure)
 - [Deployment](#deployment)
@@ -32,6 +33,9 @@ The portfolio website is built using the following technologies:
 - Tailwind CSS: A utility-first CSS framework for rapid UI development.
 - HTML: Markup language for structuring the web pages.
 - CSS: Styling language for defining the appearance of the website.
+
+## Images
+
 
 ## Getting Started
 
