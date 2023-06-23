@@ -15,8 +15,13 @@ import web4 from '../../public/web4.png';
 import web5 from '../../public/web5.png';
 import web6 from '../../public/web6.png';
 import { useState } from 'react';
+// import Skills from './skills';
 import Link from 'next/link';
 // import Resume from '../../public/Final_Resume_Kshitij.pdf';
+
+
+import {BiLogoReact,BiLogoJava,BiLogoPython,BiLogoJavascript,BiLogoAngular,BiLogoNodejs, BiLogoSpringBoot,BiLogoMongodb,BiLogoCss3} from 'react-icons/bi'
+import{SiApachemaven,SiExpress,SiNumpy,SiPandas,SiMysql,SiHtml5} from 'react-icons/si'
 
 const imgStyle = {
   layout: 'fill',
@@ -48,7 +53,8 @@ export default function Home() {
               <h1 className='text-xl font-burtons dark:text-white'>Hi, I'm Kshitij</h1>
               <ul className='flex items-center'>
                 <li> <BsFillMoonStarsFill onClick={()=> setDarkMode(!darkMode)} className='cursor-pointer text-2xl dark:text-gray-200' /> </li>
-                <li> <a  className='bg-gradient-to-r from-cyan-700 to-cyan-500 px-4 py-2 text-white  rounded-sm ml-8'>Resume</a>  </li>
+                <li> <button className='bg-gradient-to-r from-cyan-700 to-cyan-500 px-6 py-2 text-white  rounded-sm ml-8'>Resume </button>   </li>
+                {/* <a  className='bg-gradient-to-r from-cyan-700 to-cyan-500 px-4 py-2 text-white  rounded-sm ml-8 '></a> */}
               </ul>
             </nav>
           
@@ -66,15 +72,68 @@ export default function Home() {
                 <a href='https://github.com/Kshitij-Darwhekar'><AiFillGithub /></a>
               </div>
               <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96'>
-                <Image src={kshitij} style={imgStyle}/>
+                <Image src={kshitij} style={imgStyle}  />
               </div>
             </div>
           </section>
+
+          {/* Skills */}
+
+          <div>
+            <h1 className='text-5xl py-3 text-black dark:text-gray-200'> My Skills</h1>
+          </div>
+          <div className='text-center p-10 rounded-xl my-10   '>
+
+            <h2 className='text-3xl p-7 dark:text-gray-200'>Languages</h2>
+            <div className='flex flex-wrap justify-evenly'>
+              <div className='p-2 text-xl dark:text-gray-200'><BiLogoPython className='w-52 h-52 text-cyan-500'/>Python</div>
+              <div className='p-2 text-xl dark:text-gray-200'><BiLogoJavascript className='w-52 h-52 text-cyan-500'/>Java script</div>
+              <div className='p-2 text-xl dark:text-gray-200'><BiLogoJava className='w-52 h-52 text-cyan-500'/> Java</div>
+            </div>
+ 
+
+            <h2 className='text-3xl p-10 my-13 dark:text-gray-200 '>Front End</h2>
+            <div className='flex flex-wrap justify-evenly'>
+              <div className='p-2 text-xl dark:text-gray-200 '><BiLogoAngular className='w-52 h-52 text-cyan-500' />Angular</div>
+              <div className='p-2 text-xl dark:text-gray-200'><BiLogoReact className='w-52 h-52 text-cyan-500'/>React</div>
+              <div className='p-2 text-xl dark:text-gray-200'><SiHtml5 className='w-52 h-52 text-cyan-500 pb-5'/>HTML</div>
+              <div className='p-2 text-xl dark:text-gray-200'><BiLogoCss3 className='w-52 h-52 text-cyan-500'/>CSS</div>
+            </div>
+
+            <h2 className='text-3xl p-7 dark:text-gray-200'>Back End</h2>
+            <div className='flex flex-wrap justify-evenly'>
+              <div className='p-2 text-xl dark:text-gray-200'><BiLogoSpringBoot className='w-52 h-52 text-cyan-500'/> Spring Boot</div>
+              <div className='p-2 text-xl dark:text-gray-200'><BiLogoNodejs className='w-52 h-52 text-cyan-500'/>Node Js</div>
+              <div className='p-2 text-xl dark:text-gray-200'><SiExpress className='w-52 h-52 text-cyan-500 p-5'/> Express Js</div>
+            </div>
+
+
+            <h2 className='text-3xl p-7 dark:text-gray-200'>Databases</h2>
+            <div className='flex flex-wrap justify-evenly'> 
+              <div className='p-2 text-xl dark:text-gray-200'><BiLogoMongodb className='w-52 h-52 text-cyan-500'/>MongoDB</div>
+              <div className='p-2 text-xl dark:text-gray-200'><SiMysql className='w-52 h-52 text-cyan-500'/>MySQL</div>
+              
+            </div>
+            
+            
+            <h2 className='text-3xl p-7 dark:text-gray-200'>Other Technologies</h2>
+            <div className='flex flex-wrap justify-evenly'>
+              <div className='p-2 text-xl dark:text-gray-200'><SiApachemaven className='w-52 h-52 text-cyan-500 p-5'/>Maven</div>
+              <div className='p-2 text-xl dark:text-gray-200'><SiNumpy className='w-52 h-52 text-cyan-500 p-5'/>Numpy</div>
+              <div className='p-2 text-xl dark:text-gray-200'><SiPandas className='w-52 h-52 text-cyan-500 p-5'/> Pandas</div>
+            </div>
+
+          </div>
+          
+
+
+
+         
           {/* 2nd Section here */}
 
           <section >
             <div>
-              <h3 className='text-3xl py-3 dark:text-white'>Services I Offer</h3>
+              <h3 className='text-5xl py-3 mb-6 dark:text-white'>Services I Offer</h3>
               <p className='text-md py-2 leading-8 text-grey-800 dark:text-gray-200'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
                 Lorem ipsum <span className='text-teal-500'>dolor sit amet </span> consectetur adipisicing elit. Quisquam, voluptatum.
@@ -135,7 +194,7 @@ export default function Home() {
 
           <section className='py-10'>
             <div>
-              <h3 className='text-3xl py-1 dark:text-white'>Portfolio</h3>
+              <h3 className='text-5xl py-2 mb-6 dark:text-white'>Portfolio</h3>
               <p className='text-md py-2 leading-8 text-grey-800 dark:text-gray-200'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
                 Lorem ipsum <span className='text-teal-500'>dolor sit amet </span> consectetur adipisicing elit. Quisquam, voluptatum.
@@ -174,7 +233,7 @@ export default function Home() {
               <button onClick={handleSubmit} className='bg-gradient-to-r from-cyan-700 to-cyan-500  text-white px-4 py-2 rounded-lg'>Submit</button>
             </form>
           </section>
-
+        
         </main>
     </div>
     
