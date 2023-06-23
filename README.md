@@ -122,7 +122,3 @@ Feel free to explore the code and make modifications according to your preferenc
 ## Contributing
 
 Contributions to the portfolio website project are welcome! If you encounter any issues, have suggestions, or want to contribute new features, please open an issue or submit a pull request.
-
-## License
-
-The portfolio website is open source and released under the [MIT License](LICENSE). Feel free to use, modify, and distribute the code for personal or commercial projects.
