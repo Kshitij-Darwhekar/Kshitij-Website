@@ -3,8 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import {BsFillMoonStarsFill} from 'react-icons/bs';
-import {AiFillTwitterCircle, AiFillLinkedin,AiFillYoutube} from 'react-icons/ai';
-import deved from '../../public/dev-ed-wave.png';
+import {AiFillTwitterCircle, AiFillLinkedin,AiFillYoutube,AiFillGithub} from 'react-icons/ai';
 import kshitij from '../../public/Kshitij.png';
 import design from '../../public/design.png';
 import code from '../../public/code.png';
@@ -16,7 +15,8 @@ import web4 from '../../public/web4.png';
 import web5 from '../../public/web5.png';
 import web6 from '../../public/web6.png';
 import { useState } from 'react';
-
+import Link from 'next/link';
+// import Resume from '../../public/Final_Resume_Kshitij.pdf';
 
 const imgStyle = {
   layout: 'fill',
@@ -25,6 +25,15 @@ const imgStyle = {
 
 const portfolioStyle = {
   layout: 'responsive',
+}
+
+const handleSubmit = (e) => {
+  // e.preventDefault();
+  // const name = e.target.name.value;
+  // const email = e.target.email.value;
+  // const message = e.target.message.value;
+  // console.log(name, email, message);
+  // e.target.reset();
 }
 
 export default function Home() {
@@ -39,7 +48,7 @@ export default function Home() {
               <h1 className='text-xl font-burtons dark:text-white'>Hi, I'm Kshitij</h1>
               <ul className='flex items-center'>
                 <li> <BsFillMoonStarsFill onClick={()=> setDarkMode(!darkMode)} className='cursor-pointer text-2xl dark:text-gray-200' /> </li>
-                <li><a href='#' className='bg-gradient-to-r from-cyan-700 to-cyan-500 px-4 py-2 text-white  rounded-sm ml-8'>Resume</a></li>
+                <li> <a  className='bg-gradient-to-r from-cyan-700 to-cyan-500 px-4 py-2 text-white  rounded-sm ml-8'>Resume</a>  </li>
               </ul>
             </nav>
           
@@ -51,9 +60,10 @@ export default function Home() {
                 I am a 3rd year student at IIT Kharagpur. I am interested in Web Development and Machine Learning. I am currently working on a project to detect and classify skin diseases using Deep Learning. 
               </p>
               <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400'>
-                <AiFillTwitterCircle />
-                <AiFillLinkedin />
-                <AiFillYoutube />
+                <a href='https://twitter.com/KshitijDarwhek1'><AiFillTwitterCircle /></a>
+                <a href='https://www.linkedin.com/in/kshitij-darwhekar-b15a33191/'><AiFillLinkedin /></a>
+                <a href='https://youtube.com/@kshitijdarwhekar'><AiFillYoutube /></a>
+                <a href='https://github.com/Kshitij-Darwhekar'><AiFillGithub /></a>
               </div>
               <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96'>
                 <Image src={kshitij} style={imgStyle}/>
@@ -64,7 +74,7 @@ export default function Home() {
 
           <section >
             <div>
-              <h3 className='text-3xl py-1 dark:text-white'>Services I Offer</h3>
+              <h3 className='text-3xl py-3 dark:text-white'>Services I Offer</h3>
               <p className='text-md py-2 leading-8 text-grey-800 dark:text-gray-200'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
                 Lorem ipsum <span className='text-teal-500'>dolor sit amet </span> consectetur adipisicing elit. Quisquam, voluptatum.
@@ -150,6 +160,19 @@ export default function Home() {
               <div className='basis-1/3 flex-1 '><Image src={web6} className='rounded-lg object-cover ' width={'100%'} height={'100%'} style={portfolioStyle}/></div>
             </div>
 
+          </section>
+
+          <section className='py-10'>
+            <form>
+              <h1 className='text-4xl dark:text-gray-200 py-5'>Contact Me</h1>
+              <label htmlFor='name' className='dark:text-gray-200'>Name</label>
+              <input type='text' id='name' className='border-2 border-gray-300 p-2 rounded-lg w-full dark:bg-gradient-to-b from-cyan-700 to-cyan-500 dark:text-gray-200'/>
+              <label htmlFor='email' className='dark:text-gray-200'>Email</label>
+              <input type='email' id='email' className='border-2 border-gray-300 p-2 rounded-lg w-full dark:bg-gradient-to-b from-cyan-700 to-cyan-500 dark:text-gray-200'/>
+              <label htmlFor='message' className='dark:text-gray-200'>Message</label>
+              <textarea name='message' id='message' cols='30' rows='10' className='border-2 border-gray-300 p-2 py-4 rounded-lg w-full dark:bg-gradient-to-b from-cyan-700 to-cyan-500 dark:text-gray-200 '></textarea>
+              <button onClick={handleSubmit} className='bg-gradient-to-r from-cyan-700 to-cyan-500  text-white px-4 py-2 rounded-lg'>Submit</button>
+            </form>
           </section>
 
         </main>
