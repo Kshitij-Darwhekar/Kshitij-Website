@@ -5,6 +5,7 @@ import Image from 'next/image';
 import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {AiFillTwitterCircle, AiFillLinkedin,AiFillYoutube} from 'react-icons/ai';
 import deved from '../../public/dev-ed-wave.png';
+import kshitij from '../../public/Kshitij.png';
 import design from '../../public/design.png';
 import code from '../../public/code.png';
 import consulting from '../../public/consulting.png';
@@ -43,7 +44,7 @@ export default function Home() {
             </nav>
           
             <div className='text-center p-10 '>
-              <h2 className='text-5xl py-10 text-teal-600 font-medium dark:text-white md:text-6xl'>Kshitij Darwhekar</h2>
+              <h2 className='text-5xl py-10 text-teal-600 font-medium dark:text-gradient-to-r from-cyan-700 to-cyan-500 md:text-6xl'>Kshitij Darwhekar</h2>
               <h3 className='text-2xl py-2 dark:text-white md:text-3xl'>Developer and ML Enthusiast</h3>
               <p className='text-md py-5 leading-8 text-gray-800 dark:text-gray-200
               md:text-xl max-w-xl mx-auto'>
@@ -55,7 +56,7 @@ export default function Home() {
                 <AiFillYoutube />
               </div>
               <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96'>
-                <Image src={deved} style={imgStyle}/>
+                <Image src={kshitij} style={imgStyle}/>
               </div>
             </div>
           </section>
