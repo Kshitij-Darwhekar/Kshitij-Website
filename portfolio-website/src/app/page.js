@@ -18,7 +18,7 @@ import portfolio from '../../public/Portfolio1.png';
 import { useState } from 'react';
 // import Skills from './skills';
 import Link from 'next/link';
-// import Resume from '../../public/Final_Resume_Kshitij.pdf';
+// import Resume from '../../public/Resume.pdf';
 
 
 import {BiLogoReact,BiLogoJava,BiLogoPython,BiLogoJavascript,BiLogoAngular,BiLogoNodejs, BiLogoSpringBoot,BiLogoMongodb,BiLogoCss3} from 'react-icons/bi'
@@ -85,7 +85,12 @@ export default function Home() {
               
               <ul className='flex items-center justify-end'>
                 <li> <BsFillMoonStarsFill onClick={()=> setDarkMode(!darkMode)} className='cursor-pointer text-2xl dark:text-gray-200' /> </li>
-                <li> <button className='bg-gradient-to-r from-cyan-700 to-cyan-500 px-6 py-2 text-white  rounded-sm ml-8'>Resume </button>   </li>
+                <li> <a
+                    href="https://drive.google.com/file/d/1DGKJ_e5aNufM35TOfotTv-oH4bw45rku/view?usp=sharing"
+                    alt="alt text"
+                    target="_blank"
+                    rel="noopener noreferrer"> 
+                      <button className='bg-gradient-to-r from-cyan-700 to-cyan-500 px-6 py-2 text-white rounded-sm ml-8'>Resume </button> </a>  </li>
                 {/* <a  className='bg-gradient-to-r from-cyan-700 to-cyan-500 px-4 py-2 text-white  rounded-sm ml-8 '></a> */}
               </ul>
               
