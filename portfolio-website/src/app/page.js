@@ -23,37 +23,23 @@ import FlySmart from '../../public/FlySmart2.png';
 import portfolio from '../../public/Portfolio1.png';
 
 
-const imgStyle = {
-  layout: 'fill',
-  objectFit: 'cover',
-  justifyContent: 'center',
-  alignItems: 'center',
-  display: 'flex',
-  // width: '100%',
-  // height: '100%',
-  margin: 'auto',
+// const imgStyle = {
+//   layout: 'fill',
+//   objectFit: 'cover',
+//   justifyContent: 'center',
+//   alignItems: 'center',
+//   display: 'flex',
+//   // width: '100%',
+//   // height: '100%',
+//   margin: 'auto',
 
-}
+// }
 
 const portfolioStyle = {
   layout: 'responsive',
 }
 
-// const handleSubmit = (e) => {
-//   // e.preventDefault();
-//   // const name = e.target.name.value;
-//   // const email = e.target.email.value;
-//   // const message = e.target.message.value;
-//   // console.log(name, email, message);
-//   // e.target.reset();
-// }
-// // const handleClickScroll = () => {
-// //   const element = document.getElementById('section-1');
-// //   if (element) {
-// //     // 👇 Will scroll smoothly to the top of the next section
-// //     element.scrollIntoView({ behavior: 'smooth' });
-// //   }
-// // }
+
 
 const scroll = {
   scrollBehavior: 'smooth !important',
@@ -63,7 +49,7 @@ const scroll = {
 
 export default function Home() {
 
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   const [state, handleSubmit] = useForm('mrgwzblg');
 
   if (state.succeeded) {
