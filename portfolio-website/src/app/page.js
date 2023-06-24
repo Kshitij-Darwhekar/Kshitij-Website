@@ -196,9 +196,9 @@ export default function Home() {
                 
                 <h2 className='text-3xl p-7 dark:text-gray-200'>Other Technologies</h2>
                 <div className='flex flex-wrap justify-evenly'>
-                  <div className='p-2 text-xl dark:text-gray-200'><SiApachemaven className='w-48 h-48 text-cyan-500 '/>Maven</div>
-                  <div className='p-2 text-xl dark:text-gray-200'><SiNumpy className='w-48 h-48 text-cyan-500 '/>Numpy</div>
-                  <div className='p-2 text-xl dark:text-gray-200'><SiPandas className='w-48 h-48 text-cyan-500 '/> Pandas</div>
+                  <div className='p-2 text-xl dark:text-gray-200'><SiApachemaven className='w-48 h-48 text-cyan-500 mb-5'/>Maven</div>
+                  <div className='p-2 text-xl dark:text-gray-200'><SiNumpy className='w-48 h-48 text-cyan-500 mb-5'/>Numpy</div>
+                  <div className='p-2 text-xl dark:text-gray-200'><SiPandas className='w-48 h-48 text-cyan-500 mb-5'/> Pandas</div>
                 </div>
 
               </div>
@@ -308,11 +308,11 @@ export default function Home() {
           <h1 className='text-4xl dark:text-gray-200 py-5'>Contact Me</h1>
             <form onSubmit={handleSubmit}>
               <label htmlFor='name' className='dark:text-gray-200'>Name</label>
-              <input type='text' id='name' className='border-2 border-gray-300 p-2 rounded-lg w-full '/>
+              <input type='text' id='name' className='border-2 border-cyan-500 p-2 rounded-lg w-full dark:border-cyan-500 dark:bg-black dark:text-gray-200'/>
               <label htmlFor='email' className='dark:text-gray-200'>Email</label>
-              <input type='email' id='email' className='border-2 border-gray-300 p-2 rounded-lg w-full '/>
+              <input type='email' id='email' className='border-2 border-cyan-500 p-2 rounded-lg w-full dark:border-cyan-500 dark:bg-black dark:text-gray-200 '/>
               <label htmlFor='message' className='dark:text-gray-200'>Message</label>
-              <textarea name='message' id='message' cols='30' rows='10' className='border-2 border-gray-300 p-2 py-4 rounded-lg w-full '></textarea>
+              <textarea name='message' id='message' cols='30' rows='10' className='border-2 border-cyan-500  p-2 py-4 rounded-lg w-full dark:border-cyan-500 dark:bg-black dark:text-gray-200 '></textarea>
               <button disabled={state.submitting} className='bg-gradient-to-r from-cyan-700 to-cyan-500  text-white px-4 py-2 rounded-lg'>Submit</button>
             </form>  
             
