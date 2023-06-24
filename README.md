@@ -6,6 +6,7 @@ This is a portfolio website built using Next.js and Tailwind CSS. It showcases m
 
 - [Features](#features)
 - [Technologies](#technologies)
+- [Images](#images)
 - [Getting Started](#getting-started)
 - [Project Structure](#project-structure)
 - [Deployment](#deployment)
@@ -32,6 +33,33 @@ The portfolio website is built using the following technologies:
 - Tailwind CSS: A utility-first CSS framework for rapid UI development.
 - HTML: Markup language for structuring the web pages.
 - CSS: Styling language for defining the appearance of the website.
+
+## Images
+
+### Light Theme
+![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/91b7394f-4fee-4392-b0d7-cd6a8d65ffdc)
+
+![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/d5f1d37b-ee92-4089-aeb7-f975837b40c6)
+
+![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/196c87e4-f4a7-4883-95bf-927929c8bcfe)
+
+![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/1a60f6d6-0b2c-4249-a7de-a5a4d963d017)
+
+![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/801e0d33-b950-4f6d-b552-ff056e6b4c6b)
+
+
+### Dark Mode
+
+![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/ae01324c-f570-4140-95c5-d88448cda012)
+
+![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/b09a8f15-52d8-480a-ad69-e3ff5409bd32)
+
+![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/78112c16-58c7-4a94-baf0-c40c9f88861c)
+
+![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/db5f9b58-c48c-4576-a8d9-cc32a6db8327)
+
+
+
 
 ## Getting Started
 
@@ -94,7 +122,3 @@ Feel free to explore the code and make modifications according to your preferenc
 ## Contributing
 
 Contributions to the portfolio website project are welcome! If you encounter any issues, have suggestions, or want to contribute new features, please open an issue or submit a pull request.
-
-## License
-
-The portfolio website is open source and released under the [MIT License](LICENSE). Feel free to use, modify, and distribute the code for personal or commercial projects.
