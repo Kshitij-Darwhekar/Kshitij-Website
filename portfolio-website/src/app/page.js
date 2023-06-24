@@ -4,7 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import Typewriter from 'typewriter-effect';
 import {BsFillMoonStarsFill} from 'react-icons/bs';
-import {AiFillTwitterCircle, AiFillLinkedin,AiFillYoutube,AiFillGithub} from 'react-icons/ai';
+import {AiFillTwitterCircle, AiFillLinkedin,AiFillYoutube,AiFillGithub,AiFillMediumSquare, AiFillInstagram} from 'react-icons/ai';
 import kshitij from '../../public/Kshitij.png';
 import design from '../../public/design.png';
 import code from '../../public/code.png';
@@ -53,23 +53,36 @@ const scroll = {
   scrollBehavior: 'smooth !important',
 }
 
+const toggleMenu = () => {
+  setMenuOpen(!menuOpen);
+};
+
+const closeMenu = () => {
+  setMenuOpen(false);
+};
+
+
 export default function Home() {
 
   const [darkMode, setDarkMode] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <div className={darkMode ? 'dark' : ''}>
         <main className='bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-950'>
           <section className=' min-h-screen'>
-            <nav className='py-10 mb-12 flex justify-between dark:text-white"'>
+            <nav className='py-10 mb-12 flex justify-between dark:text-white'>
               <h1 className='text-xl font-burtons dark:text-white'>Hi, I'm Kshitij</h1>
-              <ul className='flex items-center gap-6'>
-                <li className='hover:text-cyan-500'> <a href='#about' style={scroll} >About</a> </li>
-                <li className='hover:text-cyan-500'> <a href='#skills' style={scroll}>Skills</a> </li>
-                <li className='hover:text-cyan-500'> <a href='#services' style={scroll}>Services</a> </li>
-                <li className='hover:text-cyan-500'> <a href='#projects' style={scroll}>Projects</a> </li>
-                <li className='hover:text-cyan-500'> <a href='#contact' style={scroll}>Contact</a> </li>
-              </ul>
+              <div className='hidden lg:block md:block'>
+                <ul className='flex items-center justify-center flex-row px-2 lg:gap-4 md:gap-4' >
+                  <li className='hover:text-cyan-500'> <a href='#about' style={scroll} >About</a> </li>
+                  <li className='hover:text-cyan-500'> <a href='#skills' style={scroll}>Skills</a> </li>
+                  <li className='hover:text-cyan-500'> <a href='#services' style={scroll}>Services</a> </li>
+                  <li className='hover:text-cyan-500'> <a href='#projects' style={scroll}>Projects</a> </li>
+                  <li className='hover:text-cyan-500'> <a href='#contact' style={scroll}>Contact</a> </li>
+                </ul>
+              </div>
+              
               <ul className='flex items-center justify-end'>
                 <li> <BsFillMoonStarsFill onClick={()=> setDarkMode(!darkMode)} className='cursor-pointer text-2xl dark:text-gray-200' /> </li>
                 <li> <button className='bg-gradient-to-r from-cyan-700 to-cyan-500 px-6 py-2 text-white  rounded-sm ml-8'>Resume </button>   </li>
@@ -108,11 +121,14 @@ export default function Home() {
                
                
               </p>
-              <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400'>
-                <a href='https://twitter.com/KshitijDarwhek1'><AiFillTwitterCircle /></a>
-                <a href='https://www.linkedin.com/in/kshitij-darwhekar-b15a33191/'><AiFillLinkedin /></a>
-                <a href='https://youtube.com/@kshitijdarwhekar'><AiFillYoutube /></a>
-                <a href='https://github.com/Kshitij-Darwhekar'><AiFillGithub /></a>
+              {/* flex justify-center flex-col items-center */}
+              <div className='text-5xl flex justify-center flex-row items-center text-gray-600 dark:text-gray-400 lg:flex gap-10 '>
+                <a href='https://twitter.com/KshitijDarwhek1' className='hover:text-cyan-500'><AiFillTwitterCircle /></a>
+                <a href='https://www.linkedin.com/in/kshitij-darwhekar-b15a33191/ '  className='hover:text-cyan-500'><AiFillLinkedin /></a>
+                <a href='https://youtube.com/@kshitijdarwhekar'  className='hover:text-cyan-500'><AiFillYoutube /></a>
+                <a href='https://github.com/Kshitij-Darwhekar'  className='hover:text-cyan-500'><AiFillGithub /></a>
+                <a href='https://www.instagram.com/kshitijdarwhekar/'  className='hover:text-cyan-500'><AiFillInstagram /></a> 
+                <a href='https://medium.com/@kshitijdarwhekar'  className='hover:text-cyan-500'><AiFillMediumSquare/></a>
               </div>
               <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96'>
                 <Image src={kshitij} style={imgStyle}  />
