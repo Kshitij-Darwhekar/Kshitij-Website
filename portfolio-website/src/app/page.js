@@ -26,6 +26,13 @@ import portfolio from '../../public/Portfolio1.png';
 const imgStyle = {
   layout: 'fill',
   objectFit: 'cover',
+  justifyContent: 'center',
+  alignItems: 'center',
+  display: 'flex',
+  // width: '100%',
+  // height: '100%',
+  margin: 'auto',
+
 }
 
 const portfolioStyle = {
@@ -123,17 +130,14 @@ export default function Home() {
               </h2>
                
               <h3 className='text-3xl py-2 dark:text-white md:text-3xl'>Full Stack Developer and ML Enthusiast</h3>
-              <p className='text-md py-5 leading-8 text-gray-800 dark:text-gray-200
-              md:text-xl max-w-10xl mx-auto'>
+              <p className='text-md py-5 leading-8 text-gray-800 dark:text-gray-200 md:text-xl max-w-10xl mx-auto'>
                I'm a full stack developer and ML enthusiast with a degree in Electronics and Telecommunication engineering. 
                I'm passionate about leveraging my expertise in both front-end and back-end technologies to create innovative solutions. 
                With a deep understanding of machine learning algorithms and data analysis, I strive to develop intelligent systems that make a tangible impact. 
                Let's connect and embark on an exciting journey together in the realm of technology and innovation!
-               
-               
               </p>
               {/* flex justify-center flex-col items-center */}
-              <div className='text-5xl flex justify-center flex-row items-center text-gray-600 dark:text-gray-400 lg:flex gap-10 '>
+              <div className='text-5xl flex justify-center flex-row items-center text-gray-600 dark:text-gray-400 md:flex md:gap-10 lg:flex lg:gap-10 '>
                 <a href='https://twitter.com/KshitijDarwhek1' className='hover:text-cyan-500'><AiFillTwitterCircle /></a>
                 <a href='https://www.linkedin.com/in/kshitij-darwhekar-b15a33191/ '  className='hover:text-cyan-500'><AiFillLinkedin /></a>
                 <a href='https://youtube.com/@kshitijdarwhekar'  className='hover:text-cyan-500'><AiFillYoutube /></a>
@@ -141,8 +145,10 @@ export default function Home() {
                 <a href='https://www.instagram.com/kshitijdarwhekar/'  className='hover:text-cyan-500'><AiFillInstagram /></a> 
                 <a href='https://medium.com/@kshitijdarwhekar'  className='hover:text-cyan-500'><AiFillMediumSquare/></a>
               </div>
-              <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96'>
-                <Image src={kshitij} style={imgStyle}  />
+              <div className='flex items-center justify-center text-center mx-auto overflow-hidden'>
+                <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96'>
+                  <Image  src={kshitij} fill={true} />
+                </div>
               </div>
             </div>
           </section>
