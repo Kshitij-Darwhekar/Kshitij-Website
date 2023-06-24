@@ -128,7 +128,7 @@ export default function Home() {
                 <a href='https://www.linkedin.com/in/kshitij-darwhekar-b15a33191/ '  className='hover:text-cyan-500'><AiFillLinkedin /></a>
                 <a href='https://youtube.com/@kshitijdarwhekar'  className='hover:text-cyan-500'><AiFillYoutube /></a>
                 <a href='https://github.com/Kshitij-Darwhekar'  className='hover:text-cyan-500'><AiFillGithub /></a>
-                <a href='https://www.instagram.com/kshitijdarwhekar/'  className='hover:text-cyan-500'><AiFillInstagram /></a> 
+                <a href='https://instagram.com/kshitijd.exe?igshid=ZDdkNTZiNTM='  className='hover:text-cyan-500'><AiFillInstagram /></a> 
                 <a href='https://medium.com/@kshitijdarwhekar'  className='hover:text-cyan-500'><AiFillMediumSquare/></a>
               </div>
               <div className='flex items-center justify-center text-center mx-auto overflow-hidden'>
