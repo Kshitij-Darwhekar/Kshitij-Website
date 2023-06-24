@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
+import Typewriter from 'typewriter-effect';
 import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {AiFillTwitterCircle, AiFillLinkedin,AiFillYoutube,AiFillGithub} from 'react-icons/ai';
 import kshitij from '../../public/Kshitij.png';
@@ -40,6 +41,17 @@ const handleSubmit = (e) => {
   // console.log(name, email, message);
   // e.target.reset();
 }
+const handleClickScroll = () => {
+  const element = document.getElementById('section-1');
+  if (element) {
+    // 👇 Will scroll smoothly to the top of the next section
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+
+const scroll = {
+  scrollBehavior: 'smooth !important',
+}
 
 export default function Home() {
 
@@ -51,21 +63,50 @@ export default function Home() {
           <section className=' min-h-screen'>
             <nav className='py-10 mb-12 flex justify-between dark:text-white"'>
               <h1 className='text-xl font-burtons dark:text-white'>Hi, I'm Kshitij</h1>
-              <ul className='flex items-center'>
+              <ul className='flex items-center gap-6'>
+                <li className='hover:text-cyan-500'> <a href='#about' style={scroll} >About</a> </li>
+                <li className='hover:text-cyan-500'> <a href='#skills' style={scroll}>Skills</a> </li>
+                <li className='hover:text-cyan-500'> <a href='#services' style={scroll}>Services</a> </li>
+                <li className='hover:text-cyan-500'> <a href='#projects' style={scroll}>Projects</a> </li>
+                <li className='hover:text-cyan-500'> <a href='#contact' style={scroll}>Contact</a> </li>
+              </ul>
+              <ul className='flex items-center justify-end'>
                 <li> <BsFillMoonStarsFill onClick={()=> setDarkMode(!darkMode)} className='cursor-pointer text-2xl dark:text-gray-200' /> </li>
                 <li> <button className='bg-gradient-to-r from-cyan-700 to-cyan-500 px-6 py-2 text-white  rounded-sm ml-8'>Resume </button>   </li>
                 {/* <a  className='bg-gradient-to-r from-cyan-700 to-cyan-500 px-4 py-2 text-white  rounded-sm ml-8 '></a> */}
               </ul>
+              
             </nav>
+
           
-            <div className='text-center p-10 '>
-              <h2 className='text-5xl py-10 text-teal-600 font-medium dark:text-gradient-to-r from-cyan-700 to-cyan-500 md:text-6xl'>Kshitij Darwhekar</h2>
-              <h3 className='text-2xl py-2 dark:text-white md:text-3xl'>Full Stack Developer and ML Enthusiast</h3>
+
+            <div className='text-center p-10 ' id='about'>
+              <h2 className='text-5xl py-10 text-teal-600 font-medium dark:text-gradient-to-r from-cyan-700 to-cyan-500 md:text-6xl'> 
+              
+              <Typewriter
+                options={{
+                  strings: [
+                    "Hi I'm Kshitij Darwhekar"
+                ],
+                  autoStart: true,
+                  loop: true,
+                  delay: 90,
+                  skipAddStyles: true,
+                  deleteSpeed: 50,
+                  pauseFor: 1000,
+                }} 
+              />
+              </h2>
+               
+              <h3 className='text-3xl py-2 dark:text-white md:text-3xl'>Full Stack Developer and ML Enthusiast</h3>
               <p className='text-md py-5 leading-8 text-gray-800 dark:text-gray-200
               md:text-xl max-w-10xl mx-auto'>
-               I am a full stack developer with experience in Angular, React, JavaScript, Java, Spring Boot, MongoDB, Express, Node.js, Python, data science, machine learning, and deep learning. 
-               I have a strong background in Electronics and Telecommunication Engineering, enabling me to build robust web applications and analyze large datasets using Python-based data science techniques.
-               I am passionate about leveraging my diverse skill set to contribute to organizations in improving decision-making processes and developing data-driven solutions.
+               I'm a full stack developer and ML enthusiast with a degree in Electronics and Telecommunication engineering. 
+               I'm passionate about leveraging my expertise in both front-end and back-end technologies to create innovative solutions. 
+               With a deep understanding of machine learning algorithms and data analysis, I strive to develop intelligent systems that make a tangible impact. 
+               Let's connect and embark on an exciting journey together in the realm of technology and innovation!
+               
+               
               </p>
               <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400'>
                 <a href='https://twitter.com/KshitijDarwhek1'><AiFillTwitterCircle /></a>
@@ -80,67 +121,64 @@ export default function Home() {
           </section>
 
           {/* Skills */}
+          <div id='skills' >
+              <div>
+                <h1 className='text-5xl py-3 text-black dark:text-gray-200'> My Skills</h1>
+              </div>
+              <div className='text-center p-10 rounded-xl my-10   '>
 
-          <div>
-            <h1 className='text-5xl py-3 text-black dark:text-gray-200'> My Skills</h1>
-          </div>
-          <div className='text-center p-10 rounded-xl my-10   '>
+                <h2 className='text-3xl p-7 dark:text-gray-200'>Languages</h2>
+                <div className='flex flex-wrap justify-evenly'>
+                  <div className='p-2 text-xl dark:text-gray-200'><BiLogoPython className='w-52 h-52 text-cyan-500'/>Python</div>
+                  <div className='p-2 text-xl dark:text-gray-200'><BiLogoJavascript className='w-52 h-52 text-cyan-500'/>Java script</div>
+                  <div className='p-2 text-xl dark:text-gray-200'><BiLogoJava className='w-52 h-52 text-cyan-500'/> Java</div>
+                </div>
+    
 
-            <h2 className='text-3xl p-7 dark:text-gray-200'>Languages</h2>
-            <div className='flex flex-wrap justify-evenly'>
-              <div className='p-2 text-xl dark:text-gray-200'><BiLogoPython className='w-52 h-52 text-cyan-500'/>Python</div>
-              <div className='p-2 text-xl dark:text-gray-200'><BiLogoJavascript className='w-52 h-52 text-cyan-500'/>Java script</div>
-              <div className='p-2 text-xl dark:text-gray-200'><BiLogoJava className='w-52 h-52 text-cyan-500'/> Java</div>
-            </div>
- 
+                <h2 className='text-3xl p-10 my-13 dark:text-gray-200 '>Front End</h2>
+                <div className='flex flex-wrap justify-evenly'>
+                  <div className='p-2 text-xl dark:text-gray-200 '><BiLogoAngular className='w-52 h-52 text-cyan-500' />Angular</div>
+                  <div className='p-2 text-xl dark:text-gray-200'><BiLogoReact className='w-52 h-52 text-cyan-500'/>React</div>
+                  <div className='p-2 text-xl dark:text-gray-200'><SiHtml5 className='w-52 h-52 text-cyan-500 pb-5'/>HTML</div>
+                  <div className='p-2 text-xl dark:text-gray-200'><BiLogoCss3 className='w-52 h-52 text-cyan-500'/>CSS</div>
+                </div>
 
-            <h2 className='text-3xl p-10 my-13 dark:text-gray-200 '>Front End</h2>
-            <div className='flex flex-wrap justify-evenly'>
-              <div className='p-2 text-xl dark:text-gray-200 '><BiLogoAngular className='w-52 h-52 text-cyan-500' />Angular</div>
-              <div className='p-2 text-xl dark:text-gray-200'><BiLogoReact className='w-52 h-52 text-cyan-500'/>React</div>
-              <div className='p-2 text-xl dark:text-gray-200'><SiHtml5 className='w-52 h-52 text-cyan-500 pb-5'/>HTML</div>
-              <div className='p-2 text-xl dark:text-gray-200'><BiLogoCss3 className='w-52 h-52 text-cyan-500'/>CSS</div>
-            </div>
-
-            <h2 className='text-3xl p-7 dark:text-gray-200'>Back End</h2>
-            <div className='flex flex-wrap justify-evenly'>
-              <div className='p-2 text-xl dark:text-gray-200'><BiLogoSpringBoot className='w-52 h-52 text-cyan-500'/> Spring Boot</div>
-              <div className='p-2 text-xl dark:text-gray-200'><BiLogoNodejs className='w-52 h-52 text-cyan-500'/>Node Js</div>
-              <div className='p-2 text-xl dark:text-gray-200'><SiExpress className='w-52 h-52 text-cyan-500 p-5'/> Express Js</div>
-            </div>
+                <h2 className='text-3xl p-7 dark:text-gray-200'>Back End</h2>
+                <div className='flex flex-wrap justify-evenly'>
+                  <div className='p-2 text-xl dark:text-gray-200'><BiLogoSpringBoot className='w-52 h-52 text-cyan-500'/> Spring Boot</div>
+                  <div className='p-2 text-xl dark:text-gray-200'><BiLogoNodejs className='w-52 h-52 text-cyan-500'/>Node Js</div>
+                  <div className='p-2 text-xl dark:text-gray-200'><SiExpress className='w-52 h-52 text-cyan-500 p-5'/> Express Js</div>
+                </div>
 
 
-            <h2 className='text-3xl p-7 dark:text-gray-200'>Databases</h2>
-            <div className='flex flex-wrap justify-evenly'> 
-              <div className='p-2 text-xl dark:text-gray-200'><BiLogoMongodb className='w-52 h-52 text-cyan-500'/>MongoDB</div>
-              <div className='p-2 text-xl dark:text-gray-200'><SiMysql className='w-52 h-52 text-cyan-500'/>MySQL</div>
+                <h2 className='text-3xl p-7 dark:text-gray-200'>Databases</h2>
+                <div className='flex flex-wrap justify-evenly'> 
+                  <div className='p-2 text-xl dark:text-gray-200'><BiLogoMongodb className='w-52 h-52 text-cyan-500'/>MongoDB</div>
+                  <div className='p-2 text-xl dark:text-gray-200'><SiMysql className='w-52 h-52 text-cyan-500'/>MySQL</div>
+                  
+                </div>
+                
+                
+                <h2 className='text-3xl p-7 dark:text-gray-200'>Other Technologies</h2>
+                <div className='flex flex-wrap justify-evenly'>
+                  <div className='p-2 text-xl dark:text-gray-200'><SiApachemaven className='w-52 h-52 text-cyan-500 p-5'/>Maven</div>
+                  <div className='p-2 text-xl dark:text-gray-200'><SiNumpy className='w-52 h-52 text-cyan-500 p-5'/>Numpy</div>
+                  <div className='p-2 text-xl dark:text-gray-200'><SiPandas className='w-52 h-52 text-cyan-500 p-5'/> Pandas</div>
+                </div>
+
+              </div>
               
-            </div>
-            
-            
-            <h2 className='text-3xl p-7 dark:text-gray-200'>Other Technologies</h2>
-            <div className='flex flex-wrap justify-evenly'>
-              <div className='p-2 text-xl dark:text-gray-200'><SiApachemaven className='w-52 h-52 text-cyan-500 p-5'/>Maven</div>
-              <div className='p-2 text-xl dark:text-gray-200'><SiNumpy className='w-52 h-52 text-cyan-500 p-5'/>Numpy</div>
-              <div className='p-2 text-xl dark:text-gray-200'><SiPandas className='w-52 h-52 text-cyan-500 p-5'/> Pandas</div>
-            </div>
-
           </div>
-          
-
 
 
          
           {/* 2nd Section here */}
 
-          <section >
+          <section id='services'>
             <div>
               <h3 className='text-5xl py-3 mb-6 dark:text-white'>Services I Offer</h3>
               <p className='text-2xl py-2 leading-8 text-grey-800 dark:text-gray-200'>
-                
-                  As a full stack developer with expertise in Angular, React, JavaScript, Spring Boot, MongoDB, Express, Node.js, Python, Data Science, Machine Learning, and 
-                  Deep Learning, I offer the following services:
-
+                  As a Full Stack Developer and Machine Learning Enthusiast I offer the following services:
               </p>
               
                 <ul className='text-lg py-2 leading-8 text-grey-800 dark:text-gray-200 text-justify list-disc ml-9 '>
@@ -204,7 +242,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className='py-10'>
+          <section className='py-10' id='projects'>
             <div>
               <h3 className='text-5xl py-2 mb-6 dark:text-white'>Portfolio</h3>
               <p className='text-md py-2 leading-8 text-grey-800 dark:text-gray-200'>
@@ -231,19 +269,19 @@ export default function Home() {
 
           </section>
 
-          <section className='py-10'>
+          <section className='py-10' id='contact'>
+          <h1 className='text-4xl dark:text-gray-200 py-5'>Contact Me</h1>
             <form>
-              <h1 className='text-4xl dark:text-gray-200 py-5'>Contact Me</h1>
               <label htmlFor='name' className='dark:text-gray-200'>Name</label>
               <input type='text' id='name' className='border-2 border-gray-300 p-2 rounded-lg w-full '/>
               <label htmlFor='email' className='dark:text-gray-200'>Email</label>
               <input type='email' id='email' className='border-2 border-gray-300 p-2 rounded-lg w-full '/>
               <label htmlFor='message' className='dark:text-gray-200'>Message</label>
               <textarea name='message' id='message' cols='30' rows='10' className='border-2 border-gray-300 p-2 py-4 rounded-lg w-full '></textarea>
-              <button onClick={handleSubmit} className='bg-gradient-to-r from-cyan-700 to-cyan-500  text-white px-4 py-2 rounded-lg'>Submit</button>
-            </form>
+            </form>  
+            <button onClick={handleSubmit} className='bg-gradient-to-r from-cyan-700 to-cyan-500  text-white px-4 py-2 rounded-lg'>Submit</button>
           </section>
-        
+          {/* <h4 className='text-2xl dark:text-gray-200'> Alternatively you can drop a mail at kshitijdarwhekar@gmail.com </h4> */}
         </main>
     </div>
     
