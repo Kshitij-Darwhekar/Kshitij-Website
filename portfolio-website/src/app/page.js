@@ -72,7 +72,7 @@ export default function Home() {
         <main className='bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-950'>
           <section className=' min-h-screen'>
             <nav className='py-10 mb-12 flex justify-between dark:text-white'>
-              <h1 className='text-xl font-burtons dark:text-white'>Hi, I'm Kshitij</h1>
+              <h1 className='text-xl font-burtons dark:text-white'><a href='#'> Hi, I'm Kshitij </a></h1>
               <div className='hidden lg:block md:block'>
                 <ul className='flex items-center justify-center flex-row px-2 lg:gap-4 md:gap-4' >
                   <li className='hover:text-cyan-500'> <a href='#about' style={scroll} >About</a> </li>
