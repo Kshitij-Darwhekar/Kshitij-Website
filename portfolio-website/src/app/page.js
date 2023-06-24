@@ -3,8 +3,16 @@
 import React from 'react';
 import Image from 'next/image';
 import Typewriter from 'typewriter-effect';
+import { useForm } from '@formspree/react';
+import { useRouter } from 'next/router';
+import { useEffect } from 'react';
+import { useState } from 'react';
+
 import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {AiFillTwitterCircle, AiFillLinkedin,AiFillYoutube,AiFillGithub,AiFillMediumSquare, AiFillInstagram} from 'react-icons/ai';
+import {BiLogoReact,BiLogoJava,BiLogoPython,BiLogoJavascript,BiLogoAngular,BiLogoNodejs, BiLogoSpringBoot,BiLogoMongodb,BiLogoCss3,BiLogoTailwindCss, BiLogoBootstrap} from 'react-icons/bi'
+import {SiApachemaven,SiExpress,SiNumpy,SiPandas,SiMysql,SiHtml5} from 'react-icons/si'
+
 import kshitij from '../../public/Kshitij.png';
 import design from '../../public/design.png';
 import code from '../../public/code.png';
@@ -15,15 +23,6 @@ import FlySmart from '../../public/FlySmart2.png';
 import portfolio from '../../public/Portfolio1.png';
 
 
-import { useState } from 'react';
-// import Skills from './skills';
-import Link from 'next/link';
-// import Resume from '../../public/Resume.pdf';
-
-
-import {BiLogoReact,BiLogoJava,BiLogoPython,BiLogoJavascript,BiLogoAngular,BiLogoNodejs, BiLogoSpringBoot,BiLogoMongodb,BiLogoCss3,BiLogoTailwindCss, BiLogoBootstrap} from 'react-icons/bi'
-import{SiApachemaven,SiExpress,SiNumpy,SiPandas,SiMysql,SiHtml5} from 'react-icons/si'
-
 const imgStyle = {
   layout: 'fill',
   objectFit: 'cover',
@@ -33,39 +32,46 @@ const portfolioStyle = {
   layout: 'responsive',
 }
 
-const handleSubmit = (e) => {
-  // e.preventDefault();
-  // const name = e.target.name.value;
-  // const email = e.target.email.value;
-  // const message = e.target.message.value;
-  // console.log(name, email, message);
-  // e.target.reset();
-}
-const handleClickScroll = () => {
-  const element = document.getElementById('section-1');
-  if (element) {
-    // 👇 Will scroll smoothly to the top of the next section
-    element.scrollIntoView({ behavior: 'smooth' });
-  }
-}
+// const handleSubmit = (e) => {
+//   // e.preventDefault();
+//   // const name = e.target.name.value;
+//   // const email = e.target.email.value;
+//   // const message = e.target.message.value;
+//   // console.log(name, email, message);
+//   // e.target.reset();
+// }
+// // const handleClickScroll = () => {
+// //   const element = document.getElementById('section-1');
+// //   if (element) {
+// //     // 👇 Will scroll smoothly to the top of the next section
+// //     element.scrollIntoView({ behavior: 'smooth' });
+// //   }
+// // }
 
 const scroll = {
   scrollBehavior: 'smooth !important',
 }
 
-const toggleMenu = () => {
-  setMenuOpen(!menuOpen);
-};
-
-const closeMenu = () => {
-  setMenuOpen(false);
-};
 
 
 export default function Home() {
 
   const [darkMode, setDarkMode] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [state, handleSubmit] = useForm('mrgwzblg');
+
+  if (state.succeeded) {
+    // const router = useRouter();
+  
+    // useEffect(() => {
+    //   const redirectTimeout = setTimeout(() => {
+    //     router.push('#about'); // Replace '/' with the URL of your homepage
+    //   }, 5000);
+  
+    //   return () => clearTimeout(redirectTimeout);
+    // }, [router]);
+  
+    return <p className='text-5xl text-cyan-500 justify-center items-center flex py-50'>Submitted Successfully</p>;
+  }
 
   return (
     <div className={darkMode ? 'dark' : ''}>
@@ -294,15 +300,16 @@ export default function Home() {
 
           <section className='py-10' id='contact'>
           <h1 className='text-4xl dark:text-gray-200 py-5'>Contact Me</h1>
-            <form>
+            <form onSubmit={handleSubmit}>
               <label htmlFor='name' className='dark:text-gray-200'>Name</label>
               <input type='text' id='name' className='border-2 border-gray-300 p-2 rounded-lg w-full '/>
               <label htmlFor='email' className='dark:text-gray-200'>Email</label>
               <input type='email' id='email' className='border-2 border-gray-300 p-2 rounded-lg w-full '/>
               <label htmlFor='message' className='dark:text-gray-200'>Message</label>
               <textarea name='message' id='message' cols='30' rows='10' className='border-2 border-gray-300 p-2 py-4 rounded-lg w-full '></textarea>
+              <button disabled={state.submitting} className='bg-gradient-to-r from-cyan-700 to-cyan-500  text-white px-4 py-2 rounded-lg'>Submit</button>
             </form>  
-            <button onClick={handleSubmit} className='bg-gradient-to-r from-cyan-700 to-cyan-500  text-white px-4 py-2 rounded-lg'>Submit</button>
+            
           </section>
           {/* <h4 className='text-2xl dark:text-gray-200'> Alternatively you can drop a mail at kshitijdarwhekar@gmail.com </h4> */}
         </main>
