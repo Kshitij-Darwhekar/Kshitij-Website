@@ -21,7 +21,7 @@ import Link from 'next/link';
 // import Resume from '../../public/Resume.pdf';
 
 
-import {BiLogoReact,BiLogoJava,BiLogoPython,BiLogoJavascript,BiLogoAngular,BiLogoNodejs, BiLogoSpringBoot,BiLogoMongodb,BiLogoCss3} from 'react-icons/bi'
+import {BiLogoReact,BiLogoJava,BiLogoPython,BiLogoJavascript,BiLogoAngular,BiLogoNodejs, BiLogoSpringBoot,BiLogoMongodb,BiLogoCss3,BiLogoTailwindCss, BiLogoBootstrap} from 'react-icons/bi'
 import{SiApachemaven,SiExpress,SiNumpy,SiPandas,SiMysql,SiHtml5} from 'react-icons/si'
 
 const imgStyle = {
@@ -150,41 +150,43 @@ export default function Home() {
 
                 <h2 className='text-3xl p-7 dark:text-gray-200'>Languages</h2>
                 <div className='flex flex-wrap justify-evenly'>
-                  <div className='p-2 text-xl dark:text-gray-200'><BiLogoPython className='w-52 h-52 text-cyan-500'/>Python</div>
-                  <div className='p-2 text-xl dark:text-gray-200'><BiLogoJavascript className='w-52 h-52 text-cyan-500'/>Java script</div>
-                  <div className='p-2 text-xl dark:text-gray-200'><BiLogoJava className='w-52 h-52 text-cyan-500'/> Java</div>
+                  <div className='p-2 text-xl dark:text-gray-200'><BiLogoPython className='w-48 h-48 text-cyan-500'/>Python</div>
+                  <div className='p-2 text-xl dark:text-gray-200'><BiLogoJavascript className='w-48 h-48 text-cyan-500'/>Java script</div>
+                  <div className='p-2 text-xl dark:text-gray-200'><BiLogoJava className='w-48 h-48 text-cyan-500'/> Java</div>
                 </div>
     
 
                 <h2 className='text-3xl p-10 my-13 dark:text-gray-200 '>Front End</h2>
                 <div className='flex flex-wrap justify-evenly'>
-                  <div className='p-2 text-xl dark:text-gray-200 '><BiLogoAngular className='w-52 h-52 text-cyan-500' />Angular</div>
-                  <div className='p-2 text-xl dark:text-gray-200'><BiLogoReact className='w-52 h-52 text-cyan-500'/>React</div>
-                  <div className='p-2 text-xl dark:text-gray-200'><SiHtml5 className='w-52 h-52 text-cyan-500 pb-5'/>HTML</div>
-                  <div className='p-2 text-xl dark:text-gray-200'><BiLogoCss3 className='w-52 h-52 text-cyan-500'/>CSS</div>
+                  <div className='p-2 text-xl dark:text-gray-200 '><BiLogoAngular className='w-48 h-48 text-cyan-500' />Angular</div>
+                  <div className='p-2 text-xl dark:text-gray-200'><BiLogoReact className='w-48 h-48 text-cyan-500'/>React</div>
+                  <div className='p-2 text-xl dark:text-gray-200'><SiHtml5 className='w-48 h-48 text-cyan-500'/>HTML</div>
+                  <div className='p-2 text-xl dark:text-gray-200'><BiLogoCss3 className='w-48 h-48 text-cyan-500'/>CSS</div>
+                  <div className='p-2 text-xl dark:text-gray-200'><BiLogoTailwindCss className='w-48 h-48 text-cyan-500'/>Tailwind CSS</div>
+                  <div className='p-2 text-xl dark:text-gray-200'><BiLogoBootstrap className='w-48 h-48 text-cyan-500'/>Bootstrap</div>
                 </div>
 
                 <h2 className='text-3xl p-7 dark:text-gray-200'>Back End</h2>
                 <div className='flex flex-wrap justify-evenly'>
-                  <div className='p-2 text-xl dark:text-gray-200'><BiLogoSpringBoot className='w-52 h-52 text-cyan-500'/> Spring Boot</div>
-                  <div className='p-2 text-xl dark:text-gray-200'><BiLogoNodejs className='w-52 h-52 text-cyan-500'/>Node Js</div>
-                  <div className='p-2 text-xl dark:text-gray-200'><SiExpress className='w-52 h-52 text-cyan-500 p-5'/> Express Js</div>
+                  <div className='p-2 text-xl dark:text-gray-200'><BiLogoSpringBoot className='w-48 h-48 text-cyan-500'/> Spring Boot</div>
+                  <div className='p-2 text-xl dark:text-gray-200'><BiLogoNodejs className='w-48 h-48 text-cyan-500'/>Node Js</div>
+                  <div className='p-2 text-xl dark:text-gray-200'><SiExpress className='w-48 h-48 text-cyan-500'/> Express Js</div>
                 </div>
 
 
                 <h2 className='text-3xl p-7 dark:text-gray-200'>Databases</h2>
                 <div className='flex flex-wrap justify-evenly'> 
-                  <div className='p-2 text-xl dark:text-gray-200'><BiLogoMongodb className='w-52 h-52 text-cyan-500'/>MongoDB</div>
-                  <div className='p-2 text-xl dark:text-gray-200'><SiMysql className='w-52 h-52 text-cyan-500'/>MySQL</div>
+                  <div className='p-2 text-xl dark:text-gray-200'><BiLogoMongodb className='w-48 h-48 text-cyan-500'/>MongoDB</div>
+                  <div className='p-2 text-xl dark:text-gray-200'><SiMysql className='w-48 h-48 text-cyan-500'/>MySQL</div>
                   
                 </div>
                 
                 
                 <h2 className='text-3xl p-7 dark:text-gray-200'>Other Technologies</h2>
                 <div className='flex flex-wrap justify-evenly'>
-                  <div className='p-2 text-xl dark:text-gray-200'><SiApachemaven className='w-52 h-52 text-cyan-500 p-5'/>Maven</div>
-                  <div className='p-2 text-xl dark:text-gray-200'><SiNumpy className='w-52 h-52 text-cyan-500 p-5'/>Numpy</div>
-                  <div className='p-2 text-xl dark:text-gray-200'><SiPandas className='w-52 h-52 text-cyan-500 p-5'/> Pandas</div>
+                  <div className='p-2 text-xl dark:text-gray-200'><SiApachemaven className='w-48 h-48 text-cyan-500 '/>Maven</div>
+                  <div className='p-2 text-xl dark:text-gray-200'><SiNumpy className='w-48 h-48 text-cyan-500 '/>Numpy</div>
+                  <div className='p-2 text-xl dark:text-gray-200'><SiPandas className='w-48 h-48 text-cyan-500 '/> Pandas</div>
                 </div>
 
               </div>
