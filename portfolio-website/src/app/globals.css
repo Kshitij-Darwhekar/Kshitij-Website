@@ -26,7 +26,16 @@
     rgb(var(--background-start-rgb));
 } */
 
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+
 @font-face {
   font-family: "burton";
   src: url('../../public/Burtons.otf');
 }
+
+@font-face {
+  font-family: "dancing";
+  src: url('../../public/Dancing_Script/DancingScript-VariableFont_wght.ttf');
+}
+

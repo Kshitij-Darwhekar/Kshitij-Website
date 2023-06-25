@@ -8,6 +8,8 @@ import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 import { useState } from 'react';
 
+import { Dancing_Script } from 'next/font/google';
+
 import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {AiFillTwitterCircle, AiFillLinkedin,AiFillYoutube,AiFillGithub,AiFillMediumSquare, AiFillInstagram} from 'react-icons/ai';
 import {BiLogoReact,BiLogoJava,BiLogoPython,BiLogoJavascript,BiLogoAngular,BiLogoNodejs, BiLogoSpringBoot,BiLogoMongodb,BiLogoCss3,BiLogoTailwindCss, BiLogoBootstrap} from 'react-icons/bi'
@@ -23,22 +25,10 @@ import FlySmart from '../../public/FlySmart2.png';
 import portfolio from '../../public/Portfolio1.png';
 
 
-// const imgStyle = {
-//   layout: 'fill',
-//   objectFit: 'cover',
-//   justifyContent: 'center',
-//   alignItems: 'center',
-//   display: 'flex',
-//   // width: '100%',
-//   // height: '100%',
-//   margin: 'auto',
-
-// }
 
 const portfolioStyle = {
   layout: 'responsive',
 }
-
 
 
 const scroll = {
@@ -71,7 +61,7 @@ export default function Home() {
         <main className='bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-950'>
           <section className=' min-h-screen'>
             <nav className='py-10 mb-12 flex justify-between dark:text-white'>
-              <h1 className='text-xl font-burtons dark:text-white'><a href='#'> Hi, I'm Kshitij </a></h1>
+              <h1 className='text-xl font-dancing dark:text-white '> <a href='#'> Hi, I'm Kshitij</a></h1>
               <div className='hidden lg:block md:block'>
                 <ul className='flex items-center justify-center flex-row px-2 lg:gap-4 md:gap-4' >
                   <li className='hover:text-cyan-500'> <a href='#about' style={scroll} >About</a> </li>
@@ -89,8 +79,7 @@ export default function Home() {
                     alt="alt text"
                     target="_blank"
                     rel="noopener noreferrer"> 
-                      <button className='bg-gradient-to-r from-cyan-700 to-cyan-500 px-6 py-2 text-white rounded-sm ml-8'>Resume </button> </a>  </li>
-                {/* <a  className='bg-gradient-to-r from-cyan-700 to-cyan-500 px-4 py-2 text-white  rounded-sm ml-8 '></a> */}
+                      <button className='bg-gradient-to-r from-cyan-700 to-cyan-500 px-6 py-2 text-white rounded-sm ml-8'>Resume </button> </a></li>
               </ul>
               
             </nav>
@@ -128,7 +117,7 @@ export default function Home() {
                 <a href='https://www.linkedin.com/in/kshitij-darwhekar-b15a33191/ '  className='hover:text-cyan-500'><AiFillLinkedin /></a>
                 <a href='https://youtube.com/@kshitijdarwhekar'  className='hover:text-cyan-500'><AiFillYoutube /></a>
                 <a href='https://github.com/Kshitij-Darwhekar'  className='hover:text-cyan-500'><AiFillGithub /></a>
-                <a href='https://instagram.com/kshitijd.exe?igshid=ZDdkNTZiNTM='  className='hover:text-cyan-500'><AiFillInstagram /></a> 
+                {/* <a href='https://instagram.com/kshitijd.exe?igshid=ZDdkNTZiNTM='  className='hover:text-cyan-500'><AiFillInstagram /></a>  */}
                 <a href='https://medium.com/@kshitijdarwhekar'  className='hover:text-cyan-500'><AiFillMediumSquare/></a>
               </div>
               <div className='flex items-center justify-center text-center mx-auto overflow-hidden'>
