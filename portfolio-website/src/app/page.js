@@ -10,7 +10,7 @@ import { useState } from 'react';
 
 import { Dancing_Script } from 'next/font/google';
 
-import {BsFillMoonStarsFill} from 'react-icons/bs';
+import {BsFillMoonStarsFill,BsArrowUpRight} from 'react-icons/bs';
 import {AiFillTwitterCircle, AiFillLinkedin,AiFillYoutube,AiFillGithub,AiFillMediumSquare, AiFillInstagram} from 'react-icons/ai';
 import {BiLogoReact,BiLogoJava,BiLogoPython,BiLogoJavascript,BiLogoAngular,BiLogoNodejs, BiLogoSpringBoot,BiLogoMongodb,BiLogoCss3,BiLogoTailwindCss, BiLogoBootstrap} from 'react-icons/bi'
 import {SiApachemaven,SiExpress,SiNumpy,SiPandas,SiMysql,SiHtml5} from 'react-icons/si'
@@ -271,10 +271,46 @@ export default function Home() {
             
             <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
 
-              <div className='basis-1/3 flex-1 '><a href='https://github.com/Kshitij-Darwhekar/pizzeria-react-app'><Image src={pizza} className='rounded-lg object-cover ' width={'100%'} height={'100%'} style={portfolioStyle}/></a></div>
-              <div className='basis-1/3 flex-1 '><a href='https://github.com/Kshitij-Darwhekar/kshitijdarwhekar.io'><Image src={portfolio} className='rounded-lg object-cover ' width={'100%'} height={'100%'} style={portfolioStyle}/></a></div>
-              <div className='basis-1/3 flex-1 '><a href='https://github.com/WebDesgns/Flight-Management-System'><Image src={FlySmart} className='rounded-lg object-cover ' width={'100%'} height={'100%'} style={portfolioStyle}/></a></div>
-              <div className='basis-1/3 flex-1 '><a href='https://github.com/Kshitij-Darwhekar/Intelligent-Traffic-Managment-System-Using-Computer-Vision'><Image src={Traffic} className='rounded-lg object-cover ' width={'100%'} height={'100%'} style={portfolioStyle}/></a></div>
+              <div className='basis-1/3 flex-1 '>
+                <a href='https://github.com/Kshitij-Darwhekar/pizzeria-react-app' className='relative'>
+                  <Image src={pizza} className='rounded-lg object-cover hover:opacity-50 transition-opacity duration-300' width={'100%'} height={'100%'} style={portfolioStyle} title='Checkout code on Github'/>
+                  <div className='absolute inset-0 flex items-center justify-center  opacity-0 hover:opacity-100 transition-opacity duration-300'>
+                    <p className='text-2xl text-end text-white'>  
+                      Click Me to Checkout Code on Github 
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div className='basis-1/3 flex-1 '>
+                <a href='https://github.com/Kshitij-Darwhekar/kshitijdarwhekar.io' className='relative'>
+                  <Image src={portfolio} className='rounded-lg object-cover ' width={'100%'} height={'100%'} style={portfolioStyle} title='Checkout code on Github'/>
+                  <div className='absolute inset-0 flex items-center justify-center  opacity-0 hover:opacity-100 transition-opacity duration-300'>
+                    <p className='text-2xl text-end text-black mb-32'>  
+                      Click Me to Checkout Code on Github
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div className='basis-1/3 flex-1 '>
+                <a href='https://github.com/WebDesgns/Flight-Management-System' className='relative'>
+                  <Image src={FlySmart} className='rounded-lg object-cover ' width={'100%'} height={'100%'} style={portfolioStyle} title='Checkout Code on Github'/>
+                  <div className='absolute inset-0 flex items-center justify-center  opacity-0 hover:opacity-100 transition-opacity duration-300'>
+                    <p className='text-2xl text-end text-black'>  
+                      Click Me to Checkout Code on Github
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div className='basis-1/3 flex-1 '>
+                <a href='https://github.com/Kshitij-Darwhekar/Intelligent-Traffic-Managment-System-Using-Computer-Vision' className='relative'>
+                  <Image src={Traffic} className='rounded-lg object-cover ' width={'100%'} height={'100%'} style={portfolioStyle} title='Checkout code on Github' />
+                  <div className='absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300'>
+                    <p className='text-2xl text-end text-white'>  
+                      Click Me to Checkout Code on Github
+                    </p>
+                  </div>
+                </a>
+              </div>
             </div>
 
           </section>
