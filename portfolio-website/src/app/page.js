@@ -275,7 +275,7 @@ export default function Home() {
                 <a href='https://github.com/Kshitij-Darwhekar/pizzeria-react-app' className='relative'>
                   <Image src={pizza} className='rounded-lg object-cover hover:opacity-50 transition-opacity duration-300' width={'100%'} height={'100%'} style={portfolioStyle} title='Checkout code on Github'/>
                   <div className='absolute inset-0 flex items-center justify-center  opacity-0 hover:opacity-100 transition-opacity duration-300'>
-                    <p className='text-2xl text-end text-white'>  
+                    <p className='text-2xl text-end text-white hover:text-3xl'>  
                       Click Me to Checkout Code on Github 
                     </p>
                   </div>
@@ -285,7 +285,7 @@ export default function Home() {
                 <a href='https://github.com/Kshitij-Darwhekar/kshitijdarwhekar.io' className='relative'>
                   <Image src={portfolio} className='rounded-lg object-cover ' width={'100%'} height={'100%'} style={portfolioStyle} title='Checkout code on Github'/>
                   <div className='absolute inset-0 flex items-center justify-center  opacity-0 hover:opacity-100 transition-opacity duration-300'>
-                    <p className='text-2xl text-end text-black mb-32'>  
+                    <p className='text-2xl text-end text-black mb-32 hover:text-3xl'>  
                       Click Me to Checkout Code on Github
                     </p>
                   </div>
@@ -295,7 +295,7 @@ export default function Home() {
                 <a href='https://github.com/WebDesgns/Flight-Management-System' className='relative'>
                   <Image src={FlySmart} className='rounded-lg object-cover ' width={'100%'} height={'100%'} style={portfolioStyle} title='Checkout Code on Github'/>
                   <div className='absolute inset-0 flex items-center justify-center  opacity-0 hover:opacity-100 transition-opacity duration-300'>
-                    <p className='text-2xl text-end text-black'>  
+                    <p className='text-2xl text-end text-black hover:text-3xl'>  
                       Click Me to Checkout Code on Github
                     </p>
                   </div>
@@ -305,7 +305,7 @@ export default function Home() {
                 <a href='https://github.com/Kshitij-Darwhekar/Intelligent-Traffic-Managment-System-Using-Computer-Vision' className='relative'>
                   <Image src={Traffic} className='rounded-lg object-cover ' width={'100%'} height={'100%'} style={portfolioStyle} title='Checkout code on Github' />
                   <div className='absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300'>
-                    <p className='text-2xl text-end text-white'>  
+                    <p className='text-2xl text-end text-white hover:text-3xl'>  
                       Click Me to Checkout Code on Github
                     </p>
                   </div>
