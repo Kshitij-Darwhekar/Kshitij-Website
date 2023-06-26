@@ -141,43 +141,43 @@ export default function Home() {
 
                 <h2 className='text-3xl p-7 dark:text-gray-200'>Languages</h2>
                 <div className='flex flex-wrap justify-evenly'>
-                  <div className='p-2 text-xl dark:text-gray-200'><BiLogoPython className='w-48 h-48 text-cyan-500'/>Python</div>
-                  <div className='p-2 text-xl dark:text-gray-200'><BiLogoJavascript className='w-48 h-48 text-cyan-500'/>Java script</div>
-                  <div className='p-2 text-xl dark:text-gray-200'><BiLogoJava className='w-48 h-48 text-cyan-500'/> Java</div>
+                  <div className='p-2 text-xl dark:text-gray-200'><BiLogoPython className='w-40 h-40 text-cyan-500 md:w-40 md:h-40 lg:w-48 lg:h-48' />Python</div>
+                  <div className='p-2 text-xl dark:text-gray-200'><BiLogoJavascript className='w-40 h-40 text-cyan-500 md:w-40 md:h-40 lg:w-48 lg:h-48'/>Java script</div>
+                  <div className='p-2 text-xl dark:text-gray-200'><BiLogoJava className='w-40 h-40 text-cyan-500 md:w-40 md:h-40 lg:w-48 lg:h-48'/> Java</div>
                 </div>
     
 
                 <h2 className='text-3xl p-10 my-13 dark:text-gray-200 '>Front End</h2>
                 <div className='flex flex-wrap justify-evenly'>
-                  <div className='p-2 text-xl dark:text-gray-200 '><BiLogoAngular className='w-48 h-48 text-cyan-500' />Angular</div>
-                  <div className='p-2 text-xl dark:text-gray-200'><BiLogoReact className='w-48 h-48 text-cyan-500'/>React</div>
-                  <div className='p-2 text-xl dark:text-gray-200'><SiHtml5 className='w-48 h-48 text-cyan-500'/>HTML</div>
-                  <div className='p-2 text-xl dark:text-gray-200'><BiLogoCss3 className='w-48 h-48 text-cyan-500'/>CSS</div>
-                  <div className='p-2 text-xl dark:text-gray-200'><BiLogoTailwindCss className='w-48 h-48 text-cyan-500'/>Tailwind CSS</div>
-                  <div className='p-2 text-xl dark:text-gray-200'><BiLogoBootstrap className='w-48 h-48 text-cyan-500'/>Bootstrap</div>
+                  <div className='p-2 text-xl dark:text-gray-200 '><BiLogoAngular className='w-40 h-40 text-cyan-500 md:w-40 md:h-40 lg:w-48 lg:h-48' />Angular</div>
+                  <div className='p-2 text-xl dark:text-gray-200'><BiLogoReact className='w-40 h-40 text-cyan-500 md:w-40 md:h-40 lg:w-48 lg:h-48'/>React</div>
+                  <div className='p-2 text-xl dark:text-gray-200'><SiHtml5 className='w-40 h-40 text-cyan-500 md:w-40 md:h-40 lg:w-48 lg:h-48'/>HTML</div>
+                  <div className='p-2 text-xl dark:text-gray-200'><BiLogoCss3 className='w-40 h-40 text-cyan-500 md:w-40 md:h-40 lg:w-48 lg:h-48'/>CSS</div>
+                  <div className='p-2 text-xl dark:text-gray-200'><BiLogoTailwindCss className='w-40 h-40 text-cyan-500 md:w-40 md:h-40 lg:w-48 lg:h-48'/>Tailwind CSS</div>
+                  <div className='p-2 text-xl dark:text-gray-200'><BiLogoBootstrap className='w-40 h-40 text-cyan-500 md:w-40 md:h-40 lg:w-48 lg:h-48'/>Bootstrap</div>
                 </div>
 
                 <h2 className='text-3xl p-7 dark:text-gray-200'>Back End</h2>
                 <div className='flex flex-wrap justify-evenly'>
-                  <div className='p-2 text-xl dark:text-gray-200'><BiLogoSpringBoot className='w-48 h-48 text-cyan-500'/> Spring Boot</div>
-                  <div className='p-2 text-xl dark:text-gray-200'><BiLogoNodejs className='w-48 h-48 text-cyan-500'/>Node Js</div>
-                  <div className='p-2 text-xl dark:text-gray-200'><SiExpress className='w-48 h-48 text-cyan-500'/> Express Js</div>
+                  <div className='p-2 text-xl dark:text-gray-200'><BiLogoSpringBoot className='w-40 h-40 text-cyan-500 md:w-40 md:h-40 lg:w-48 lg:h-48'/> Spring Boot</div>
+                  <div className='p-2 text-xl dark:text-gray-200'><BiLogoNodejs className='w-40 h-40 text-cyan-500 md:w-40 md:h-40 lg:w-48 lg:h-48'/>Node Js</div>
+                  <div className='p-2 text-xl dark:text-gray-200'><SiExpress className='w-40 h-40 text-cyan-500 md:w-40 md:h-40 lg:w-48 lg:h-48'/> Express Js</div>
                 </div>
 
 
                 <h2 className='text-3xl p-7 dark:text-gray-200'>Databases</h2>
                 <div className='flex flex-wrap justify-evenly'> 
-                  <div className='p-2 text-xl dark:text-gray-200'><BiLogoMongodb className='w-48 h-48 text-cyan-500'/>MongoDB</div>
-                  <div className='p-2 text-xl dark:text-gray-200'><SiMysql className='w-48 h-48 text-cyan-500'/>MySQL</div>
+                  <div className='p-2 text-xl dark:text-gray-200'><BiLogoMongodb className='w-40 h-40 text-cyan-500 md:w-40 md:h-40 lg:w-48 lg:h-48'/>MongoDB</div>
+                  <div className='p-2 text-xl dark:text-gray-200'><SiMysql className='w-40 h-40 text-cyan-500 md:w-40 md:h-40 lg:w-48 lg:h-48'/>MySQL</div>
                   
                 </div>
                 
                 
                 <h2 className='text-3xl p-7 dark:text-gray-200'>Other Technologies</h2>
                 <div className='flex flex-wrap justify-evenly'>
-                  <div className='p-2 text-xl dark:text-gray-200'><SiApachemaven className='w-48 h-48 text-cyan-500 mb-5'/>Maven</div>
-                  <div className='p-2 text-xl dark:text-gray-200'><SiNumpy className='w-48 h-48 text-cyan-500 mb-5'/>Numpy</div>
-                  <div className='p-2 text-xl dark:text-gray-200'><SiPandas className='w-48 h-48 text-cyan-500 mb-5'/> Pandas</div>
+                  <div className='p-2 text-xl dark:text-gray-200'><SiApachemaven className='w-40 h-40 text-cyan-500 md:w-40 md:h-40 lg:w-48 lg:h-48 mb-5'/>Maven</div>
+                  <div className='p-2 text-xl dark:text-gray-200'><SiNumpy className='w-40 h-40 text-cyan-500 md:w-40 md:h-40 lg:w-48 lg:h-48 mb-5'/>Numpy</div>
+                  <div className='p-2 text-xl dark:text-gray-200'><SiPandas className='w-40 h-40 text-cyan-500 md:w-40 md:h-40 lg:w-48 lg:h-48 mb-5'/> Pandas</div>
                 </div>
 
               </div>
@@ -279,7 +279,7 @@ export default function Home() {
                 <a href='https://github.com/Kshitij-Darwhekar/pizzeria-react-app' className='relative'>
                   <Image src={pizza} className='rounded-lg object-cover hover:opacity-50 transition-opacity duration-300' width={'100%'} height={'100%'} style={portfolioStyle} title='Checkout code on Github'/>
                   <div className='absolute inset-0 flex items-center justify-center  opacity-0 hover:opacity-100 transition-opacity duration-300'>
-                    <p className='text-2xl text-end text-white hover:text-3xl'>  
+                    <p className='text-xl text-center text-white hover:text-3xl md:text-2xl lg:text-2xl'>  
                       Click Me to Checkout Code on Github 
                     </p>
                   </div>
@@ -289,7 +289,7 @@ export default function Home() {
                 <a href='https://github.com/Kshitij-Darwhekar/kshitijdarwhekar.io' className='relative'>
                   <Image src={portfolio} className='rounded-lg object-cover ' width={'100%'} height={'100%'} style={portfolioStyle} title='Checkout code on Github'/>
                   <div className='absolute inset-0 flex items-center justify-center  opacity-0 hover:opacity-100 transition-opacity duration-300'>
-                    <p className='text-2xl text-end text-black mb-32 hover:text-3xl'>  
+                    <p className='text-xl text-center text-black mb-32 hover:text-3xl md:text-2xl lg:text-2xl'>  
                       Click Me to Checkout Code on Github
                     </p>
                   </div>
@@ -299,7 +299,7 @@ export default function Home() {
                 <a href='https://github.com/WebDesgns/Flight-Management-System' className='relative'>
                   <Image src={FlySmart} className='rounded-lg object-cover ' width={'100%'} height={'100%'} style={portfolioStyle} title='Checkout Code on Github'/>
                   <div className='absolute inset-0 flex items-center justify-center  opacity-0 hover:opacity-100 transition-opacity duration-300'>
-                    <p className='text-2xl text-end text-black hover:text-3xl'>  
+                    <p className='text-xl text-center text-black hover:text-3xl md:text-2xl lg:text-2xl'>  
                       Click Me to Checkout Code on Github
                     </p>
                   </div>
@@ -309,7 +309,7 @@ export default function Home() {
                 <a href='https://github.com/Kshitij-Darwhekar/Intelligent-Traffic-Managment-System-Using-Computer-Vision' className='relative'>
                   <Image src={Traffic} className='rounded-lg object-cover ' width={'100%'} height={'100%'} style={portfolioStyle} title='Checkout code on Github' />
                   <div className='absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300'>
-                    <p className='text-2xl text-end text-white hover:text-3xl'>  
+                    <p className='text-xl text-center text-white hover:text-3xl md:text-2xl lg:text-2xl'>  
                       Click Me to Checkout Code on Github
                     </p>
                   </div>
