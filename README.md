@@ -2,6 +2,9 @@
 
 This is a portfolio website built using Next.js and Tailwind CSS. It showcases my projects, skills, and provides information about me.
 
+Visit the Website : https://portfolio-website-ochre-mu.vercel.app/ 
+Read the blog : https://medium.com/@kshitijdarwhekar/introduction-626e131561ee 
+
 ## Table of Contents
 
 - [Features](#features)
