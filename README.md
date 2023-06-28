@@ -47,8 +47,16 @@ Coming Soon
 
 Coming Soon
 
--Landing Page
-![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/04f3d8be-c154-43d2-88bb-81f68cf40b36)
+- Landing Page
+
+  ![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/04f3d8be-c154-43d2-88bb-81f68cf40b36)
+  
+- Skills Section
+- Services Section
+- Portfolio Section
+- Contact Me
+
+
 
 - About Section
   ![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/1cd2aa03-6f83-45b7-9fcb-1d4960e93d97)
