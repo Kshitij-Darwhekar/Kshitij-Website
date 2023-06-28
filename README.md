@@ -41,7 +41,40 @@ The portfolio website is built using the following technologies:
 
 ### Light Theme
 
-Coming Soon
+- Landing Page
+
+  ![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/448076e6-2ed6-4935-9bbd-eb0051212eea)
+
+  
+- About Section
+
+  ![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/90a0158e-8c36-4ea0-9231-02bc1d617160)
+
+  
+- Skills Section
+
+  ![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/9eb0808a-2e44-4458-9b63-10e374e0ef39)
+
+  ![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/c736ef3f-44cf-47a0-ad16-02d889a6eb6b)
+
+  
+- Services Section
+
+  ![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/1ce5b3f1-258b-4c0f-bb43-042962dbdb64)
+
+  ![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/78e8219a-c8e5-4c6e-8746-935fadcd0124)
+
+  
+- Portfolio Section
+
+  ![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/8b4eb537-0d80-48ea-9086-892ae4ddce77)
+
+
+- Contact Me
+
+  ![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/90ea19e7-bee3-4e54-8995-64596f7d6cb2)
+
+
 
 ### Dark Mode
 
@@ -70,8 +103,8 @@ Coming Soon
   
 - Portfolio Section
 
-  ![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/10df8d55-da0f-4591-a3d8-b2c7a84e0311)
-  
+  ![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/c2474136-6560-49a9-92c7-73824ae3bc0a)
+
 - Contact Me
 
   ![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/53f5103b-60d9-4a79-9ec6-58d441bf76eb)
