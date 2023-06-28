@@ -64,7 +64,7 @@ Coming Soon
 
 - Services Section
 
-  ![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/e9ed58a0-3b8a-4f23-adbf-22215b8ef7df)
+  ![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/39bcd251-b597-4b6d-acf0-e2c1909b7f26)
 
   ![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/89d00feb-b29f-4533-b2c9-5d46d13f0246)
   
