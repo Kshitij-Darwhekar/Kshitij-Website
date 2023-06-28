@@ -51,35 +51,35 @@ Coming Soon
 
   ![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/04f3d8be-c154-43d2-88bb-81f68cf40b36)
   
-- Skills Section
-- Services Section
-- Portfolio Section
-- Contact Me
-
-
 
 - About Section
-  ![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/1cd2aa03-6f83-45b7-9fcb-1d4960e93d97)
 
+  ![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/1cd2aa03-6f83-45b7-9fcb-1d4960e93d97)
+  
 - Skills Section
 
-![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/8fd33519-8a5b-4120-8409-944982c9a176)
+  ![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/8fd33519-8a5b-4120-8409-944982c9a176)
 
-![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/aa249ba5-8963-4c11-acec-825d7611253f)
+  ![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/aa249ba5-8963-4c11-acec-825d7611253f)
 
 - Services Section
 
-![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/e9ed58a0-3b8a-4f23-adbf-22215b8ef7df)
+  ![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/e9ed58a0-3b8a-4f23-adbf-22215b8ef7df)
 
-![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/89d00feb-b29f-4533-b2c9-5d46d13f0246)
-
+  ![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/89d00feb-b29f-4533-b2c9-5d46d13f0246)
+  
 - Portfolio Section
 
-![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/10df8d55-da0f-4591-a3d8-b2c7a84e0311)
-
+  ![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/10df8d55-da0f-4591-a3d8-b2c7a84e0311)
+  
 - Contact Me
 
-![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/53f5103b-60d9-4a79-9ec6-58d441bf76eb)
+  ![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/53f5103b-60d9-4a79-9ec6-58d441bf76eb)
+
+
+
+
+
 
 
 ## Getting Started
