@@ -6,8 +6,7 @@ const dancingScript = Dancing_Script({ subsets: ['latin'] })
 
 export const metadata = {
   title: "Kshitij's Portfolio",
-  description: "I am Kshitij Darwhekar a student in MITAOE. I am a full stack developer and ML enthusiast with a degree in Electronics and Telecommunication engineering. I am passionate about leveraging my expertise in both front-end and back-end technologies to create innovative solutions. With a deep understanding of machine learning algorithms and data analysis, I strive to develop intelligent systems that make a tangible impact." ,
-}
+  description: "Explore the diverse creations of a skilled full stack developer. Discover a showcase of innovative web and software projects on my portfolio website. From front-end design to back-end development, witness the power of seamless integration and captivating user experiences. Unleash the potential of technology and witness the artistry of coding. Visit now and embark on a journey through my digital world."}
 
 export default function RootLayout({ children }) {
   return (
