@@ -324,6 +324,7 @@ export default function Home() {
             
           </section>
           </main>
+          <Analytics/>
     </div>
     
   )
