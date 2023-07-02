@@ -4,14 +4,11 @@ import React from 'react';
 import Image from 'next/image';
 import Typewriter from 'typewriter-effect';
 import { useForm } from '@formspree/react';
-import { useRouter } from 'next/router';
-import { useEffect } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { useState } from 'react';
 
-import { Dancing_Script } from 'next/font/google';
-
-import {BsFillMoonStarsFill,BsArrowUpRight} from 'react-icons/bs';
-import {AiFillTwitterCircle, AiFillLinkedin,AiFillYoutube,AiFillGithub,AiFillMediumSquare, AiFillInstagram ,AiFillMail} from 'react-icons/ai';
+import {BsFillMoonStarsFill} from 'react-icons/bs';
+import {AiFillTwitterCircle, AiFillLinkedin,AiFillYoutube,AiFillGithub,AiFillMediumSquare,AiFillMail} from 'react-icons/ai';
 import {BiLogoReact,BiLogoJava,BiLogoPython,BiLogoJavascript,BiLogoAngular,BiLogoNodejs, BiLogoSpringBoot,BiLogoMongodb,BiLogoCss3,BiLogoTailwindCss, BiLogoBootstrap} from 'react-icons/bi'
 import {SiApachemaven,SiExpress,SiNumpy,SiPandas,SiMysql,SiHtml5} from 'react-icons/si'
 
@@ -23,12 +20,13 @@ import pizza from '../../public/pizza1.png';
 import Traffic from '../../public/Traffic.png';
 import FlySmart from '../../public/FlySmart2.png';
 import portfolio from '../../public/Portfolio1.png';
-import Logo from '../../public/Logo.jpg';
 
 
 
 const portfolioStyle = {
   layout: 'responsive',
+  hover: 'opacity-75',
+  
 }
 
 
@@ -44,15 +42,6 @@ export default function Home() {
   const [state, handleSubmit] = useForm('mrgwzblg');
 
   if (state.succeeded) {
-    // const router = useRouter();
-  
-    // useEffect(() => {
-    //   const redirectTimeout = setTimeout(() => {
-    //     router.push('#about'); // Replace '/' with the URL of your homepage
-    //   }, 5000);
-  
-    //   return () => clearTimeout(redirectTimeout);
-    // }, [router]);
   
     return <p className='text-5xl text-cyan-500 justify-center items-center flex py-50'>Submitted Successfully</p>;
   }
@@ -63,7 +52,7 @@ export default function Home() {
           <section className=' min-h-screen'>
             <nav className='py-10 mb-12 flex justify-between dark:text-white'>
               <h1 className='text-xl font-dancing dark:text-white '> <a href='#'> Hi, I'm Kshitij</a>  </h1>
-              <div className='hidden lg:block md:block'>
+              <nav className='hidden lg:block md:block'>
                 <ul className='flex items-center justify-center flex-row px-2 lg:gap-4 md:gap-4' >
                   <li className='hover:text-cyan-500'> <a href='#about' style={scroll} >About</a> </li>
                   <li className='hover:text-cyan-500'> <a href='#skills' style={scroll}>Skills</a> </li>
@@ -71,7 +60,7 @@ export default function Home() {
                   <li className='hover:text-cyan-500'> <a href='#projects' style={scroll}>Projects</a> </li>
                   <li className='hover:text-cyan-500'> <a href='#contact' style={scroll}>Contact</a> </li>
                 </ul>
-              </div>
+              </nav>
               
 
               
@@ -120,7 +109,6 @@ export default function Home() {
                 <a href='https://www.linkedin.com/in/kshitij-darwhekar-b15a33191/ '  className='hover:text-cyan-500'><AiFillLinkedin /></a>
                 <a href='https://youtube.com/@kshitijdarwhekar'  className='hover:text-cyan-500'><AiFillYoutube /></a>
                 <a href='https://github.com/Kshitij-Darwhekar'  className='hover:text-cyan-500'><AiFillGithub /></a>
-                {/* <a href='https://instagram.com/kshitijd.exe?igshid=ZDdkNTZiNTM='  className='hover:text-cyan-500'><AiFillInstagram /></a>  */}
                 <a href='https://medium.com/@kshitijdarwhekar'  className='hover:text-cyan-500'><AiFillMediumSquare/></a>
                 <a href='mailto:kshitijdarwhekar@gmail.com'  className='hover:text-cyan-500'><AiFillMail /></a>
               </div>
@@ -305,22 +293,25 @@ export default function Home() {
                   </div>
                 </a>
               </div>
-              <div className='basis-1/3 flex-1 '>
-                <a href='https://github.com/Kshitij-Darwhekar/Intelligent-Traffic-Managment-System-Using-Computer-Vision' className='relative'>
-                  <Image src={Traffic} className='rounded-lg object-cover ' width={'100%'} height={'100%'} style={portfolioStyle} title='Checkout code on Github' />
+              <div className='basis-1/3 flex-1 relative'>
+                <a href='https://github.com/Kshitij-Darwhekar/Intelligent-Traffic-Managment-System-Using-Computer-Vision' className='relative opacity-100 hover:opacity-50 transition-opacity duration-150'>
+                  <Image src={Traffic} className='rounded-lg object-cover  ' width={'100%'} height={'100%'} style={portfolioStyle} title='Checkout code on Github' />
+                </a>
                   <div className='absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300'>
-                    <p className='text-xl text-center text-white hover:text-3xl md:text-2xl lg:text-2xl'>  
+                    <p className='text-xl text-center text-white hover:text-3xl md:text-2xl lg:text-2xl '>  
                       Click Me to Checkout Code on Github
                     </p>
                   </div>
-                </a>
+                
               </div>
             </div>
 
           </section>
 
+
+
           <section className='py-10' id='contact'>
-          <h1 className='text-4xl dark:text-gray-200 py-5'>Contact Me</h1>
+          <h1 className='text-5xl dark:text-gray-200 py-5'>Contact Me</h1>
             <form onSubmit={handleSubmit}>
               <label htmlFor='name' className='dark:text-gray-200'>Name</label>
               <input type='text' id='name' className='border-2 border-cyan-500 p-2 rounded-lg w-full dark:border-cyan-500 dark:bg-black dark:text-gray-200'/>
@@ -332,8 +323,7 @@ export default function Home() {
             </form>  
             
           </section>
-          {/* <h4 className='text-2xl dark:text-gray-200'> Alternatively you can drop a mail at kshitijdarwhekar@gmail.com </h4> */}
-        </main>
+          </main>
     </div>
     
   )
