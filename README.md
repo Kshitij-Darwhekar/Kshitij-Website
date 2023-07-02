@@ -2,6 +2,9 @@
 
 This is a portfolio website built using Next.js and Tailwind CSS. It showcases my projects, skills, and provides information about me.
 
+- Visit the Website : https://portfolio-website-ochre-mu.vercel.app/ 
+- Read the blog : https://medium.com/@kshitijdarwhekar/introduction-626e131561ee 
+
 ## Table of Contents
 
 - [Features](#features)
@@ -37,26 +40,77 @@ The portfolio website is built using the following technologies:
 ## Images
 
 ### Light Theme
-![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/91b7394f-4fee-4392-b0d7-cd6a8d65ffdc)
 
-![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/d5f1d37b-ee92-4089-aeb7-f975837b40c6)
+- Landing Page
 
-![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/196c87e4-f4a7-4883-95bf-927929c8bcfe)
+  ![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/448076e6-2ed6-4935-9bbd-eb0051212eea)
 
-![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/1a60f6d6-0b2c-4249-a7de-a5a4d963d017)
+  
+- About Section
 
-![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/801e0d33-b950-4f6d-b552-ff056e6b4c6b)
+  ![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/90a0158e-8c36-4ea0-9231-02bc1d617160)
+
+  
+- Skills Section
+
+  ![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/9eb0808a-2e44-4458-9b63-10e374e0ef39)
+
+  ![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/c736ef3f-44cf-47a0-ad16-02d889a6eb6b)
+
+  
+- Services Section
+
+  ![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/1ce5b3f1-258b-4c0f-bb43-042962dbdb64)
+
+  ![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/78e8219a-c8e5-4c6e-8746-935fadcd0124)
+
+  
+- Portfolio Section
+
+  ![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/8b4eb537-0d80-48ea-9086-892ae4ddce77)
+
+
+- Contact Me
+
+  ![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/90ea19e7-bee3-4e54-8995-64596f7d6cb2)
+
 
 
 ### Dark Mode
 
-![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/ae01324c-f570-4140-95c5-d88448cda012)
+Coming Soon
 
-![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/b09a8f15-52d8-480a-ad69-e3ff5409bd32)
+- Landing Page
 
-![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/78112c16-58c7-4a94-baf0-c40c9f88861c)
+  ![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/04f3d8be-c154-43d2-88bb-81f68cf40b36)
+  
 
-![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/db5f9b58-c48c-4576-a8d9-cc32a6db8327)
+- About Section
+
+  ![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/1cd2aa03-6f83-45b7-9fcb-1d4960e93d97)
+  
+- Skills Section
+
+  ![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/8fd33519-8a5b-4120-8409-944982c9a176)
+
+  ![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/aa249ba5-8963-4c11-acec-825d7611253f)
+
+- Services Section
+
+  ![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/39bcd251-b597-4b6d-acf0-e2c1909b7f26)
+
+  ![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/89d00feb-b29f-4533-b2c9-5d46d13f0246)
+  
+- Portfolio Section
+
+  ![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/c2474136-6560-49a9-92c7-73824ae3bc0a)
+
+- Contact Me
+
+  ![image](https://github.com/Kshitij-Darwhekar/Portfolio-Website/assets/54590658/53f5103b-60d9-4a79-9ec6-58d441bf76eb)
+
+
+
 
 
 
