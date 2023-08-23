@@ -67,7 +67,7 @@ export default function Home() {
               <ul className='flex items-center justify-end'>
                 <li> <BsFillMoonStarsFill onClick={()=> setDarkMode(!darkMode)} className='cursor-pointer text-2xl dark:text-gray-200' /> </li>
                 <li> <a
-                    href="https://drive.google.com/file/d/1DGKJ_e5aNufM35TOfotTv-oH4bw45rku/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1EPW6LhYyFN-r77FJaIw_Y88iz2pt5EZ4/view?usp=sharing"
                     alt="alt text"
                     target="_blank"
                     rel="noopener noreferrer"> 
