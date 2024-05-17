@@ -23,6 +23,7 @@ import portfolio from '../../public/Portfolio1.png';
 
 
 
+
 const portfolioStyle = {
   layout: 'responsive',
   hover: 'opacity-75',
@@ -35,11 +36,22 @@ const scroll = {
 }
 
 
-
 export default function Home() {
 
   const [darkMode, setDarkMode] = useState(true);
   const [state, handleSubmit] = useForm('mrgwzblg');
+  const [hover, setHover] = useState(false); // initial false
+  
+  const onHover = (e) => {
+    e.preventDefault();
+    setHover(true); // turn true
+    console.log("hovered");
+  };
+  
+  const onHoverOver = (e) => {
+    e.preventDefault(); // turn false
+    setHover(false);
+  };
 
   if (state.succeeded) {
   
@@ -263,46 +275,41 @@ export default function Home() {
             
             <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
 
-              <div className='basis-1/3 flex-1 '>
-                <a href='https://github.com/Kshitij-Darwhekar/pizzeria-react-app' className='relative'>
-                  <Image src={pizza} className='rounded-lg object-cover hover:opacity-50 transition-opacity duration-300' width={'100%'} height={'100%'} style={portfolioStyle} title='Checkout code on Github'/>
-                  <div className='absolute inset-0 flex items-center justify-center  opacity-0 hover:opacity-100 transition-opacity duration-300'>
-                    <p className='text-xl text-center text-white hover:text-3xl md:text-2xl lg:text-2xl'>  
-                      Click Me to Checkout Code on Github 
-                    </p>
-                  </div>
-                </a>
-              </div>
-              <div className='basis-1/3 flex-1 '>
-                <a href='https://github.com/Kshitij-Darwhekar/kshitijdarwhekar.io' className='relative'>
-                  <Image src={portfolio} className='rounded-lg object-cover ' width={'100%'} height={'100%'} style={portfolioStyle} title='Checkout code on Github'/>
-                  <div className='absolute inset-0 flex items-center justify-center  opacity-0 hover:opacity-100 transition-opacity duration-300'>
-                    <p className='text-xl text-center text-black mb-32 hover:text-3xl md:text-2xl lg:text-2xl'>  
-                      Click Me to Checkout Code on Github
-                    </p>
-                  </div>
-                </a>
-              </div>
-              <div className='basis-1/3 flex-1 '>
-                <a href='https://github.com/WebDesgns/Flight-Management-System' className='relative'>
-                  <Image src={FlySmart} className='rounded-lg object-cover ' width={'100%'} height={'100%'} style={portfolioStyle} title='Checkout Code on Github'/>
-                  <div className='absolute inset-0 flex items-center justify-center  opacity-0 hover:opacity-100 transition-opacity duration-300'>
-                    <p className='text-xl text-center text-black hover:text-3xl md:text-2xl lg:text-2xl'>  
-                      Click Me to Checkout Code on Github
-                    </p>
-                  </div>
+              <div className='basis-1/3 flex-1 relative'>
+                  {hover &&(
+                    <p className='absolute inset-0 flex items-center justify-center text-white '>
+                      Click to Chekout Github Repo
+                    </p> )}
+                <a href='https://github.com/Kshitij-Darwhekar/pizzeria-react-app' className='relative opacity-100 hover:opacity-50 transition-opacity duration-150'>
+                  <Image src={pizza} className='rounded-lg object-cover hover:opacity-50 transition-opacity duration-300' width={'100%'} height={'100%'} style={portfolioStyle} title='Click to Checkout code on Github' onMouseEnter={(e) => onHover(e)} onMouseLeave={(e) => onHoverOver(e)}/>
                 </a>
               </div>
               <div className='basis-1/3 flex-1 relative'>
-                <a href='https://github.com/Kshitij-Darwhekar/Intelligent-Traffic-Managment-System-Using-Computer-Vision' className='relative opacity-100 hover:opacity-50 transition-opacity duration-150'>
-                  <Image src={Traffic} className='rounded-lg object-cover  ' width={'100%'} height={'100%'} style={portfolioStyle} title='Checkout code on Github' />
+                  {hover &&(
+                    <p className='absolute inset-0 flex items-center justify-center text-white '>
+                      Click to Chekout Github Repo
+                    </p> )}
+                <a href='https://github.com/Kshitij-Darwhekar/kshitijdarwhekar.io' className='relative opacity-100 hover:opacity-50 transition-opacity duration-150'>
+                  <Image src={portfolio} className='rounded-lg object-cover hover:opacity-50 transition-opacity duration-300' width={'100%'} height={'100%'} style={portfolioStyle} title='Click to Checkout code on Github' onMouseEnter={(e) => onHover(e)} onMouseLeave={(e) => onHoverOver(e)}/>
                 </a>
-                  <div className='absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300'>
-                    <p className='text-xl text-center text-white hover:text-3xl md:text-2xl lg:text-2xl '>  
-                      Click Me to Checkout Code on Github
-                    </p>
-                  </div>
-                
+              </div>
+              <div className='basis-1/3 flex-1 relative'>
+                  {hover &&(
+                    <p className='absolute inset-0 flex items-center justify-center text-white '>
+                      Click to Checkout Github Repo
+                    </p> )}
+                <a href='https://github.com/WebDesgns/Flight-Management-System' className='relative opacity-100 hover:opacity-50 transition-opacity duration-150'>
+                  <Image src={FlySmart} className='rounded-lg object-cover hover:opacity-50 transition-opacity duration-300' width={'100%'} height={'100%'} style={portfolioStyle} title='Click to Checkout Code on Github' onMouseEnter={(e) => onHover(e)} onMouseLeave={(e) => onHoverOver(e)}/>
+                </a>
+              </div>
+              <div className='basis-1/3 flex-1 relative'>
+                {hover &&(
+                    <p className='absolute inset-0 flex items-center justify-center text-white '>
+                      Click to Chekout Github Repo
+                    </p> )}
+                <a href='https://github.com/Kshitij-Darwhekar/Intelligent-Traffic-Managment-System-Using-Computer-Vision' className='relative opacity-100 hover:opacity-50 transition-opacity duration-150'>
+                  <Image src={Traffic} className='rounded-lg object-cover hover:opacity-50 transition-opacity duration-300' width={'100%'} height={'100%'} style={portfolioStyle} title='Click to Checkout code on Github' onMouseEnter={(e) => onHover(e)} onMouseLeave={(e) => onHoverOver(e)}/>
+                </a> 
               </div>
             </div>
 
