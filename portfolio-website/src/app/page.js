@@ -74,13 +74,13 @@ export default function Home() {
 
               
               <ul className='flex items-center justify-end'>
-                <li> <BsFillMoonStarsFill onClick={()=> setDarkMode(!darkMode)} className='cursor-pointer text-2xl dark:text-gray-200' /> </li>
+                <li><span className='hover:text-cyan-500 dark:hover:text-cyan-500'> <BsFillMoonStarsFill onClick={()=> setDarkMode(!darkMode)} className='cursor-pointer text-2xl dark:text-gray-200' /></span> </li>
                 <li> <a
                     href="https://drive.google.com/file/d/1SdDB0Xt4q9rrInaFspWdUGcc-_tmMUSZ/view?usp=sharing"
                     alt="alt text"
                     target="_blank"
                     rel="noopener noreferrer"> 
-                      <button className='bg-gradient-to-r from-cyan-700 to-cyan-500 px-6 py-2 text-white rounded-sm ml-8'>Resume </button> </a></li>
+                      <button className='bg-gradient-to-r from-cyan-700 to-cyan-500 hover:bg-gradient-to-l from-cyan-700 to from-cyan-500 px-6 py-2 text-white rounded-sm ml-8'>Resume </button> </a></li>
               </ul>
               
             </nav>
@@ -132,11 +132,11 @@ export default function Home() {
 
           {/* Skills */}
 
-          <div id='skills' ref={skillsRef}>
+          <div id='skills' ref={skillsRef} className='p-10'>
               <div>
                 <h1 className='text-5xl py-3 text-black dark:text-gray-200'> My Skills</h1>
               </div>
-              <div className='text-center p-10 rounded-xl my-10   '>
+              <div className='text-center p-10 rounded-xl my-10'>
 
                 <h2 className='text-3xl p-7 dark:text-gray-200 md:text-4xl lg:text-5xl'>Languages</h2>
                 <div className='flex flex-wrap justify-evenly'>
@@ -186,7 +186,7 @@ export default function Home() {
 
   {/* Projects */}
 
-          <section className='py-10' id='projects' ref={projectRef}>
+          <section className='p-10' id='projects' ref={projectRef}>
             <div>
               <h3 className='text-5xl py-2 mb-6 dark:text-white'>Portfolio</h3>
               <p className='text-md py-2 leading-8 text-grey-800 dark:text-gray-200 text-justify'>
@@ -242,12 +242,9 @@ export default function Home() {
                 </a> 
               </div>
             </div>
+      </section>
 
-          </section>
-
-
-
-          <section className='py-10' id='contact' ref={contactRef}>
+        <section className='p-6' id='contact' ref={contactRef}>
           <h1 className='text-5xl dark:text-gray-200 py-5'>Contact Me</h1>
             <form onSubmit={handleSubmit}>
               <label htmlFor='name' className='dark:text-gray-200 '>Name</label>
@@ -258,10 +255,9 @@ export default function Home() {
               <textarea name='message' id='message' cols='30' rows='10' className='border-2 border-cyan-500  p-2 py-4 rounded-lg w-full dark:border-cyan-500 dark:bg-black dark:text-gray-200 '></textarea>
               <button disabled={state.submitting} className='bg-gradient-to-r from-cyan-700 to-cyan-500  text-white px-4 py-2 rounded-lg'>Submit</button>
             </form>  
-            
-          </section>
-          </main>
-          <Analytics/>
+        </section>
+      </main>
+      <Analytics/>
     </div>
     
   )
