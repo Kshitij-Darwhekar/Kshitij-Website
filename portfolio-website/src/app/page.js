@@ -11,9 +11,9 @@ import { useRef } from 'react';
 import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {AiFillTwitterCircle, AiFillLinkedin,AiFillYoutube,AiFillGithub,AiFillMediumSquare,AiFillMail} from 'react-icons/ai';
 import {BiLogoReact,BiLogoJava,BiLogoPython,BiLogoNodejs, BiLogoSpringBoot,BiLogoMongodb,BiLogoCss3,BiLogoTailwindCss, BiLogoBootstrap, BiLogoHtml5} from 'react-icons/bi'
-import {SiApachemaven,SiExpress,SiNumpy,SiPandas,SiMysql} from 'react-icons/si'
+import {SiApachemaven,SiNumpy,SiPandas,SiMysql} from 'react-icons/si'
 
-import kshitij from '../../public/Kshitij.png';
+import kshitij from '../../public/Kshitij_2.png';
 import pizza from '../../public/pizza1.png';
 import Traffic from '../../public/Traffic.png';
 import FlySmart from '../../public/FlySmart2.png';
@@ -124,7 +124,7 @@ export default function Home() {
               </div>
               <div className='flex items-center justify-center text-center mx-auto overflow-hidden'>
                 <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-64 h-64 mt-20 overflow-hidden md:h-96 md:w-96 lg:w-96 lg:h-96'>
-                  <Image  src={kshitij} fill={true} />
+                  <Image  src={kshitij} fill={false} />
                 </div>
               </div>
             </div>
