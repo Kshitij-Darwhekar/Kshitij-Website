@@ -59,7 +59,7 @@ export default function Home() {
 
   return (
     <div className={darkMode ? 'dark' : ''}>
-        <main className='bg-slate-200 text-slate-900 dark:bg-slate-900 dark:text-slate-400 scroll-smooth antialiased font-poppins selection:bg-teal-500 selection:text-teal-700'>
+        <main className='bg-slate-200 text-slate-900 dark:bg-slate-900 dark:text-slate-400 scroll-smooth antialiased leading-relaxed font-poppins selection:bg-teal-500 selection:text-teal-700'>
           <section className=' min-h-screen'>
             <nav className='p-10 mb-12 flex justify-between dark:text-slate-400'>
               <h1 className='text-xl font-dancing hover:text-teal-500 dark:text-slate-400 '> <a href='#' className='hover:text-teal-500'> Hi, I'm Kshitij</a>  </h1>
@@ -72,7 +72,7 @@ export default function Home() {
                 </ul>
               </nav>
               
-
+              {/* Landing Page */}
               
               <ul className='flex items-center justify-end'>
                 <li><span className='hover:text-teal-500 dark:hover:text-teal-500'> <BsFillMoonStarsFill onClick={()=> setDarkMode(!darkMode)} className='cursor-pointer text-2xl dark:text-gray-200' /></span> </li>
@@ -86,10 +86,7 @@ export default function Home() {
               
             </nav>
 
-          
-            {/* About */}
-
-            <div className='text-center p-10 ' id='about' ref={aboutRef}>
+            <div className='text-center p-10 '>
               <div className='flex flex-col items-center justify-center gap-y-5'>
                 <h2 className='text-6xl text-black font-medium dark:text-slate-400 md:text-7xl lg:text-8xl text-center'>Hi I'm <span className='text-teal-500 dark:text-teal-500'>Kshitij Darwhekar</span> </h2>
                 <h2 className='text-3xl py-5 px-3 text-teal-500/75 font-medium dark:text-teal-500/75 md:text-5xl lg:text-5xl text-center'> 
@@ -115,16 +112,12 @@ export default function Home() {
 
               {/* <h3 className='text-3xl py-2 dark:text-white md:text-3xl'>Full Stack Developer and ML Enthusiast</h3> */}
               <p className='text-lg py-5 font-burton text-center leading-8 text-gray-800 dark:text-slate-400 md:text-xl max-w-10xl mx-auto'>
-               {/* I'm a full stack developer and ML enthusiast with a degree in Electronics and Telecommunication engineering. 
-               I'm passionate about leveraging my expertise in both front-end and back-end technologies to create innovative solutions. 
-               With a deep understanding of machine learning algorithms and data analysis, I strive to develop intelligent systems that make a tangible impact. 
-               Let's connect and embark on an exciting journey together in the realm of technology and innovation! */}
-               Hey! I'm a <span className='text-teal-500'>Full Stack Web Developer</span> with a passion for <span className='text-teal-500'>Machine Learning</span><br/>
+                Hey! I'm a <span className='text-teal-500'>Full Stack Web Developer</span> with a passion for <span className='text-teal-500'>Machine Learning</span><br/>
                 and a keen interest in <span className='text-teal-500'>Generative AI and LLMs.</span> <br/>
-               Take a look around to see my projects and dive into my world of tech innovation! <br/>
+                Take a look around to see my projects and dive into my world of tech innovation! <br/>
               </p>
               
-              <div className='py-4 text-5xl flex justify-center flex-row items-center text-gray-600 dark:text-gray-400 md:flex md:gap-10 lg:flex lg:gap-10 '>
+              <div className='py-4 mb-40 text-5xl flex justify-center flex-row items-center text-gray-600 dark:text-gray-400 md:flex md:gap-10 lg:flex lg:gap-10 '>
                 <a href='https://twitter.com/KshitijDarwhek1' className='hover:text-teal-500'><AiFillTwitterCircle /></a>
                 <a href='https://www.linkedin.com/in/kshitij-darwhekar-b15a33191/ '  className='hover:text-teal-500'><AiFillLinkedin /></a>
                 <a href='https://youtube.com/@kshitijdarwhekar'  className='hover:text-teal-500'><AiFillYoutube /></a>
@@ -133,13 +126,51 @@ export default function Home() {
                 <a href='mailto:kshitijdarwhekar@gmail.com'  className='hover:text-teal-500'><AiFillMail /></a>
               </div>
 
-              {/* Image Section */}
+              {/* About Me Section */}
 
-              <div className='flex items-center justify-center text-center mx-auto overflow-hidden'>
-                <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-64 h-64 my-40 overflow-hidden md:h-96 md:w-96 lg:w-96 lg:h-96'>
-                  <Image  src={kshitij} fill={false} />
+              <div className='text-center p-10' id='about' ref={aboutRef}>
+
+                <div className='flex items-center justify-center text-center mx-auto overflow-hidden'>
+                  <div className='relative mb-4 mx-auto bg-gradient-to-b from-teal-500 rounded-full w-64 h-64 overflow-hidden md:h-96 md:w-96 lg:w-96 lg:h-96'>
+                    <Image  src={kshitij} fill={false} />
+                  </div>
                 </div>
+
+                  <h2 className='text-5xl py-3 text-black dark:text-slate-400'>About Me</h2>
+
+                  <p className='text-lg py-4 text-justify leading-8 text-gray-800 dark:text-slate-400 md:text-xl max-w-10xl mx-auto'>
+                    Back in high school, after finishing my 12th grade and looking for something to do during a long summer break, 
+                    I decided to try my hand at building a website. That project sparked a passion for web development that has only grown 
+                    stronger over the years. Fast forward to Today, I take pride in developing web solutions that are not only visually 
+                    appealing but also highly functional and user-friendly.
+                  </p>
+
+                  <p className='text-lg py-4  text-justify leading-8 text-gray-800 dark:text-slate-400 md:text-xl max-w-10xl mx-auto'>
+                    These days, I'm really diving deep into <span> Machine Learning </span> , <span> Artificial Intelligence </span>, and 
+                    <span> Generative AI </span> . 
+                    It's like unlocking a whole new world of possibilities! I'm fascinated by how these technologies can predict outcomes, 
+                    understand languages, and even create new content out of thin air. It's not just about coding anymore; 
+                    it's about understanding the magic behind the algorithms and using them to create cool stuff.
+                  </p>
+
+                  {/* <p className='text-lg py-4 text-justify leading-8 text-gray-800 dark:text-slate-400 md:text-xl max-w-10xl mx-auto'>
+                    My fascination with technology doesn't stop at web development. I've always been captivated by Machine Learning and 
+                    Artificial Intelligence. It all started with a simple curiosity about predicting the outcome of a Sunday game, but it 
+                    quickly evolved into a deeper interest in how data and insights can be used to make accurate predictions and drive innovation.
+                    Generative AI, in particular, intrigues me – the idea that a machine can learn and generate new content is nothing short of 
+                    magical.
+                  </p>  */}
+
+                  <p className='text-lg py-4 text-justify leading-8 text-gray-800 dark:text-slate-400 md:text-xl max-w-10xl mx-auto'>
+                    When I’m not not geeking out over tech stuff, you can usually find me playing or watching cricket, which is my favourite way 
+                    to unwind. I also love listening to music, which keeps me inspired and energised.
+                  </p>
+
+                  <p className='text-lg py-4 text-justify leading-8 text-gray-800 dark:text-slate-400 md:text-xl max-w-10xl mx-auto'>
+                  Thanks for stopping by to learn a bit about me. Let's connect and create something amazing together!
+                  </p>
               </div>
+
             </div>
           </section>
 
@@ -203,12 +234,14 @@ export default function Home() {
             <div>
               <h3 className='text-5xl py-2 mb-6 dark:text-slate-400'>Portfolio</h3>
               <p className='text-lg py-2 leading-8 text-grey-800 dark:text-slate-400 text-justify'>
-                My portfolio is a collection of diverse work samples that reflect my expertise and experience in <span className='text-slate-200 '> Full Stack development and Machine Learning </span> . 
-                It includes a range of projects, such as <a className='text-slate-200 hover:text-teal-500 focus-visible:text-teal-500' href=''>Pizzeria-react-app</a> , 
-                <a className='text-slate-200 hover:text-teal-500 focus-visible:text-teal-500' href=''> FlySmart </a>  ,  
-                <a className='text-slate-200 hover:text-teal-500 focus-visible:text-teal-500' href=''> Medical Insurance Premium prediction </a>  ,  
-                <a className='text-slate-200 hover:text-teal-500 focus-visible:text-teal-500' href=''> Intelligent Traffic Managment System </a> ,  
-                <a className='text-slate-200 hover:text-teal-500 focus-visible:text-teal-500' href=''> Portfolio Website </a>
+                My portfolio is a collection of diverse work samples that reflect my expertise and experience in <span className='text-slate-200 hover:text-teal-500 focus-visible:text-teal-500 '> Full Stack development</span> <span className='text-slate-400'> and </span> <span className='text-slate-200 hover:text-teal-500 focus-visible:text-teal-500'>  Machine Learning </span> . 
+                It includes a range of projects, such as 
+                <a className='text-slate-200 hover:text-teal-500 focus-visible:text-teal-500' href='https://github.com/Kshitij-Darwhekar/pizzeria-react-app'> Pizzeria-react-app</a> , 
+                <a className='text-slate-200 hover:text-teal-500 focus-visible:text-teal-500' href='https://github.com/WebDesgns/Flight-Management-System'> FlySmart </a>  ,  
+                <a className='text-slate-200 hover:text-teal-500 focus-visible:text-teal-500' href='https://github.com/Kshitij-Darwhekar/Medical-Insurance-Premium-Prediction.git'> Medical Insurance Premium prediction </a>  ,  
+                <a className='text-slate-200 hover:text-teal-500 focus-visible:text-teal-500' href='https://github.com/Kshitij-Darwhekar/Intelligent-Traffic-Managment-System-Using-Computer-Vision'> Intelligent Traffic Managment System </a> ,  
+                <a className='text-slate-200 hover:text-teal-500 focus-visible:text-teal-500' href='https://github.com/Kshitij-Darwhekar/kshitijdarwhekar.io'> Portfolio Website </a>
+                <a className='text-slate-200 hover:text-teal-500 focus-visible:text-teal-500' href='https://github.com/Kshitij-Darwhekar/Disease_Outbreak_Prediction.git'> Disease Outbreak Prediction </a>
                  each demonstrating my creativity, problem-solving abilities, and professional growth.
               </p>
               <p className='text-lg py-2 leading-8 text-grey-800 dark:text-slate-400 mx-auto text-justify'>
@@ -277,6 +310,20 @@ export default function Home() {
               <button disabled={state.submitting} className='bg-gradient-to-r from-teal-700 to-teal-500 my-2 text-slate-200 px-4 py-2 rounded-lg'>Submit</button>
             </form>  
         </section>
+
+        {/* <div className='flex items-center justify-center flex-row '>
+          <footer className='max-w-md pb-0 text-sm text-center text-slate-600 md:pb-3 lg:pb-3'>
+            
+              <p className='p-2'>
+                Inspired by multiple web dev portfolio's , Coded in 
+                <a href='https://code.visualstudio.com/' className='font-medium text-slate-400 hover:text-teal-500'> Visual Studio Code </a> by yours truly  , Built using 
+                <a href='https://nextjs.org/' className='font-medium text-slate-400 hover:text-teal-500'> Next.js </a>  and 
+                <a href='https://tailwindcss.com/' className='font-medium text-slate-400 hover:text-teal-500'> Tailwind CSS </a> , Hosted on Personal VPS. Checkout the Repo on 
+                <a href='https://github.com/Kshitij-Darwhekar/Kshitij-Website' className='font-medium text-slate-400 hover:text-teal-500'> Github </a> 
+              </p>
+              
+          </footer>
+        </div> */}
       </main>
       <Analytics/>
     </div>
