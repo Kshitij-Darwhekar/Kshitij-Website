@@ -131,7 +131,7 @@ export default function Home() {
               <div className='text-center' id='about' ref={aboutRef}>
 
                 <div className='flex items-center justify-center text-center mx-auto overflow-hidden'>
-                  <div className='relative mb-4 mx-auto bg-gradient-to-b from-teal-500 rounded-full w-64 h-64 overflow-hidden md:h-96 md:w-96 lg:w-96 lg:h-96'>
+                  <div className='relative mt-4 mb-4 mx-auto bg-gradient-to-b from-teal-500 rounded-full w-64 h-64 overflow-hidden md:h-96 md:w-96 lg:w-96 lg:h-96'>
                     <Image  src={kshitij} fill={false} />
                   </div>
                 </div>
