@@ -311,7 +311,7 @@ export default function Home() {
             </form>  
         </section>
 
-        {/* <div className='flex items-center justify-center flex-row '>
+        <div className='flex items-center justify-center flex-row '>
           <footer className='max-w-md pb-0 text-sm text-center text-slate-600 md:pb-3 lg:pb-3'>
             
               <p className='p-2'>
@@ -323,7 +323,7 @@ export default function Home() {
               </p>
               
           </footer>
-        </div> */}
+        </div>
       </main>
       <Analytics/>
     </div>
