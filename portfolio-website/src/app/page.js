@@ -307,7 +307,7 @@ export default function Home() {
               <input type='email' id='email' className='my-2 border-2 border-teal-500 p-2 rounded-lg w-full dark:border-teal-500 dark:bg-black dark:text-gray-200 '/>
               <label htmlFor='message' className='dark:text-slate-400 '>Message</label>
               <textarea name='message' id='message' cols='30' rows='10' className='my-2 border-2 border-teal-500  p-2 py-4 rounded-lg w-full dark:border-teal-500 dark:bg-black dark:text-gray-200 '></textarea>
-              <button disabled={state.submitting} className='bg-gradient-to-r from-teal-700 to-teal-500 my-2 text-slate-200 px-4 py-2 rounded-lg'>Submit</button>
+              <button disabled={state.submitting} className='bg-gradient-to-r from-teal-700 to-teal-500 my-2 hover:bg-gradient-to-l text-slate-200 px-4 py-2 rounded-lg'>Submit</button>
             </form>  
         </section>
                   <hr className=' border-slate-600'/>
