@@ -298,7 +298,7 @@ export default function Home() {
 
 {/* Contact Me Form */}
 
-        <section className='p-10' id='contact' ref={contactRef}>
+        <section className='' id='contact' ref={contactRef}>
           <h1 className='text-5xl dark:text-slate-400 py-5'>Contact Me</h1>
             <form onSubmit={handleSubmit} className='p-3'>
               <label htmlFor='name' className='dark:text-slate-400 '>Name</label>
@@ -310,7 +310,7 @@ export default function Home() {
               <button disabled={state.submitting} className='bg-gradient-to-r from-teal-700 to-teal-500 my-2 text-slate-200 px-4 py-2 rounded-lg'>Submit</button>
             </form>  
         </section>
-
+                  <hr className=' border-slate-600'/>
         <div className='flex items-center justify-center flex-row '>
           <footer className='max-w-md pb-0 text-sm text-center text-slate-600 md:pb-3 lg:pb-3'>
             
