@@ -59,7 +59,7 @@ export default function Home() {
 
   return (
     <div className={darkMode ? 'dark' : ''}>
-        <main className='bg-slate-200 text-slate-900 dark:bg-slate-900 dark:text-slate-400 scroll-smooth antialiased font-sans selection:bg-teal-500 selection:text-teal-700'>
+        <main className='bg-slate-200 text-slate-900 dark:bg-slate-900 dark:text-slate-400 scroll-smooth antialiased font-poppins selection:bg-teal-500 selection:text-teal-700'>
           <section className=' min-h-screen'>
             <nav className='p-10 mb-12 flex justify-between dark:text-slate-400'>
               <h1 className='text-xl font-dancing hover:text-teal-500 dark:text-slate-400 '> <a href='#' className='hover:text-teal-500'> Hi, I'm Kshitij</a>  </h1>

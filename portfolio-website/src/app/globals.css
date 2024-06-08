@@ -39,3 +39,7 @@
   src: url('../../public/Dancing_Script/DancingScript-VariableFont_wght.ttf');
 }
 
+@font-face {
+  font-family: "poppins";
+  src: url('../../public/Poppins/Poppins-Regular.ttf');
+}
