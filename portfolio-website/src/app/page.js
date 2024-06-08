@@ -298,7 +298,7 @@ export default function Home() {
 
 {/* Contact Me Form */}
 
-        <section className='' id='contact' ref={contactRef}>
+        <section className='px-10' id='contact' ref={contactRef}>
           <h1 className='text-5xl dark:text-slate-400 py-5'>Contact Me</h1>
             <form onSubmit={handleSubmit} className='p-3'>
               <label htmlFor='name' className='dark:text-slate-400 '>Name</label>
