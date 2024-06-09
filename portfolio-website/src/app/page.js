@@ -7,6 +7,7 @@ import Typewriter from 'typewriter-effect';
 import { useForm } from '@formspree/react';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { GoogleAnalytics } from '@next/third-parties/google'
 import { useState } from 'react';
 import { useRef } from 'react';
 
@@ -133,7 +134,7 @@ export default function Home() {
 
                 <div className='flex items-center justify-center text-center mx-auto overflow-hidden'>
                   <div className='relative mt-4 mb-4 mx-auto bg-gradient-to-b from-teal-500 rounded-full w-64 h-64 overflow-hidden md:h-96 md:w-96 lg:w-96 lg:h-96'>
-                    <Image  src={kshitij} fill={false} />
+                    <Image  src={kshitij} fill={false} alt='Kshitij Image' />
                   </div>
                 </div>
 
@@ -328,6 +329,8 @@ export default function Home() {
       </main>
       <Analytics/>
       <SpeedInsights />
+      <GoogleAnalytics gaId="G-9EZ8WLWJRF" />
+      
     </div>
     
   )
