@@ -31,6 +31,9 @@ const portfolioStyle = {
   
 }
 
+export const viewport = {
+  themeColor: '#0f172a',
+}
 
 export default function Home() {
 
@@ -53,6 +56,8 @@ export default function Home() {
   const projectRef = useRef(null);
   const skillsRef = useRef(null);
   const contactRef = useRef(null);
+
+  
 
   if (state.succeeded) {
   
@@ -164,7 +169,7 @@ export default function Home() {
                   </p>  */}
 
                   <p className='text-lg py-4 text-justify leading-8 text-gray-800 dark:text-slate-400 md:text-xl max-w-10xl mx-auto'>
-                    When I’m not not geeking out over tech stuff, you can usually find me playing or watching cricket, which is my favourite way 
+                    When I’m not geeking out over tech stuff, you can usually find me playing or watching cricket, which is my favourite way 
                     to unwind. I also love listening to music, which keeps me inspired and energised.
                   </p>
 
