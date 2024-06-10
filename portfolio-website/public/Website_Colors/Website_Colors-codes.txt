@@ -1,0 +1,11 @@
+Your selected colors:
+
+    Text: #dcdaea - rgb(220, 218, 234) - hsl(248, 28%, 89%)
+    Background: #0f172a - rgb(15, 23, 42) - hsl(222, 47%, 11%)
+    Primary: #14b8a6 - rgb(20, 184, 166) - hsl(173, 80%, 40%)
+    Secondary: #0f766e - rgb(15, 118, 110) - hsl(175, 77%, 26%)
+    Accent: #14b8a6 - rgb(20, 184, 166) - hsl(173, 80%, 40%)
+
+Realtime Colors link for selected colors: https://www.realtimecolors.com/?colors=dcdaea-0f172a-14b8a6-0f766e-14b8a6&fonts=Poppins-Poppins
+
+Thanks for using RealtimeColors.com!
