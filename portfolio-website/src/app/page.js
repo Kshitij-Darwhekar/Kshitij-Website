@@ -35,6 +35,7 @@ export const viewport = {
   themeColor: '#0f172a',
 }
 
+
 export default function Home() {
 
   const [darkMode, setDarkMode] = useState(true);
@@ -200,11 +201,11 @@ export default function Home() {
                 <h2 className='text-3xl p-7 dark:text-slate-400 md:text-4xl lg:text-5xl'>Front End</h2>
                 <div className='flex flex-wrap justify-evenly'>
                   {/* <div className='p-2 text-xl dark:text-gray-200 '><BiLogoAngular className='w-40 h-40 text-cyan-500 md:w-40 md:h-40 lg:w-48 lg:h-48' />Angular</div> */}
-                  <div className='p-2 text-xl dark:text-slate-400'><BiLogoReact className='w-40 h-40 text-teal-500 md:w-40 md:h-40 lg:w-48 lg:h-48'/>React</div>
-                  <div className='p-2 text-xl dark:text-slate-400'><BiLogoHtml5 className='w-40 h-40 text-teal-500 md:w-40 md:h-40 lg:w-48 lg:h-48'/>HTML</div>
-                  <div className='p-2 text-xl dark:text-slate-400'><BiLogoCss3 className='w-40 h-40 text-teal-500 md:w-40 md:h-40 lg:w-48 lg:h-48'/>CSS</div>
-                  <div className='p-2 text-xl dark:text-slate-400'><BiLogoTailwindCss className='w-40 h-40 text-teal-500 md:w-40 md:h-40 lg:w-48 lg:h-48'/>Tailwind CSS</div>
-                  <div className='p-2 text-xl dark:text-slate-400'><BiLogoBootstrap className='w-40 h-40 text-teal-500 md:w-40 md:h-40 lg:w-48 lg:h-48'/>Bootstrap</div>
+                  <div className='p-2 m-2 text-xl dark:text-slate-400'><BiLogoReact className='w-40 h-40 text-teal-500 md:w-40 md:h-40 lg:w-48 lg:h-48'/>React</div>
+                  <div className='p-2 m-2 text-xl dark:text-slate-400'><BiLogoHtml5 className='w-40 h-40 text-teal-500 md:w-40 md:h-40 lg:w-48 lg:h-48'/>HTML</div>
+                  <div className='p-2 m-2 text-xl dark:text-slate-400'><BiLogoCss3 className='w-40 h-40 text-teal-500 md:w-40 md:h-40 lg:w-48 lg:h-48'/>CSS</div>
+                  <div className='p-2 m-2 text-xl dark:text-slate-400'><BiLogoTailwindCss className='w-40 h-40 text-teal-500 md:w-40 md:h-40 lg:w-48 lg:h-48'/>Tailwind CSS</div>
+                  <div className='p-2 m-2 text-xl dark:text-slate-400'><BiLogoBootstrap className='w-40 h-40 text-teal-500 md:w-40 md:h-40 lg:w-48 lg:h-48'/>Bootstrap</div>
                 </div>
 
                 <h2 className='text-3xl p-7 dark:text-slate-400 md:text-4xl lg:text-5xl'>Back End</h2>
