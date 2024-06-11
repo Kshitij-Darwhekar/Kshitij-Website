@@ -4,7 +4,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Typewriter from 'typewriter-effect';
-import { useForm } from '@formspree/react';
+import { useForm, ValidationError } from '@formspree/react';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { GoogleAnalytics } from '@next/third-parties/google'
@@ -62,7 +62,7 @@ export default function Home() {
 
   if (state.succeeded) {
   
-    return <p className='text-5xl text-teal-500 justify-center items-center flex py-50'>Submitted Successfully</p>;
+    return <p className='text-2xl text-teal-500 justify-center items-center flex py-50 md:text-5xl lg:text-5xl'>Submitted Successfully</p>;
   }
 
   return (
@@ -313,12 +313,17 @@ export default function Home() {
               <input type='text' id='name' className='my-2 border-2 border-teal-500 p-2 rounded-lg w-full dark:border-teal-500 dark:bg-black dark:text-gray-200'/>
               <label htmlFor='email' className='dark:text-slate-400 '>Email</label>
               <input type='email' id='email' className='my-2 border-2 border-teal-500 p-2 rounded-lg w-full dark:border-teal-500 dark:bg-black dark:text-gray-200 '/>
+              <ValidationError prefix="Email" field="email" errors={state.errors}/>
               <label htmlFor='message' className='dark:text-slate-400 '>Message</label>
               <textarea name='message' id='message' cols='30' rows='10' className='my-2 border-2 border-teal-500  p-2 py-4 rounded-lg w-full dark:border-teal-500 dark:bg-black dark:text-gray-200 '></textarea>
-              <button disabled={state.submitting} className='bg-gradient-to-r from-teal-700 to-teal-500 my-2 hover:bg-gradient-to-l text-slate-200 px-4 py-2 rounded-lg'>Submit</button>
+              <ValidationError prefix="Email" field="email" errors={state.errors}/>
+              <button type='submit' disabled={state.submitting} className='bg-gradient-to-r from-teal-700 to-teal-500 my-2 hover:bg-gradient-to-l text-slate-200 px-4 py-2 rounded-lg'>Submit</button>
             </form>  
         </section>
-                  <hr className=' border-slate-600'/>
+
+{/* Footer */}
+        
+        <hr className=' border-slate-600'/>
         <div className='flex items-center justify-center flex-row '>
           <footer className='max-w-md pb-0 text-sm text-center text-slate-600 md:pb-3 lg:pb-3'>
             
