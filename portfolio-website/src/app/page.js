@@ -14,13 +14,15 @@ import { useRef } from 'react';
 import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {AiFillTwitterCircle, AiFillLinkedin,AiFillYoutube,AiFillGithub,AiFillMediumSquare,AiFillMail} from 'react-icons/ai';
 import {BiLogoReact,BiLogoJava,BiLogoPython,BiLogoNodejs, BiLogoSpringBoot,BiLogoMongodb,BiLogoCss3,BiLogoTailwindCss, BiLogoBootstrap, BiLogoHtml5} from 'react-icons/bi'
-import {SiApachemaven,SiNumpy,SiPandas,SiMysql} from 'react-icons/si'
+import {SiApachemaven,SiNumpy,SiPandas,SiMysql, SiDocker} from 'react-icons/si'
+
 
 import kshitij from '../../public/Kshitij_2.png';
 import pizza from '../../public/pizza1.png';
 import Traffic from '../../public/Traffic.png';
 import FlySmart from '../../public/FlySmart2.png';
 import portfolio from '../../public/Portfolio1.png';
+
 
 
 
@@ -155,7 +157,7 @@ export default function Home() {
 
                   <p className='text-lg py-4  text-justify leading-8 text-gray-800 dark:text-slate-400 md:text-xl max-w-10xl mx-auto'>
                     These days, I'm really diving deep into <span> Machine Learning </span> , <span> Artificial Intelligence </span>, and 
-                    <span> Generative AI </span> . 
+                    <span> Generative AI. </span>
                     It's like unlocking a whole new world of possibilities! I'm fascinated by how these technologies can predict outcomes, 
                     understand languages, and even create new content out of thin air. It's not just about coding anymore; 
                     it's about understanding the magic behind the algorithms and using them to create cool stuff.
@@ -229,6 +231,7 @@ export default function Home() {
                   <div className='p-2 text-xl dark:text-slate-400'><SiApachemaven className='w-40 h-40 text-teal-500 md:w-40 md:h-40 lg:w-48 lg:h-48 mb-5'/>Maven</div>
                   <div className='p-2 text-xl dark:text-slate-400'><SiNumpy className='w-40 h-40 text-teal-500 md:w-40 md:h-40 lg:w-48 lg:h-48 mb-5'/>Numpy</div>
                   <div className='p-2 text-xl dark:text-slate-400'><SiPandas className='w-40 h-40 text-teal-500 md:w-40 md:h-40 lg:w-48 lg:h-48 mb-5'/> Pandas</div>
+                  <div className='p-2 text-xl dark:text-slate-400'><SiDocker className='w-40 h-40 text-teal-500 md:w-40 md:h-40 lg:w-48 lg:h-48 mb-5'/> Docker</div>
                 </div>
 
               </div>
