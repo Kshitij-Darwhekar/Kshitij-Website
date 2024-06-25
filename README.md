@@ -116,7 +116,7 @@ To run the portfolio website on your local machine, follow these steps:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/Kshitij-Darwhekar/Portfolio-Website.git
+git clone https://github.com/Kshitij-Darwhekar/Kshitij-Website.git
 ```
 
 2. Navigate to the project directory:
