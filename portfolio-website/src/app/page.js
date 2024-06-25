@@ -317,9 +317,9 @@ export default function Home() {
           <h1 className='text-5xl dark:text-slate-400 py-5'>Contact Me</h1>
             <form onSubmit={handleSubmit} className='p-3'>
               <label htmlFor='name' className='dark:text-slate-400 '>Name</label>
-              <input type='name' id='name' name='name' className='my-2 border-2 border-teal-500 p-2 rounded-lg w-full dark:border-teal-500 dark:bg-black dark:text-gray-200'/>
+              <input type='name' id='name' name='name' required className='my-2 border-2 border-teal-500 p-2 rounded-lg w-full dark:border-teal-500 dark:bg-black dark:text-gray-200' />
               <label htmlFor='email' className='dark:text-slate-400 '>Email</label>
-              <input type='email' id='email' name='email' className='my-2 border-2 border-teal-500 p-2 rounded-lg w-full dark:border-teal-500 dark:bg-black dark:text-gray-200 '/>
+              <input type='email' id='email' name='email' required className='my-2 border-2 border-teal-500 p-2 rounded-lg w-full dark:border-teal-500 dark:bg-black dark:text-gray-200 '/>
               <ValidationError prefix="Email" field="email" errors={state.errors}/>
               <label htmlFor='message' className='dark:text-slate-400 '>Message</label>
               <textarea name='message' id='message' cols='30' rows='10' className='my-2 border-2 border-teal-500  p-2 py-4 rounded-lg w-full dark:border-teal-500 dark:bg-black dark:text-gray-200 '></textarea>
