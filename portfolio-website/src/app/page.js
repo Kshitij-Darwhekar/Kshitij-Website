@@ -60,6 +60,7 @@ export default function Home() {
   const skillsRef = useRef(null);
   const contactRef = useRef(null);
 
+  // <div class="relative h-full w-full bg-white"><div class="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)]"></div></div>
   
 
   if (state.succeeded) {
@@ -84,6 +85,7 @@ export default function Home() {
               
               {/* Landing Page */}
               
+              
               <ul className='flex items-center justify-end'>
                 <li><span className='hover:text-teal-500 dark:hover:text-teal-500'> <BsFillMoonStarsFill onClick={()=> setDarkMode(!darkMode)} className='cursor-pointer text-2xl dark:text-gray-200' /></span> </li>
                 <li> <a
@@ -91,10 +93,11 @@ export default function Home() {
                     alt="alt text"
                     target="_blank"
                     rel="noopener noreferrer"> 
-                      <button className='bg-gradient-to-r from-teal-700 to-teal-500 hover:bg-gradient-to-l px-6 py-2 text-slate-200 rounded-md ml-8'>Resume </button> </a></li>
+                      <button className='bg-gradient-to-r from-teal-700 to-teal-500 hover:bg-gradient-to-l px-6 py-2 text-slate-200 rounded-md ml-8'> Resume </button> </a></li>
               </ul>
               
             </nav>
+
 
             <div className='text-center p-10 '>
               <div className='flex flex-col items-center justify-center gap-y-5'>
@@ -135,6 +138,7 @@ export default function Home() {
                 <a href='https://medium.com/@kshitijdarwhekar'  className='hover:text-teal-500'><AiFillMediumSquare/></a>
                 <a href='mailto:kshitijdarwhekar@gmail.com'  className='hover:text-teal-500'><AiFillMail /></a>
               </div>
+
 
               {/* About Me Section */}
 
@@ -313,13 +317,13 @@ export default function Home() {
           <h1 className='text-5xl dark:text-slate-400 py-5'>Contact Me</h1>
             <form onSubmit={handleSubmit} className='p-3'>
               <label htmlFor='name' className='dark:text-slate-400 '>Name</label>
-              <input type='text' id='name' className='my-2 border-2 border-teal-500 p-2 rounded-lg w-full dark:border-teal-500 dark:bg-black dark:text-gray-200'/>
+              <input type='name' id='name' name='name' className='my-2 border-2 border-teal-500 p-2 rounded-lg w-full dark:border-teal-500 dark:bg-black dark:text-gray-200'/>
               <label htmlFor='email' className='dark:text-slate-400 '>Email</label>
-              <input type='email' id='email' className='my-2 border-2 border-teal-500 p-2 rounded-lg w-full dark:border-teal-500 dark:bg-black dark:text-gray-200 '/>
+              <input type='email' id='email' name='email' className='my-2 border-2 border-teal-500 p-2 rounded-lg w-full dark:border-teal-500 dark:bg-black dark:text-gray-200 '/>
               <ValidationError prefix="Email" field="email" errors={state.errors}/>
               <label htmlFor='message' className='dark:text-slate-400 '>Message</label>
               <textarea name='message' id='message' cols='30' rows='10' className='my-2 border-2 border-teal-500  p-2 py-4 rounded-lg w-full dark:border-teal-500 dark:bg-black dark:text-gray-200 '></textarea>
-              <ValidationError prefix="Email" field="email" errors={state.errors}/>
+              <ValidationError prefix="Message" field="message" errors={state.errors}/>
               <button type='submit' disabled={state.submitting} className='bg-gradient-to-r from-teal-700 to-teal-500 my-2 hover:bg-gradient-to-l text-slate-200 px-4 py-2 rounded-lg'>Submit</button>
             </form>  
         </section>
