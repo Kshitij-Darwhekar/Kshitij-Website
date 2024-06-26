@@ -163,6 +163,7 @@ You can customize the portfolio website to suit your needs. Here are some possib
 - Add or remove sections as per your requirements.
 - Modify the styling using Tailwind CSS classes or custom CSS styles.
 - Replace the logo and favicon with your own branding assets.
+- Make sure you chnage the [Formspree](https://formspree.io/) endpoint in the code.
 - Integrate additional functionality such as a blog or social media links.
 
 Feel free to explore the code and make modifications according to your preferences.
