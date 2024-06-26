@@ -152,6 +152,7 @@ To deploy the portfolio website to a hosting platform, follow the deployment ins
 
 - Vercel: Refer to the [Vercel documentation](https://vercel.com/docs) for instructions on deploying Next.js projects.
 - Netlify: Refer to the [Netlify documentation](https://docs.netlify.com/) for instructions on deploying static sites.
+- Alternatively you can deploy website on your personal Virtual Private Server (VPS).
 
 Remember to set up the necessary environment variables if your website requires API keys or other sensitive information.
 
