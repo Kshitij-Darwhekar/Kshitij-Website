@@ -12,6 +12,7 @@ This is a portfolio website built using Next.js and Tailwind CSS. It showcases m
 - [Images](#images)
 - [Getting Started](#getting-started)
 - [Project Structure](#project-structure)
+- [Color References](#color-references)
 - [Deployment](#deployment)
 - [Customization](#customization)
 - [Contributing](#contributing)
@@ -145,6 +146,10 @@ The project structure is organized as follows:
 
 - `src/app/`: Contains the Next.js pages for different sections of the website.
 - `public/`: Contains static assets such as images, icons, and resume file.
+
+## Color References
+
+The colors used in website are provided in `public/Website_Colors`
 
 ## Deployment
 
