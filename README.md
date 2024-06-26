@@ -149,7 +149,7 @@ The project structure is organized as follows:
 
 ## Color References
 
-The colors used in website are provided in `public/Website_Colors`
+- The colors used in website are provided in `public/Website_Colors`
 
 ## Deployment
 
