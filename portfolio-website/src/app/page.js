@@ -22,6 +22,7 @@ import pizza from '../../public/pizza1.png';
 import Traffic from '../../public/Traffic.png';
 import FlySmart from '../../public/FlySmart2.png';
 import portfolio from '../../public/Portfolio1.png';
+import radplants from '../../public/radplants.png'
 
 
 
@@ -82,22 +83,20 @@ export default function Home() {
                   <button onClick={() => {contactRef.current?.scrollIntoView({behavior: 'smooth' })} } className='hover:text-teal-500 text-lg'> Contact </button>
                 </ul>
               </nav>
-              
-              {/* Landing Page */}
-              
-              
               <ul className='flex items-center justify-end'>
-                <li><span className='hover:text-teal-500 dark:hover:text-teal-500'> <BsFillMoonStarsFill onClick={()=> setDarkMode(!darkMode)} className='cursor-pointer text-2xl dark:text-gray-200' /></span> </li>
+                <li><span className=''> <BsFillMoonStarsFill onClick={()=> setDarkMode(!darkMode)} className='cursor-pointer text-2xl dark:text-slate-400 hover:text-teal-500 dark:hover:text-teal-500' /></span> </li>
                 <li> <a
                     href="https://drive.google.com/file/d/1SdDB0Xt4q9rrInaFspWdUGcc-_tmMUSZ/view?usp=sharing"
                     alt="alt text"
                     target="_blank"
                     rel="noopener noreferrer"> 
-                      <button className='bg-gradient-to-r from-teal-700 to-teal-500 hover:bg-gradient-to-l px-6 py-2 text-slate-200 rounded-md ml-8'> Resume </button> </a></li>
+                      <button className='bg-gradient-to-r from-teal-700 to-teal-500 hover:bg-gradient-to-l px-6 py-2 dark:text-slate-200 rounded-md ml-8'> Resume </button> </a></li>
               </ul>
               
             </nav>
 
+
+            {/* Landing Page */}
 
             <div className='text-center p-10 '>
               <div className='flex flex-col items-center justify-center gap-y-5'>
@@ -249,14 +248,14 @@ export default function Home() {
             <div>
               <h3 className='text-5xl py-2 mb-6 dark:text-slate-400'>Portfolio</h3>
               <p className='text-lg py-2 leading-8 text-grey-800 dark:text-slate-400 text-justify'>
-                My portfolio is a collection of diverse work samples that reflect my expertise and experience in <span className='text-slate-200 hover:text-teal-500 focus-visible:text-teal-500 '> Full Stack development</span> <span className='text-slate-400'> and </span> <span className='text-slate-200 hover:text-teal-500 focus-visible:text-teal-500'>  Machine Learning </span> . 
+                My portfolio is a collection of diverse work samples that reflect my expertise and experience in <span className='text-slate-500 hover:text-teal-500 focus-visible:text-teal-500 dark:text-slate-200 dark:hover:text-teal-500'> Full Stack development</span> <span className='text-slate-800 dark:text-slate-400'> and </span> <span className='text-slate-500 hover:text-teal-500 focus-visible:text-teal-500 dark:text-slate-200 dark:hover:text-teal-500'>  Machine Learning </span> . 
                 It includes a range of projects, such as 
-                <a className='text-slate-200 hover:text-teal-500 focus-visible:text-teal-500' href='https://github.com/Kshitij-Darwhekar/pizzeria-react-app'> Pizzeria-react-app</a> , 
-                <a className='text-slate-200 hover:text-teal-500 focus-visible:text-teal-500' href='https://github.com/WebDesgns/Flight-Management-System'> FlySmart </a>  ,  
-                <a className='text-slate-200 hover:text-teal-500 focus-visible:text-teal-500' href='https://github.com/Kshitij-Darwhekar/Medical-Insurance-Premium-Prediction.git'> Medical Insurance Premium prediction </a>  ,  
-                <a className='text-slate-200 hover:text-teal-500 focus-visible:text-teal-500' href='https://github.com/Kshitij-Darwhekar/Intelligent-Traffic-Managment-System-Using-Computer-Vision'> Intelligent Traffic Managment System </a> ,  
-                <a className='text-slate-200 hover:text-teal-500 focus-visible:text-teal-500' href='https://github.com/Kshitij-Darwhekar/kshitijdarwhekar.io'> Portfolio Website </a>
-                <a className='text-slate-200 hover:text-teal-500 focus-visible:text-teal-500' href='https://github.com/Kshitij-Darwhekar/Disease_Outbreak_Prediction.git'> Disease Outbreak Prediction </a>
+                <a className='text-slate-500 hover:text-teal-500 focus-visible:text-teal-500 dark:text-slate-200 dark:hover:text-teal-500' href='https://github.com/Kshitij-Darwhekar/pizzeria-react-app'> Pizzeria-react-app</a> , 
+                <a className='text-slate-500 hover:text-teal-500 focus-visible:text-teal-500 dark:text-slate-200 dark:hover:text-teal-500' href='https://github.com/WebDesgns/Flight-Management-System'> FlySmart </a>  ,  
+                <a className='text-slate-500 hover:text-teal-500 focus-visible:text-teal-500 dark:text-slate-200 dark:hover:text-teal-500' href='https://github.com/Kshitij-Darwhekar/Medical-Insurance-Premium-Prediction.git'> Medical Insurance Premium prediction </a>  ,  
+                <a className='text-slate-500 hover:text-teal-500 focus-visible:text-teal-500 dark:text-slate-200 dark:hover:text-teal-500' href='https://github.com/Kshitij-Darwhekar/Intelligent-Traffic-Managment-System-Using-Computer-Vision'> Intelligent Traffic Managment System </a> ,  
+                <a className='text-slate-500 hover:text-teal-500 focus-visible:text-teal-500 dark:text-slate-200 dark:hover:text-teal-500' href='https://github.com/Kshitij-Darwhekar/kshitijdarwhekar.io'> Portfolio Website </a>
+                <a className='text-slate-500 hover:text-teal-500 focus-visible:text-teal-500 dark:text-slate-200 dark:hover:text-teal-500' href='https://github.com/Kshitij-Darwhekar/Disease_Outbreak_Prediction.git'> Disease Outbreak Prediction </a>
                  each demonstrating my creativity, problem-solving abilities, and professional growth.
               </p>
               <p className='text-lg py-2 leading-8 text-grey-800 dark:text-slate-400 mx-auto text-justify'>
@@ -272,7 +271,7 @@ export default function Home() {
 
               <div className='basis-1/3 flex-1 relative'>
                   {hover &&(
-                    <p className='absolute inset-0 flex items-center justify-center text-slate-200 '>
+                    <p className='absolute inset-0 flex items-center justify-center text-slate-400 '>
                       Click to Chekout Github Repo
                     </p> )}
                 <a href='https://github.com/Kshitij-Darwhekar/pizzeria-react-app' className='relative opacity-100 hover:bg-teal-700 transition-opacity duration-150'>
@@ -281,7 +280,7 @@ export default function Home() {
               </div>
               <div className='basis-1/3 flex-1 relative'>
                   {hover &&(
-                    <p className='absolute inset-0 flex items-center justify-center text-slate-200 '>
+                    <p className='absolute inset-0 flex items-center justify-center text-slate-400 '>
                       Click to Chekout Github Repo
                     </p>
                     
@@ -292,7 +291,7 @@ export default function Home() {
               </div>
               <div className='basis-1/3 flex-1 relative'>
                   {hover &&(
-                    <p className='absolute inset-0 flex items-center justify-center text-sslate-400 '>
+                    <p className='absolute inset-0 flex items-center justify-center text-slate-400 '>
                       Click to Checkout Github Repo
                     </p> )}
                 <a href='https://github.com/WebDesgns/Flight-Management-System' className='relative opacity-100 hover:bg-teal-700 transition-opacity duration-150'>
@@ -301,13 +300,22 @@ export default function Home() {
               </div>
               <div className='basis-1/3 flex-1 relative'>
                 {hover &&(
-                    <p className='absolute inset-0 flex items-center justify-center text-sslate-400 '>
+                    <p className='absolute inset-0 flex items-center justify-center text-slate-400 '>
                       Click to Checkout Github Repo
                     </p> )}
                 <a href='https://github.com/Kshitij-Darwhekar/Intelligent-Traffic-Managment-System-Using-Computer-Vision' className='relative opacity-100 hover:bg-teal-700 transition-opacity duration-150'>
                   <Image src={Traffic} className='rounded-lg object-cover hover:opacity-50 transition-opacity duration-300' width={'100%'} height={'100%'} style={portfolioStyle} title='Click to Checkout code on Github' onMouseEnter={(e) => onHover(e)} onMouseLeave={(e) => onHoverOver(e)}/>
                 </a> 
               </div>
+              {/* <div className='basis-1/3 flex-1 relative'>
+                {hover &&(
+                    <p className='absolute inset-0 flex items-center justify-center text-slate-400 '>
+                      Click to Checkout Github Repo
+                    </p> )}
+                <a href='https://github.com/Kshitij-Darwhekar/E-Commerce-Website' className='relative opacity-100 hover:bg-teal-700 transition-opacity duration-150'>
+                  <Image src={radplants} className='rounded-lg object-cover hover:opacity-50 transition-opacity duration-300' width={'100%'} height={'100%'} style={portfolioStyle} title='Click to Checkout code on Github' onMouseEnter={(e) => onHover(e)} onMouseLeave={(e) => onHoverOver(e)}/>
+                </a> 
+              </div> */}
             </div>
       </section>
 
