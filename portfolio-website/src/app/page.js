@@ -23,6 +23,7 @@ import Traffic from '../../public/Traffic.png';
 import FlySmart from '../../public/FlySmart2.png';
 import portfolio from '../../public/Portfolio1.png';
 import radplants from '../../public/radplants.png'
+import lifeorganics from "../../public/Life_Organics.png"
 
 
 
@@ -314,6 +315,15 @@ export default function Home() {
                     </p> )}
                 <a href='https://github.com/Kshitij-Darwhekar/E-Commerce-Website' className='relative opacity-100 hover:bg-teal-700 transition-opacity duration-150'>
                   <Image src={radplants} className='rounded-lg object-cover hover:opacity-50 transition-opacity duration-300' width={'100%'} height={'100%'} style={portfolioStyle} title='Click to Checkout code on Github' onMouseEnter={(e) => onHover(e)} onMouseLeave={(e) => onHoverOver(e)}/>
+                </a> 
+              </div>
+              <div className='basis-1/3 flex-1 relative'>
+                {hover &&(
+                    <p className='absolute inset-0 flex items-center justify-center text-slate-400 '>
+                      Click to Checkout Github Repo
+                    </p> )}
+                <a href='https://github.com/Kshitij-Darwhekar/Life_Organics_Final' className='relative opacity-100 hover:bg-teal-700 transition-opacity duration-150 '>
+                  <Image src={lifeorganics} className='rounded-lg object-cover hover:opacity-50 transition-opacity duration-300' width={'100%'} height={'100%'} style={portfolioStyle} title='Click to Checkout code on Github' onMouseEnter={(e) => onHover(e)} onMouseLeave={(e) => onHoverOver(e)}/>
                 </a> 
               </div> */}
             </div>
