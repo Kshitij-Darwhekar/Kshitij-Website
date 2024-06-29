@@ -95,8 +95,7 @@ The portfolio website is built using the following technologies:
 
 - Portfolio Section
 
-  ![image](https://github.com/Kshitij-Darwhekar/Kshitij-Website/assets/54590658/e7dceed5-03f8-4232-8f24-b430c084866d)
-
+  ![image](https://github.com/Kshitij-Darwhekar/Kshitij-Website/assets/54590658/71a5f4ed-6bde-4b5c-b347-f8e69bd2205c)
 
 
 - Contact Me
