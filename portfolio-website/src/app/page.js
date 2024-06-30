@@ -362,7 +362,8 @@ export default function Home() {
                 Inspired by multiple web dev portfolio's , Coded in 
                 <a href='https://code.visualstudio.com/' className='font-medium text-slate-400 hover:text-teal-500'> Visual Studio Code </a> by yours truly  , Built using 
                 <a href='https://nextjs.org/' className='font-medium text-slate-400 hover:text-teal-500'> Next.js </a>  and 
-                <a href='https://tailwindcss.com/' className='font-medium text-slate-400 hover:text-teal-500'> Tailwind CSS </a> , Hosted on Personal VPS. Checkout the Repo on 
+                <a href='https://tailwindcss.com/' className='font-medium text-slate-400 hover:text-teal-500'> Tailwind CSS </a> , Hosted on 
+                <a href='https://aws.amazon.com/what-is/vps/' className='font-medium text-slate-400 hover:text-teal-500'>Personal VPS. </a> Checkout the Repo on 
                 <a href='https://github.com/Kshitij-Darwhekar/Kshitij-Website' className='font-medium text-slate-400 hover:text-teal-500'> Github </a> 
               </p>
               
