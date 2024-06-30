@@ -62,12 +62,11 @@ export default function Home() {
   const skillsRef = useRef(null);
   const contactRef = useRef(null);
 
-  // <div class="relative h-full w-full bg-white"><div class="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)]"></div></div>
   
 
   if (state.succeeded) {
   
-    return <p className='text-2xl text-teal-500 justify-center items-center flex py-50 md:text-5xl lg:text-5xl'>Submitted Successfully</p>;
+    return <p className='text-2xl text-teal-500 justify-center items-center flex py-50 md:text-5xl lg:text-5xl'> Submitted Successfully </p>;
   }
 
   return (
@@ -126,7 +125,7 @@ export default function Home() {
               {/* <h3 className='text-3xl py-2 dark:text-white md:text-3xl'>Full Stack Developer and ML Enthusiast</h3> */}
               <p className='text-lg py-5 font-burton text-center leading-8 text-gray-800 dark:text-slate-400 md:text-xl max-w-10xl mx-auto'>
                 Hey! I'm a <span className='text-teal-500'>Full Stack Web Developer</span> with a passion for <span className='text-teal-500'>Machine Learning</span><br/>
-                and a keen interest in <span className='text-teal-500'>Generative AI and LLMs.</span> <br/>
+                and a keen interest in <span className='text-teal-500'>Generative AI </span> and <span className='text-teal-500'>LLMs.</span> <br/>
                 Take a look around to see my projects and dive into my world of tech innovation! <br/>
               </p>
               
