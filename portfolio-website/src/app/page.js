@@ -270,7 +270,7 @@ export default function Home() {
             <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
 
               <div className='basis-1/3 flex-1 relative'>
-                  <h1 className='text-xl text-slate-400 hover:text-teal-500 py-4 md:text-2xl lg:text-2xl'><a href='https://github.com/Kshitij-Darwhekar/pizzeria-react-app'>Pizzeria React App</a></h1>
+                  <h1 className='text-xl text-slate-400 dark:text-slate-200 hover:text-teal-500 dark:hover:text-teal-500 py-4 md:text-2xl lg:text-2xl'><a href='https://github.com/Kshitij-Darwhekar/pizzeria-react-app'>Pizzeria React App</a></h1>
                   {hover &&(
                     <p className='absolute inset-0 flex items-center justify-center text-slate-400 '>
                       Click to Chekout Github Repo
@@ -280,7 +280,7 @@ export default function Home() {
                 </a>
               </div>
               <div className='basis-1/3 flex-1 relative'>
-              <h1 className='text-xl text-slate-400 hover:text-teal-500 py-4 md:text-2xl lg:text-2xl'><a href='https://github.com/Kshitij-Darwhekar/kshitijdarwhekar.io'>Portfolio Website</a></h1>
+              <h1 className='text-xl text-slate-400 dark:text-slate-200 hover:text-teal-500 dark:hover:text-teal-500 py-4 md:text-2xl lg:text-2xl'><a href='https://github.com/Kshitij-Darwhekar/kshitijdarwhekar.io'>Portfolio Website</a></h1>
                   {hover &&(
                     <p className='absolute inset-0 flex items-center justify-center text-slate-400 '>
                       Click to Chekout Github Repo
@@ -292,7 +292,7 @@ export default function Home() {
                 </a>
               </div>
               <div className='basis-1/3 flex-1 relative'>
-              <h1 className='text-xl text-slate-400 hover:text-teal-500 py-4 md:text-2xl lg:text-2xl'><a href='https://github.com/WebDesgns/Flight-Management-System'>FlySmart: Flight Ticket Booking System</a></h1>
+              <h1 className='text-xl text-slate-400 dark:text-slate-200 hover:text-teal-500 dark:hover:text-teal-500 py-4 md:text-2xl lg:text-2xl'><a href='https://github.com/WebDesgns/Flight-Management-System'>FlySmart: Flight Ticket Booking System</a></h1>
                   {hover &&(
                     <p className='absolute inset-0 flex items-center justify-center text-slate-400 '>
                       Click to Checkout Github Repo
@@ -302,7 +302,7 @@ export default function Home() {
                 </a>
               </div>
               <div className='basis-1/3 flex-1 relative'>
-              <h1 className='text-xl text-slate-400 hover:text-teal-500 py-4 md:text-2xl lg:text-2xl'><a href='https://github.com/Kshitij-Darwhekar/Intelligent-Traffic-Managment-System-Using-Computer-Vision'>Intelligent Traffic Management Systems using CV</a></h1>
+              <h1 className='text-xl text-slate-400 dark:text-slate-200 hover:text-teal-500 dark:hover:text-teal-500 py-4 md:text-2xl lg:text-2xl'><a href='https://github.com/Kshitij-Darwhekar/Intelligent-Traffic-Managment-System-Using-Computer-Vision'>Intelligent Traffic Management Systems using CV</a></h1>
                 {hover &&(
                     <p className='absolute inset-0 flex items-center justify-center text-slate-400 '>
                       Click to Checkout Github Repo
@@ -311,18 +311,18 @@ export default function Home() {
                   <Image src={Traffic} className='rounded-lg object-cover hover:opacity-50 transition-opacity duration-300' width={'100%'} height={'100%'} style={portfolioStyle} title='Intelligent Traffic Managment System using Computer Vision' onMouseEnter={(e) => onHover(e)} onMouseLeave={(e) => onHoverOver(e)}/>
                 </a> 
               </div>
-              {/* <div className='basis-1/3 flex-1 relative'>
-                <h1 className='text-xl text-slate-400 hover:text-teal-500 py-4 md:text-2xl lg:text-2xl'><a href='https://github.com/Kshitij-Darwhekar/E-Commerce-Website'>Radpants: E-commerce Website</a></h1>
+              <div className='basis-1/3 flex-1 relative'>
+                <h1 className='text-xl text-slate-400 dark:text-slate-200 hover:text-teal-500 dark:hover:text-teal-500 py-4 md:text-2xl lg:text-2xl'><a href='https://github.com/Kshitij-Darwhekar/E-Commerce-Website'>Radpants: E-commerce Website</a></h1>
                 {hover &&(
                     <p className='absolute inset-0 flex items-center justify-center text-slate-400 '>
                       Click to Checkout Github Repo
                     </p> )}
                 <a href='https://github.com/Kshitij-Darwhekar/E-Commerce-Website' className='relative opacity-100 hover:bg-teal-700 transition-opacity duration-150'>
-                  <Image src={radplants} className='rounded-lg object-cover hover:opacity-50 transition-opacity duration-300' width={'100%'} height={'100%'} style={portfolioStyle} title='E-Commerce Website' onMouseEnter={(e) => onHover(e)} onMouseLeave={(e) => onHoverOver(e)}/>
+                  <Image src={radplants} className='rounded-lg object-cover hover:opacity-50 transition-opacity duration-300' width={'100%'} height={'110%'} style={portfolioStyle} title='E-Commerce Website' onMouseEnter={(e) => onHover(e)} onMouseLeave={(e) => onHoverOver(e)}/>
                 </a> 
               </div>
               <div className='basis-1/3 flex-1 relative'>
-                <h1 className='text-xl text-slate-400 hover:text-teal-500 py-4 md:text-2xl lg:text-2xl'><a href='https://github.com/Kshitij-Darwhekar/Life_Organics_Final'>Life Organics: E-Commerce Website</a></h1>
+                <h1 className='text-xl text-slate-400 dark:text-slate-200 hover:text-teal-500 dark:hover:text-teal-500 py-4 md:text-2xl lg:text-2xl'><a href='https://github.com/Kshitij-Darwhekar/Life_Organics_Final'>Life Organics: E-Commerce Website</a></h1>
                 {hover &&(
                     <p className='absolute inset-0 flex items-center justify-center text-slate-400 '>
                       Click to Checkout Github Repo
@@ -330,7 +330,7 @@ export default function Home() {
                 <a href='https://github.com/Kshitij-Darwhekar/Life_Organics_Final' className='relative opacity-100 hover:bg-teal-700 transition-opacity duration-150 '>
                   <Image src={lifeorganics} className='rounded-lg object-cover hover:opacity-50 transition-opacity duration-300' width={'100%'} height={'100%'} style={portfolioStyle} title='Life Organics : E-commeerce Website' onMouseEnter={(e) => onHover(e)} onMouseLeave={(e) => onHoverOver(e)}/>
                 </a> 
-              </div> */}
+              </div>
             </div>
       </section>
 
