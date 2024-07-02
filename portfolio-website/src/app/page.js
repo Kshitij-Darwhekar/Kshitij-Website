@@ -74,25 +74,37 @@ export default function Home() {
         <main className='bg-slate-200 text-slate-900 dark:bg-slate-900 dark:text-slate-400 scroll-smooth antialiased leading-relaxed font-poppins selection:bg-teal-500 selection:text-teal-700'>
           <section className=' min-h-screen'>
             <nav className='p-10 mb-12 flex justify-between dark:text-slate-400'>
-              <h1 className='text-xl font-dancing hover:text-teal-500 dark:text-slate-400 '> <a href='#' className='hover:text-teal-500'> Hi, I'm Kshitij</a>  </h1>
+              <h1 className='text-xl py-4 font-dancing hover:text-teal-500 dark:text-slate-400 '> <a href='#' className='hover:text-teal-500'> Hi, I'm Kshitij</a>  </h1>
               <nav className='hidden lg:block md:block'>
-                <ul className='flex items-center justify-center flex-row px-2 lg:gap-4 md:gap-4' >
+                
+                <ul className='flex items-center justify-center flex-row px-2 py-4 lg:gap-4 lg:py-4 md:gap-4 md:py-4' >
                   <button onClick={() => {aboutRef.current?.scrollIntoView({behavior:'smooth'})}} className='hover:text-teal-500 text-lg'> About</button>
                   <button onClick={() => {skillsRef.current?.scrollIntoView({behavior: 'smooth'})} } className='hover:text-teal-500 text-lg'> Skills </button>
                   <button onClick={() => {projectRef.current?.scrollIntoView({behavior: 'smooth'})}} className='hover:text-teal-500 text-lg'> Portfolio</button>
                   <button onClick={() => {contactRef.current?.scrollIntoView({behavior: 'smooth' })} } className='hover:text-teal-500 text-lg'> Contact </button>
                 </ul>
+               
+                
               </nav>
               <ul className='flex items-center justify-end'>
                 <li><span className=''> <BsFillMoonStarsFill onClick={()=> setDarkMode(!darkMode)} className='cursor-pointer text-2xl dark:text-slate-400 hover:text-teal-500 dark:hover:text-teal-500' /></span> </li>
-                <li> <a
+                <li> 
+                  <a
                     href="https://drive.google.com/file/d/1SdDB0Xt4q9rrInaFspWdUGcc-_tmMUSZ/view?usp=sharing" // https://drive.google.com/file/d/1SdDB0Xt4q9rrInaFspWdUGcc-_tmMUSZ/view?usp=sharing
                     alt="alt text"
                     target="_blank"
                     rel="noopener noreferrer"> 
-                      <button className='bg-gradient-to-r from-teal-700 to-teal-500 hover:bg-gradient-to-l px-6 py-2 dark:text-slate-200 rounded-md ml-8'> Resume </button> </a></li>
+                      {/* <button className='bg-gradient-to-r from-teal-700 to-teal-500 hover:bg-gradient-to-l px-6 py-2 dark:text-slate-200 rounded-md ml-8'> Resume </button>  */}
+                      <div className=' pt-1'>
+                        <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 mx-4 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-teal-700 to-teal-500 group-hover:from-cyan-500 group-hover:to-cyan-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
+                            <span className="relative px-5 py-2.5 transition-all ease-in duration-75 dark:text-slate-200 bg-slate-200 dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                              Resume
+                            </span>
+                        </button>
+                      </div>   
+                    </a>
+                </li>
               </ul>
-              
             </nav>
 
 
@@ -100,7 +112,7 @@ export default function Home() {
 
             <div className='text-center p-10 '>
               <div className='flex flex-col items-center justify-center gap-y-5'>
-                <h2 className='text-6xl text-black font-medium dark:text-slate-400 md:text-7xl lg:text-8xl text-center'>Hi I'm <span className='text-teal-500 dark:text-teal-500'>Kshitij Darwhekar</span> </h2>
+                <h2 className='text-6xl text-slate-900 font-medium dark:text-slate-400 md:text-7xl lg:text-8xl text-center'>Hi I'm <span className='text-teal-500 dark:text-teal-500'>Kshitij</span> <span className='text-teal-500 dark:text-teal-500 p-4 md:p-0 lg:p-0'>Darwhekar</span> </h2>
                 <h2 className='text-3xl py-5 px-3 text-teal-500/75 font-medium dark:text-teal-500/75 md:text-5xl lg:text-5xl text-center'> 
                 <Typewriter
                   options={{
@@ -347,7 +359,12 @@ export default function Home() {
               <label htmlFor='message' className='dark:text-slate-400 '>Message</label>
               <textarea name='message' id='message' cols='30' rows='10' className='my-2 border-2 border-teal-500  p-2 py-4 rounded-lg w-full dark:border-teal-500 dark:bg-black dark:text-gray-200 '></textarea>
               <ValidationError prefix="Message" field="message" errors={state.errors}/>
-              <button type='submit' disabled={state.submitting} className='bg-gradient-to-r from-teal-700 to-teal-500 my-2 hover:bg-gradient-to-l text-slate-200 px-4 py-2 rounded-lg'>Submit</button>
+              {/* <button type='submit' disabled={state.submitting} className='bg-gradient-to-r from-teal-700 to-teal-500 my-2 hover:bg-gradient-to-l text-slate-200 px-4 py-2 rounded-lg'>Submit</button> */}
+              <button type='submit' className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-teal-700 to-teal-500 group-hover:from-cyan-500 group-hover:to-cyan-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
+                 <span className="relative px-5 py-2.5 transition-all ease-in duration-75 dark:text-slate-200 bg-slate-200 dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                     Submit
+                  </span>
+              </button>
             </form>  
         </section>
 
