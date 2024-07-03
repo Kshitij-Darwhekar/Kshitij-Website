@@ -255,7 +255,7 @@ export default function Home() {
 
   {/* Projects */}
 
-          <section className='p-10' id='projects' ref={projectRef}>
+        <section className='p-10' id='projects' ref={projectRef}>
             <div>
               <h3 className='text-5xl py-2 mb-6 dark:text-slate-400'>Portfolio</h3>
               <p className='text-lg py-2 leading-8 text-grey-800 dark:text-slate-400 text-justify'>
@@ -343,7 +343,7 @@ export default function Home() {
                 </a> 
               </div>
             </div>
-      </section>
+        </section>
 
 {/* Contact Me Form */}
 
