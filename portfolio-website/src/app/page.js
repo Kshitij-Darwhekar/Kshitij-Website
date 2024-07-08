@@ -25,6 +25,10 @@ import portfolio from '../../public/Portfolio1.png';
 import radplants from '../../public/radplants.png'
 import lifeorganics from "../../public/Life_Organics.png"
 
+// import dotenv from 'dotenv'
+
+// import formendpoint from '../../.env' 
+// process.env.REACT_APP_FORMSPREE_ENDPOINT
 
 
 
@@ -42,8 +46,12 @@ export const viewport = {
 
 export default function Home() {
 
+  const formspreeEndpoint = process.env.NEXT_PUBLIC_FORMSPREE_FORM_ID;
+
+  const gaId = process.env.NEXT_PUBLIC_GA_ID;
+
   const [darkMode, setDarkMode] = useState(true);
-  const [state, handleSubmit] = useForm('mrgwzblg');
+  const [state, handleSubmit] = useForm(`${formspreeEndpoint}`);
   const [hover, setHover] = useState(false); // initial false
   
   const onHover = (e) => {
@@ -409,8 +417,8 @@ export default function Home() {
       </main>
       <Analytics/>
       <SpeedInsights />
-      <GoogleAnalytics gaId="G-9EZ8WLWJRF" />
-      
+      <GoogleAnalytics gaId={gaId} />
+  
     </div>
     
   )
