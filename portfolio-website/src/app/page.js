@@ -25,13 +25,6 @@ import portfolio from '../../public/Portfolio1.png';
 import radplants from '../../public/radplants.png'
 import lifeorganics from "../../public/Life_Organics.png"
 
-// import dotenv from 'dotenv'
-
-// import formendpoint from '../../.env' 
-// process.env.REACT_APP_FORMSPREE_ENDPOINT
-
-
-
 
 const portfolioStyle = {
   layout: 'responsive',
