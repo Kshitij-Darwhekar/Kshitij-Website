@@ -14,7 +14,7 @@ import { useRef } from 'react';
 import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {AiFillTwitterCircle, AiFillLinkedin,AiFillYoutube,AiFillGithub,AiFillMediumSquare,AiFillMail} from 'react-icons/ai';
 import {BiLogoReact,BiLogoJava,BiLogoPython,BiLogoNodejs, BiLogoSpringBoot,BiLogoMongodb,BiLogoCss3,BiLogoTailwindCss, BiLogoBootstrap, BiLogoHtml5} from 'react-icons/bi'
-import {SiApachemaven,SiNumpy,SiPandas,SiMysql, SiDocker} from 'react-icons/si'
+import {SiApachemaven,SiNumpy,SiPandas,SiMysql, SiDocker, SiSqlite} from 'react-icons/si'
 
 
 import kshitij from '../../public/Kshitij_2.png';
@@ -152,7 +152,7 @@ export default function Home() {
 
               {/* <h3 className='text-3xl py-2 dark:text-white md:text-3xl'>Full Stack Developer and ML Enthusiast</h3> */}
               <p className='text-lg py-5 font-burton text-center leading-8 text-gray-800 dark:text-slate-400 md:text-xl max-w-10xl mx-auto'>
-                Hey! I'm a <span className='text-teal-500'>Full Stack Web Developer</span> with a passion for <span className='text-teal-500'>Machine Learning</span><br/>
+                Hey! I'm a <span className='text-teal-500'>Celonis Data Engineer</span> with a passion for <span className='text-teal-500'>Machine Learning</span><br/>
                 and a keen interest in <span className='text-teal-500'>Generative AI </span> and <span className='text-teal-500'>LLMs.</span> <br/>
                 Take a look around to see my projects and dive into my world of tech innovation! <br/>
               </p>
@@ -253,7 +253,7 @@ export default function Home() {
                 <div className='flex flex-wrap justify-evenly'> 
                   <div className='p-2 text-xl dark:text-slate-400'><BiLogoMongodb className='w-40 h-40 text-teal-500 md:w-40 md:h-40 lg:w-48 lg:h-48'/>MongoDB</div>
                   <div className='p-2 text-xl dark:text-slate-400'><SiMysql className='w-40 h-40 text-teal-500 md:w-40 md:h-40 lg:w-48 lg:h-48'/>MySQL</div>
-                  
+                  <div className='p-2 text-xl dark:text-slate-400'><SiSqlite className='w-40 h-40 text-teal-500 md:w-40 md:h-40 lg:w-48 lg:h-48'/>Sqlite</div>
                 </div>
                 
                 
