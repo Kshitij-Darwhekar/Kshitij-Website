@@ -158,7 +158,7 @@ export default function Home() {
               </p>
               
               <div className='py-4 mb-40 text-5xl flex justify-center flex-row items-center text-gray-600 dark:text-gray-400 md:flex md:gap-10 lg:flex lg:gap-10 '>
-                <a href='https://twitter.com/KshitijDarwhek1' className='hover:text-teal-500'><AiFillTwitterCircle /></a>
+                <a href='https://x.com/KshitijDarwhekr' className='hover:text-teal-500'><AiFillTwitterCircle /></a>
                 <a href='https://www.linkedin.com/in/kshitij-darwhekar'  className='hover:text-teal-500'><AiFillLinkedin /></a>
                 <a href='https://youtube.com/@kshitijdarwhekar'  className='hover:text-teal-500'><AiFillYoutube /></a>
                 <a href='https://github.com/Kshitij-Darwhekar'  className='hover:text-teal-500'><AiFillGithub /></a>
