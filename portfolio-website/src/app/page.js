@@ -281,7 +281,7 @@ export default function Home() {
                 <a className='text-slate-500 hover:text-teal-500 focus-visible:text-teal-500 dark:text-slate-200 dark:hover:text-teal-500' href='https://github.com/Kshitij-Darwhekar/pizzeria-react-app'> Pizzeria-react-app</a> , 
                 <a className='text-slate-500 hover:text-teal-500 focus-visible:text-teal-500 dark:text-slate-200 dark:hover:text-teal-500' href='https://github.com/WebDesgns/Flight-Management-System'> FlySmart </a>  ,  
                 <a className='text-slate-500 hover:text-teal-500 focus-visible:text-teal-500 dark:text-slate-200 dark:hover:text-teal-500' href='https://github.com/Kshitij-Darwhekar/Medical-Insurance-Premium-Prediction.git'> Medical Insurance Premium prediction </a>  ,  
-                <a className='text-slate-500 hover:text-teal-500 focus-visible:text-teal-500 dark:text-slate-200 dark:hover:text-teal-500' href='https://github.com/Kshitij-Darwhekar/Intelligent-Traffic-Managment-System-Using-Computer-Vision'> Intelligent Traffic Managment System </a> ,  
+                <a className='text-slate-500 hover:text-teal-500 focus-visible:text-teal-500 dark:text-slate-200 dark:hover:text-teal-500' href='https://github.com/Kshitij-Darwhekar/Intelligent-Traffic-Managment-System-Using-Computer-Vision'> Intelligent Traffic Management System </a> ,  
                 <a className='text-slate-500 hover:text-teal-500 focus-visible:text-teal-500 dark:text-slate-200 dark:hover:text-teal-500' href='https://github.com/Kshitij-Darwhekar/kshitijdarwhekar.io'> Portfolio Website </a>
                 <a className='text-slate-500 hover:text-teal-500 focus-visible:text-teal-500 dark:text-slate-200 dark:hover:text-teal-500' href='https://github.com/Kshitij-Darwhekar/Disease_Outbreak_Prediction.git'> Disease Outbreak Prediction </a>
                  each demonstrating my creativity, problem-solving abilities, and professional growth.
@@ -304,7 +304,7 @@ export default function Home() {
                       Click to Chekout Github Repo
                     </p> )}
                 <a href='https://github.com/Kshitij-Darwhekar/pizzeria-react-app' className='relative opacity-100 hover:bg-teal-700 transition-opacity duration-150'>
-                  <Image src={pizza} className='rounded-lg object-cover hover:opacity-50 transition-opacity duration-300' width={'100%'} height={'100%'} style={portfolioStyle} title='Pizzeria React App' onMouseEnter={(e) => onHover(e)} onMouseLeave={(e) => onHoverOver(e)}/>
+                  <Image src={pizza} className='rounded-lg object-cover hover:opacity-50 transition-opacity duration-300' width={'100%'} height={'100%'} style={portfolioStyle} title='Pizzeria React App' alt="Screenshot of Pizzeria Website" onMouseEnter={(e) => onHover(e)} onMouseLeave={(e) => onHoverOver(e)}/>
                 </a>
               </div>
               <div className='basis-1/3 flex-1 relative'>
@@ -316,7 +316,7 @@ export default function Home() {
                     
                   )}
                 <a href='https://github.com/Kshitij-Darwhekar/kshitijdarwhekar.io' className='relative opacity-100 hover:bg-teal-700 transition-opacity duration-150'>
-                  <Image src={portfolio} className='rounded-lg object-cover hover:opacity-50 transition-opacity duration-300' width={'100%'} height={'100%'} style={portfolioStyle} title='Poertfolio Website HTML , CSS and JS' onMouseEnter={(e) => onHover(e)} onMouseLeave={(e) => onHoverOver(e)}/>
+                  <Image src={portfolio} className='rounded-lg object-cover hover:opacity-50 transition-opacity duration-300' width={'100%'} height={'100%'} style={portfolioStyle} title='Poertfolio Website HTML , CSS and JS' alt="Screenshot of Portfolio Website" onMouseEnter={(e) => onHover(e)} onMouseLeave={(e) => onHoverOver(e)}/>
                 </a>
               </div>
               <div className='basis-1/3 flex-1 relative'>
@@ -326,7 +326,7 @@ export default function Home() {
                       Click to Checkout Github Repo
                     </p> )}
                 <a href='https://github.com/WebDesgns/Flight-Management-System' className='relative opacity-100 hover:bg-teal-700 transition-opacity duration-150'>
-                  <Image src={FlySmart} className='rounded-lg object-cover hover:opacity-50 transition-opacity duration-300' width={'100%'} height={'100%'} style={portfolioStyle} title='FlySmart: Flight Ticket Booking Website' onMouseEnter={(e) => onHover(e)} onMouseLeave={(e) => onHoverOver(e)}/>
+                  <Image src={FlySmart} className='rounded-lg object-cover hover:opacity-50 transition-opacity duration-300' width={'100%'} height={'100%'} style={portfolioStyle} title='FlySmart: Flight Ticket Booking Website' alt="Screenshot of Flight Ticket Boking Website" onMouseEnter={(e) => onHover(e)} onMouseLeave={(e) => onHoverOver(e)}/>
                 </a>
               </div>
               <div className='basis-1/3 flex-1 relative'>
@@ -336,7 +336,7 @@ export default function Home() {
                       Click to Checkout Github Repo
                     </p> )}
                 <a href='https://github.com/Kshitij-Darwhekar/Intelligent-Traffic-Managment-System-Using-Computer-Vision' className='relative opacity-100 hover:bg-teal-700 transition-opacity duration-150'>
-                  <Image src={Traffic} className='rounded-lg object-cover hover:opacity-50 transition-opacity duration-300' width={'100%'} height={'100%'} style={portfolioStyle} title='Intelligent Traffic Managment System using Computer Vision' onMouseEnter={(e) => onHover(e)} onMouseLeave={(e) => onHoverOver(e)}/>
+                  <Image src={Traffic} className='rounded-lg object-cover hover:opacity-50 transition-opacity duration-300' width={'100%'} height={'100%'} style={portfolioStyle} title='Intelligent Traffic Managment System using Computer Vision' alt="Screenshot of Intelligent Traffic Management Project UI" onMouseEnter={(e) => onHover(e)} onMouseLeave={(e) => onHoverOver(e)}/>
                 </a> 
               </div>
               <div className='basis-1/3 flex-1 relative'>
@@ -346,7 +346,7 @@ export default function Home() {
                       Click to Checkout Github Repo
                     </p> )}
                 <a href='https://github.com/Kshitij-Darwhekar/E-Commerce-Website' className='relative opacity-100 hover:bg-teal-700 transition-opacity duration-150'>
-                  <Image src={radplants} className='rounded-lg object-cover hover:opacity-50 transition-opacity duration-300' width={'100%'} height={'110%'} style={portfolioStyle} title='E-Commerce Website' onMouseEnter={(e) => onHover(e)} onMouseLeave={(e) => onHoverOver(e)}/>
+                  <Image src={radplants} className='rounded-lg object-cover hover:opacity-50 transition-opacity duration-300' width={'100%'} height={'110%'} style={portfolioStyle} title='E-Commerce Website' alt="Screenshot of E-commerce Website (radplants)" onMouseEnter={(e) => onHover(e)} onMouseLeave={(e) => onHoverOver(e)}/>
                 </a> 
               </div>
               <div className='basis-1/3 flex-1 relative'>
@@ -356,7 +356,7 @@ export default function Home() {
                       Click to Checkout Github Repo
                     </p> )}
                 <a href='https://github.com/Kshitij-Darwhekar/Life_Organics_Final' className='relative opacity-100 hover:bg-teal-700 transition-opacity duration-150 '>
-                  <Image src={lifeorganics} className='rounded-lg object-cover hover:opacity-50 transition-opacity duration-300' width={'100%'} height={'100%'} style={portfolioStyle} title='Life Organics : E-commeerce Website' onMouseEnter={(e) => onHover(e)} onMouseLeave={(e) => onHoverOver(e)}/>
+                  <Image src={lifeorganics} className='rounded-lg object-cover hover:opacity-50 transition-opacity duration-300' width={'100%'} height={'100%'} style={portfolioStyle} title='Life Organics : E-commeerce Website' alt="Screenshot of E-commerce Website (Life Organics)" onMouseEnter={(e) => onHover(e)} onMouseLeave={(e) => onHoverOver(e)}/>
                 </a> 
               </div>
             </div>

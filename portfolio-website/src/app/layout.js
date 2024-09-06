@@ -7,13 +7,13 @@ const inter = Inter({ subsets: ['latin'] })
 const dancingScript = Dancing_Script({ subsets: ['latin'] })
 
 export const metadata = {
-  title: "Kshitij's Portfolio",
+  title: " Kshitij's Portfolio ",
   description: `Kshitij Darwhekar is a Celonis Data Engineer , ML Ehtusiast and Generative AI Enthusiast who likes to build beautiful and user friendly websites with React Js and Tailwind Css` ,
-  keywords: ["Full Stack Developer","Celonis","Data Engineer", "Web Development", "Software Projects", "Front-end Design", "Machine Learning", "Coding","Generative AI","Artificial Intelligence", "Portfolio", "Kshitij Darwhekar"],
+  keywords: ["Kshitij Darwhekar","Celonis","Data Engineer","Full Stack Developer", "Web Development", "Software Projects", "Front-end Design", "Machine Learning", "Coding","Generative AI","Artificial Intelligence", "Portfolio","Skills"],
   author: "Kshitij",
   language: "en-US",
   openGraph: {
-    title: "Kshitij's Portfolio",
+    title: " Kshitij's Portfolio ",
     description: `Kshitij Darwhekar is a Celonis Data Engineer , ML Ehtusiast and Generative AI Enthusiast who likes to build beautiful and user friendly websites with React Js and Tailwind Css`,
     image: {metaimg},  // Path to an image for social sharing
     url: "https://kshitijdarwhekar.com"
