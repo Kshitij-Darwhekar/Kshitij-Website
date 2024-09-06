@@ -298,7 +298,7 @@ export default function Home() {
             <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
 
               <div className='basis-1/3 flex-1 relative'>
-                  <h1 className='text-xl text-slate-400 dark:text-slate-200 hover:text-teal-500 dark:hover:text-teal-500 py-4 md:text-2xl lg:text-2xl'><a href='https://github.com/Kshitij-Darwhekar/pizzeria-react-app'>Pizzeria React App</a></h1>
+                  <h2 className='text-xl text-slate-400 dark:text-slate-200 hover:text-teal-500 dark:hover:text-teal-500 py-4 md:text-2xl lg:text-2xl'><a href='https://github.com/Kshitij-Darwhekar/pizzeria-react-app'>Pizzeria React App</a></h2>
                   {hover &&(
                     <p className='absolute inset-0 flex items-center justify-center text-slate-400 '>
                       Click to Chekout Github Repo
@@ -308,7 +308,7 @@ export default function Home() {
                 </a>
               </div>
               <div className='basis-1/3 flex-1 relative'>
-              <h1 className='text-xl text-slate-400 dark:text-slate-200 hover:text-teal-500 dark:hover:text-teal-500 py-4 md:text-2xl lg:text-2xl'><a href='https://github.com/Kshitij-Darwhekar/kshitijdarwhekar.io'>Portfolio Website</a></h1>
+              <h2 className='text-xl text-slate-400 dark:text-slate-200 hover:text-teal-500 dark:hover:text-teal-500 py-4 md:text-2xl lg:text-2xl'><a href='https://github.com/Kshitij-Darwhekar/kshitijdarwhekar.io'>Portfolio Website</a></h2>
                   {hover &&(
                     <p className='absolute inset-0 flex items-center justify-center text-slate-400 '>
                       Click to Chekout Github Repo
@@ -320,7 +320,7 @@ export default function Home() {
                 </a>
               </div>
               <div className='basis-1/3 flex-1 relative'>
-              <h1 className='text-xl text-slate-400 dark:text-slate-200 hover:text-teal-500 dark:hover:text-teal-500 py-4 md:text-2xl lg:text-2xl'><a href='https://github.com/WebDesgns/Flight-Management-System'>FlySmart: Flight Ticket Booking System</a></h1>
+              <h2 className='text-xl text-slate-400 dark:text-slate-200 hover:text-teal-500 dark:hover:text-teal-500 py-4 md:text-2xl lg:text-2xl'><a href='https://github.com/WebDesgns/Flight-Management-System'>FlySmart: Flight Ticket Booking System</a></h2>
                   {hover &&(
                     <p className='absolute inset-0 flex items-center justify-center text-slate-400 '>
                       Click to Checkout Github Repo
@@ -330,7 +330,7 @@ export default function Home() {
                 </a>
               </div>
               <div className='basis-1/3 flex-1 relative'>
-              <h1 className='text-xl text-slate-400 dark:text-slate-200 hover:text-teal-500 dark:hover:text-teal-500 py-4 md:text-2xl lg:text-2xl'><a href='https://github.com/Kshitij-Darwhekar/Intelligent-Traffic-Managment-System-Using-Computer-Vision'>Intelligent Traffic Management Systems using CV</a></h1>
+              <h2 className='text-xl text-slate-400 dark:text-slate-200 hover:text-teal-500 dark:hover:text-teal-500 py-4 md:text-2xl lg:text-2xl'><a href='https://github.com/Kshitij-Darwhekar/Intelligent-Traffic-Managment-System-Using-Computer-Vision'>Intelligent Traffic Management Systems using CV</a></h2>
                 {hover &&(
                     <p className='absolute inset-0 flex items-center justify-center text-slate-400 '>
                       Click to Checkout Github Repo
@@ -340,7 +340,7 @@ export default function Home() {
                 </a> 
               </div>
               <div className='basis-1/3 flex-1 relative'>
-                <h1 className='text-xl text-slate-400 dark:text-slate-200 hover:text-teal-500 dark:hover:text-teal-500 py-4 md:text-2xl lg:text-2xl'><a href='https://github.com/Kshitij-Darwhekar/E-Commerce-Website'>Radpants: E-commerce Website</a></h1>
+                <h2 className='text-xl text-slate-400 dark:text-slate-200 hover:text-teal-500 dark:hover:text-teal-500 py-4 md:text-2xl lg:text-2xl'><a href='https://github.com/Kshitij-Darwhekar/E-Commerce-Website'>Radpants: E-commerce Website</a></h2>
                 {hover &&(
                     <p className='absolute inset-0 flex items-center justify-center text-slate-400 '>
                       Click to Checkout Github Repo
@@ -350,7 +350,7 @@ export default function Home() {
                 </a> 
               </div>
               <div className='basis-1/3 flex-1 relative'>
-                <h1 className='text-xl text-slate-400 dark:text-slate-200 hover:text-teal-500 dark:hover:text-teal-500 py-4 md:text-2xl lg:text-2xl'><a href='https://github.com/Kshitij-Darwhekar/Life_Organics_Final'>Life Organics: E-Commerce Website</a></h1>
+                <h2 className='text-xl text-slate-400 dark:text-slate-200 hover:text-teal-500 dark:hover:text-teal-500 py-4 md:text-2xl lg:text-2xl'><a href='https://github.com/Kshitij-Darwhekar/Life_Organics_Final'>Life Organics: E-Commerce Website</a></h2>
                 {hover &&(
                     <p className='absolute inset-0 flex items-center justify-center text-slate-400 '>
                       Click to Checkout Github Repo
