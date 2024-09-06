@@ -13,9 +13,9 @@ import { useRef } from 'react';
 
 import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {AiFillTwitterCircle, AiFillLinkedin,AiFillYoutube,AiFillGithub,AiFillMediumSquare,AiFillMail} from 'react-icons/ai';
-import {BiLogoReact,BiLogoJava,BiLogoPython,BiLogoNodejs, BiLogoSpringBoot,BiLogoMongodb,BiLogoCss3,BiLogoTailwindCss, BiLogoBootstrap, BiLogoHtml5} from 'react-icons/bi'
-import {SiApachemaven,SiNumpy,SiPandas,SiMysql, SiDocker, SiSqlite} from 'react-icons/si'
-
+import {BiLogoReact,BiLogoJava,BiLogoPython,BiLogoNodejs, BiLogoSpringBoot,BiLogoMongodb,BiLogoCss3,BiLogoTailwindCss, BiLogoBootstrap, BiLogoHtml5, BiLogoPostgresql} from 'react-icons/bi'
+import {SiApachemaven,SiNumpy,SiPandas,SiMysql, SiDocker, SiSqlite,SiApachespark,SiApacheairflow,SiApachehive,SiApachekafka} from 'react-icons/si'
+import { TbBrandSnowflake } from "react-icons/tb";
 
 import kshitij from '../../public/Kshitij_2.png';
 import pizza from '../../public/pizza1.png';
@@ -134,6 +134,7 @@ export default function Home() {
                   options={{
                     strings: [
                       
+                      " Celonis Data Engineer",
                       " Web Developer",
                       " ML Enthusiast",
                       " Generative AI"
@@ -254,15 +255,20 @@ export default function Home() {
                   <div className='p-2 text-xl dark:text-slate-400'><BiLogoMongodb className='w-40 h-40 text-teal-500 md:w-40 md:h-40 lg:w-48 lg:h-48'/>MongoDB</div>
                   <div className='p-2 text-xl dark:text-slate-400'><SiMysql className='w-40 h-40 text-teal-500 md:w-40 md:h-40 lg:w-48 lg:h-48'/>MySQL</div>
                   <div className='p-2 text-xl dark:text-slate-400'><SiSqlite className='w-40 h-40 text-teal-500 md:w-40 md:h-40 lg:w-48 lg:h-48'/>Sqlite</div>
+                  {/* <div className='p-2 text-xl dark:text-slate-400'><BiLogoPostgresql className='w-40 h-40 text-teal-500 md:w-40 md:h-40 lg:w-48 lg:h-48'/>PostgreSQL</div> */}
+                  {/* <div className='p-2 text-xl dark:text-slate-400'><TbBrandSnowflake className='w-40 h-40 text-teal-500 md:w-40 md:h-40 lg:w-48 lg:h-48'/>Snowflake</div> */}
                 </div>
                 
                 
                 <h2 className='text-3xl p-7 dark:text-slate-400 md:text-4xl lg:text-5xl'>Other Technologies</h2>
                 <div className='flex flex-wrap justify-evenly'>
-                  <div className='p-2 text-xl dark:text-slate-400'><SiApachemaven className='w-40 h-40 text-teal-500 md:w-40 md:h-40 lg:w-48 lg:h-48 mb-5'/>Maven</div>
-                  <div className='p-2 text-xl dark:text-slate-400'><SiNumpy className='w-40 h-40 text-teal-500 md:w-40 md:h-40 lg:w-48 lg:h-48 mb-5'/>Numpy</div>
-                  <div className='p-2 text-xl dark:text-slate-400'><SiPandas className='w-40 h-40 text-teal-500 md:w-40 md:h-40 lg:w-48 lg:h-48 mb-5'/> Pandas</div>
-                  <div className='p-2 text-xl dark:text-slate-400'><SiDocker className='w-40 h-40 text-teal-500 md:w-40 md:h-40 lg:w-48 lg:h-48 mb-5'/> Docker</div>
+                  {/* <div className='p-2 text-xl dark:text-slate-400'><SiApacheairflow className='w-40 h-40 text-teal-500 md:w-40 md:h-40 lg:w-48 lg:h-48 mb-5'/>Apache Airflow</div>
+                  <div className='p-2 text-xl dark:text-slate-400'><SiApachekafka className='w-40 h-40 text-teal-500 md:w-40 md:h-40 lg:w-48 lg:h-48 mb-5'/>Apache Kafka</div>
+                  <div className='p-2 text-xl dark:text-slate-400'><SiApachespark className='w-40 h-40 text-teal-500 md:w-40 md:h-40 lg:w-48 lg:h-48 mb-5'/>Apache Spark</div> */}
+                  <div className='p-2 m-2 text-xl dark:text-slate-400'><SiApachemaven className='w-40 h-40 text-teal-500 md:w-40 md:h-40 lg:w-48 lg:h-48 mb-5'/>Maven</div>
+                  <div className='p-2 m-2 text-xl dark:text-slate-400'><SiNumpy className='w-40 h-40 text-teal-500 md:w-40 md:h-40 lg:w-48 lg:h-48 mb-5'/>Numpy</div>
+                  <div className='p-2 m-2 text-xl dark:text-slate-400'><SiPandas className='w-40 h-40 text-teal-500 md:w-40 md:h-40 lg:w-48 lg:h-48 mb-5'/> Pandas</div>
+                  <div className='p-2 m-2 text-xl dark:text-slate-400'><SiDocker className='w-40 h-40 text-teal-500 md:w-40 md:h-40 lg:w-48 lg:h-48 mb-5'/> Docker</div>
                 </div>
 
               </div>
