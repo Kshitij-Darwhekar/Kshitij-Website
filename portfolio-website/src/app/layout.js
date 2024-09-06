@@ -8,21 +8,21 @@ const dancingScript = Dancing_Script({ subsets: ['latin'] })
 
 export const metadata = {
   title: "Kshitij's Portfolio",
-  description: `Kshitij Darwhekar is Full Stack Web Developer , ML Ehtusiast and Generative AI Enthusiast who likes to build beautiful and user friendly websites with React Js and Tailwind Css` ,
-  keywords: ["Full Stack Developer", "Web Development", "Software Projects", "Front-end Design", "Machine Learning", "Coding","Generative AI","Artificial Intelligence", "Portfolio", "Kshitij Darwhekar"],
+  description: `Kshitij Darwhekar is a Celonis Data Engineer , ML Ehtusiast and Generative AI Enthusiast who likes to build beautiful and user friendly websites with React Js and Tailwind Css` ,
+  keywords: ["Full Stack Developer","Celonis","Data Engineer", "Web Development", "Software Projects", "Front-end Design", "Machine Learning", "Coding","Generative AI","Artificial Intelligence", "Portfolio", "Kshitij Darwhekar"],
   author: "Kshitij",
   language: "en-US",
   openGraph: {
     title: "Kshitij's Portfolio",
-    description: `Kshitij Darwhekar is Full Stack Web Developer , ML Ehtusiast and Generative AI Enthusiast who likes to build beautiful and user friendly websites with React Js and Tailwind Css`,
+    description: `Kshitij Darwhekar is a Celonis Data Engineer , ML Ehtusiast and Generative AI Enthusiast who likes to build beautiful and user friendly websites with React Js and Tailwind Css`,
     image: {metaimg},  // Path to an image for social sharing
-    url: "https://kshitijdarwhekar.tech"
+    url: "https://kshitijdarwhekar.com"
   },
   twitterCard: {
     card: "summary_large_image",
-    creator: "@KshitijDarwhek1",
+    creator: "@KshitijDarwhekr",
     title: "Kshitij's Portfolio",
-    description: `Kshitij Darwhekar is Full Stack Web Developer , ML Ehtusiast and Generative AI Enthusiast who likes to build beautiful and user friendly websites with React Js and Tailwind Css`,
+    description: `Kshitij Darwhekar is a Celonis Data Engineer , ML Ehtusiast and Generative AI Enthusiast who likes to build beautiful and user friendly websites with React Js and Tailwind Css`,
     image: {metaimg}  // Path to an image for Twitter sharing
   }
             
