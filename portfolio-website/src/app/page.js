@@ -12,9 +12,9 @@ import { useState } from 'react';
 import { useRef } from 'react';
 
 import {BsFillMoonStarsFill} from 'react-icons/bs';
-import {AiFillTwitterCircle, AiFillLinkedin,AiFillYoutube,AiFillGithub,AiFillMediumSquare,AiFillMail} from 'react-icons/ai';
-import {BiLogoReact,BiLogoJava,BiLogoPython,BiLogoNodejs, BiLogoSpringBoot,BiLogoMongodb,BiLogoCss3,BiLogoTailwindCss, BiLogoBootstrap, BiLogoHtml5, BiLogoPostgresql} from 'react-icons/bi'
-import {SiApachemaven,SiNumpy,SiPandas,SiMysql, SiDocker, SiSqlite,SiApachespark,SiApacheairflow,SiApachehive,SiApachekafka} from 'react-icons/si'
+import {AiFillTwitterCircle, AiFillLinkedin,AiFillYoutube,AiFillGithub,AiFillMediumSquare,AiFillMail,AiOutlineCoffee} from 'react-icons/ai';
+import {BiSolidCoffeeTogo ,BiLogoReact,BiLogoJava,BiLogoPython,BiLogoNodejs, BiLogoSpringBoot,BiLogoMongodb,BiLogoCss3,BiLogoTailwindCss, BiLogoBootstrap, BiLogoHtml5, BiLogoPostgresql} from 'react-icons/bi'
+import {SiApachemaven,SiNumpy,SiPandas,SiMysql, SiDocker, SiSqlite,SiApachespark,SiApacheairflow,SiApachehive,SiApachekafka,SiBuymeacoffee} from 'react-icons/si'
 import { TbBrandSnowflake } from "react-icons/tb";
 
 import kshitij from '../../public/Kshitij_2.png';
@@ -165,6 +165,7 @@ export default function Home() {
                 <a href='https://github.com/Kshitij-Darwhekar'  className='hover:text-teal-500'><AiFillGithub /></a>
                 <a href='https://medium.com/@kshitijdarwhekar'  className='hover:text-teal-500'><AiFillMediumSquare/></a>
                 <a href='mailto:kshitijdarwhekar@gmail.com'  className='hover:text-teal-500'><AiFillMail /></a>
+                <a href='https://buymeacoffee.com/kshitijdarwhekar' className='hover:text-teal-500' ><SiBuymeacoffee size={36} /></a>
               </div>
 
 
