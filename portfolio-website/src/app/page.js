@@ -165,7 +165,7 @@ export default function Home() {
                 <a href='https://github.com/Kshitij-Darwhekar'  className='hover:text-teal-500'><AiFillGithub /></a>
                 <a href='https://medium.com/@kshitijdarwhekar'  className='hover:text-teal-500'><AiFillMediumSquare/></a>
                 <a href='mailto:kshitijdarwhekar@gmail.com'  className='hover:text-teal-500'><AiFillMail /></a>
-                <a href='https://buymeacoffee.com/kshitijdarwhekar' className='hover:text-teal-500' ><SiBuymeacoffee size={36} /></a>
+                {/* <a href='https://www.buymeacoffee.com/kshitijdarwhekar'  className='hover:text-teal-500'><AiFillBuyMeACoffee /></a> */}
               </div>
 
 
