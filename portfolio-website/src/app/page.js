@@ -78,6 +78,7 @@ export default function Home() {
   const projectRef = useRef(null);
   const skillsRef = useRef(null);
   const contactRef = useRef(null);
+  const experienceRef = useRef(null);
 
   
 
@@ -96,6 +97,7 @@ export default function Home() {
                 
                 <ul className='flex items-center justify-center flex-row px-2 py-4 lg:gap-4 lg:py-4 md:gap-4 md:py-4' >
                   <button onClick={() => {aboutRef.current?.scrollIntoView({behavior:'smooth'})}} className='hover:text-teal-500 text-lg'> About</button>
+                  <button onClick={() => {experienceRef.current?.scrollIntoView({behavior: 'smooth' })} } className='hover:text-teal-500 text-lg'> Experience </button>
                   <button onClick={() => {skillsRef.current?.scrollIntoView({behavior: 'smooth'})} } className='hover:text-teal-500 text-lg'> Skills </button>
                   <button onClick={() => {projectRef.current?.scrollIntoView({behavior: 'smooth'})}} className='hover:text-teal-500 text-lg'> Portfolio</button>
                   <button onClick={() => {contactRef.current?.scrollIntoView({behavior: 'smooth' })} } className='hover:text-teal-500 text-lg'> Contact </button>
@@ -216,6 +218,41 @@ export default function Home() {
 
             </div>
           </section>
+
+          {/* Experience Section */}
+          <section id="experience" className='p-10' ref={experienceRef}>
+            <h2 className='text-5xl py-3 text-black dark:text-slate-400'>Experience</h2>
+            <div className='mt-6'>
+              <div className='mb-4'>
+              <h3 className='text-2xl font-semibold text-gray-800 dark:text-slate-400'>Application Developer</h3>
+              <h3 className='text-lg font-semibold py-1'><a className='text-slate-500 hover:text-teal-400 focus-visible:text-teal-500 dark:text-slate-400 dark:hover:text-teal-500' href='https://www.linkedin.com/company/ibm/posts/?feedView=all'>IBM India Pvt Ltd</a><span className='text-slate-400 dark:text-slate-400'> (Dec-24 to ) </span></h3>
+                <div className='text-lg text-gray-800 dark:text-slate-400 p-4'>
+                <ul style={{ listStyleType: 'disc' }} className='text-lg text-slate-400 dark:text-slate-400'>
+                  <li className='py-1'>1 Year of experience in Celonis, specializing in creating and managing data connections, building and opti-
+                  mizing data pipelines, and developing comprehensive data views and analyses.</li>
+                  <li className='py-1'>Proficient in designing and implementing custom KPIs tailored to business needs to drive data-driven decision-
+                  making.</li>
+                  <li className='py-1'>Hands-on experience with Robotic Process Automation (RPA) tools, particularly Power Automate, to streamline
+                  processes and enhance operational efficiency.</li>
+                 </ul>
+                </div>
+              </div>
+              {/*  */}
+              <div className='mb-4'>
+                <h3 className='text-2xl font-semibold text-gray-800 dark:text-slate-400'>IOT& Robotics Intern</h3>
+                <h3 className='text-lg font-semibold py-1'><a className='text-slate-400 hover:text-teal-500 focus-visible:text-teal-500 dark:text-slate-400 dark:hover:text-teal-500' href='https://www.linkedin.com/company/phn-technology/posts/?feedView=all'>PHN Technology Pvt Ltd</a><span className='text-slate-400 dark:text-slate-400'> (Feb-23 to Jul-23) </span></h3>
+                {/* <h3 className='text-lg font-semibold text-slate-500 dark:text-slate-500 py-1'>(Feb-2023 to Jul-2023)</h3> */}
+                <div className='text-lg text-gray-800 dark:text-slate-400 p-4'>
+                 <ul style={{ listStyleType: 'disc' }} className='text-lg text-slate-400 dark:text-slate-400'>
+                  <li className='py-1'>Conducted in-depth research and development for a new Kid's Smartwatch product, focusing on integrating IoT and robotics technologies to enhance functionality and user experience.</li>
+                  <li className='py-1'>Assisted in organizing a company-wide hackathon, contributing to event planning, technical support, and fostering innovation among participants.</li>
+                  <li className='py-1'>Explored and evaluated emerging IoT and robotics technologies to provide actionable insights for potential new product development initiatives.</li>
+                 </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
 
           {/* Skills */}
 
