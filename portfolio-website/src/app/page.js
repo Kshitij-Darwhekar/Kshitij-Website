@@ -157,7 +157,7 @@ export default function Home() {
               <p className='text-lg py-5 font-burton text-center leading-8 text-gray-800 dark:text-slate-400 md:text-xl max-w-10xl mx-auto'>
                 Hey! I'm a <span className='text-teal-500'>Celonis Data Engineer</span> with a passion for <span className='text-teal-500'>Machine Learning</span><br/>
                 and a keen interest in <span className='text-teal-500'>Generative AI </span> and <span className='text-teal-500'>LLMs.</span> <br/>
-                Take a look around to see my projects and dive into my world of tech innovation! <br/>
+                Take a look around to see my projects and dive into my world of tech innovation!  <br/>
               </p>
               
               <div className='py-4 mb-40 text-5xl flex justify-center flex-row items-center text-gray-600 dark:text-gray-400 md:flex md:gap-10 lg:flex lg:gap-10 '>
