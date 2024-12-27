@@ -224,24 +224,24 @@ export default function Home() {
             <h2 className='text-5xl py-3 text-black dark:text-slate-400'>Experience</h2>
             <div className='mt-6'>
               <div className='mb-4'>
-              <h3 className='text-2xl font-semibold text-gray-800 dark:text-slate-400'>Application Developer</h3>
-              <h3 className='text-lg font-semibold py-1'><a className='text-slate-500 hover:text-teal-400 focus-visible:text-teal-500 dark:text-slate-400 dark:hover:text-teal-500' href='https://www.linkedin.com/company/ibm/posts/?feedView=all'>IBM India Pvt Ltd</a><span className='text-gray-800 dark:text-slate-400'> (Dec-24 to ) </span></h3>
-                <div className='text-lg text-gray-800 dark:text-slate-400 p-4'>
+              <h3 className='text-xl font-semibold text-teal-500 dark:text-teal-500 md:text-2xl lg:text-2xl'>Application Developer</h3>
+              <h3 className='text-md font-semibold py-1 md:text-lg lg:text-lg'><a className='text-slate-500 hover:text-teal-400 focus-visible:text-teal-500 dark:text-slate-400 dark:hover:text-teal-500' href='https://www.linkedin.com/company/ibm/posts/?feedView=all'>IBM India Pvt Ltd</a><span className='text-gray-800 dark:text-slate-400'> (Dec-24 to ) </span></h3>
+                <div className='text-md text-gray-800 dark:text-slate-400 p-4 md:text-lg lg:text-lg'>
                 <ul style={{ listStyleType: 'disc' }} className='text-lg text-gray-800 dark:text-slate-400'>
-                  <li className='py-1'>1 Year of experience in Celonis, specializing in creating and managing data connections, building and opti-mizing data pipelines, and developing comprehensive data views and analyses.</li>
-                  <li className='py-1'>Proficient in designing and implementing custom KPIs tailored to business needs to drive data-driven decision making.</li>
-                  <li className='py-1'>Hands-on experience with Robotic Process Automation (RPA) tools, particularly Power Automate, to streamline processes and enhance operational efficiency.</li>
+                  <li className='py-1'>1 Year of experience in <span className='text-teal-500'>Celonis</span>, specializing in creating and managing data connections, building and opti-mizing data pipelines, and developing comprehensive data views and analyses.</li>
+                  <li className='py-1'>Proficient in designing and implementing <span className='text-teal-500'>custom KPIs</span>  tailored to business needs to drive data-driven decision making.</li>
+                  <li className='py-1'>Hands-on experience with <span className='text-teal-500'>Robotic Process Automation (RPA)</span> tools, particularly <span className='text-teal-500'>Power Automate</span> , to streamline processes and enhance operational efficiency.</li>
                  </ul>
                 </div>
               </div>
               {/*  */}
               <div className='mb-4'>
-                <h3 className='text-2xl font-semibold text-gray-800 dark:text-slate-400'>IOT & Robotics Intern</h3>
-                <h3 className='text-lg font-semibold py-1'><a className='text-slate-400 hover:text-teal-500 focus-visible:text-teal-500 dark:text-slate-400 dark:hover:text-teal-500' href='https://www.linkedin.com/company/phn-technology/posts/?feedView=all'>PHN Technology Pvt Ltd</a><span className='text-gray-800 dark:text-slate-400'> (Feb-23 to Jul-23) </span></h3>
+                <h3 className='text-xl font-semibold text-teal-500 dark:text-teal-500 md:text-2xl lg:text-2xl'>IOT & Robotics Intern</h3>
+                <h3 className='text-md font-semibold py-1 md:text-lg lg:text-lg'><a className='text-slate-400 hover:text-teal-500 focus-visible:text-teal-500 dark:text-slate-400 dark:hover:text-teal-500' href='https://www.linkedin.com/company/phn-technology/posts/?feedView=all'>PHN Technology Pvt Ltd</a><span className='text-gray-800 dark:text-slate-400'> (Feb-23 to Jul-23) </span></h3>
                 {/* <h3 className='text-lg font-semibold text-slate-500 dark:text-slate-500 py-1'>(Feb-2023 to Jul-2023)</h3> */}
-                <div className='text-lg text-gray-800 dark:text-slate-400 p-4'>
+                <div className='text-md text-gray-800 dark:text-slate-400 p-4 md:text-lg lg:text-lg'>
                  <ul style={{ listStyleType: 'disc' }} className='text-lg text-gray-800 dark:text-slate-400'>
-                  <li className='py-1'>Conducted in-depth research and development for a new Kid's Smartwatch product, focusing on integrating IoT and robotics technologies to enhance functionality and user experience.</li>
+                  <li className='py-1'>Conducted in-depth research and development for a new Kid's Smartwatch product, focusing on integrating <span className='text-teal-500'>IoT and robotics</span>  technologies to enhance functionality and user experience.</li>
                   <li className='py-1'>Assisted in organizing a company-wide hackathon, contributing to event planning, technical support, and fostering innovation among participants.</li>
                   <li className='py-1'>Explored and evaluated emerging IoT and robotics technologies to provide actionable insights for potential new product development initiatives.</li>
                  </ul>
