@@ -92,7 +92,7 @@ export default function Home() {
         <main className='bg-slate-200 text-slate-900 dark:bg-slate-900 dark:text-slate-400 scroll-smooth antialiased leading-relaxed font-poppins selection:bg-teal-500 selection:text-teal-700'>
           <section className=' min-h-screen'>
             <nav className='p-10 mb-12 flex justify-between dark:text-slate-400'>
-              <h1 className='text-xl py-4 font-dancing hover:text-teal-500 dark:text-slate-400 '> <a href='#' className='hover:text-teal-500'> Hi, I'm Kshitij</a>  </h1>
+              <h1 className='text-xl py-4 font-dancing hover:text-teal-500 dark:text-slate-400 '> <a href='https://mr.wikipedia.org/wiki/%E0%A4%95%E0%A5%8D%E0%A4%B7%E0%A4%BF%E0%A4%A4%E0%A4%BF%E0%A4%9C' className='hover:text-teal-500'> Hi, I'm Kshitij</a>  </h1>
               <nav className='hidden lg:block md:block'>
                 
                 <ul className='flex items-center justify-center flex-row px-2 py-4 lg:gap-4 lg:py-4 md:gap-4 md:py-4' >
