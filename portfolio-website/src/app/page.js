@@ -230,7 +230,7 @@ export default function Home() {
                 <ul style={{ listStyleType: 'disc' }} className='text-lg text-gray-800 dark:text-slate-400'>
                   <li className='py-1'>1 Year of experience in <span className='text-teal-500'>Celonis</span>, specializing in creating and managing data connections, building and opti-mizing data pipelines, and developing comprehensive data views and analyses.</li>
                   <li className='py-1'>Proficient in designing and implementing <span className='text-teal-500'>custom KPIs</span>  tailored to business needs to drive data-driven decision making.</li>
-                  <li className='py-1'>Hands-on experience with <span className='text-teal-500'>Robotic Process Automation (RPA)</span> tools, particularly <span className='text-teal-500'>Power Automate</span> , to streamline processes and enhance operational efficiency.</li>
+                  <li className='py-1'>Hands-on experience with <span className='text-teal-500'>Robotic Process Automation (RPA)</span> tools, particularly <span className='text-teal-500'>Automation Anywhere</span> , to streamline processes and enhance operational efficiency.</li>
                  </ul>
                 </div>
               </div>
