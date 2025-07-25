@@ -17,7 +17,7 @@ import {BiSolidCoffeeTogo ,BiLogoReact,BiLogoJava,BiLogoPython,BiLogoNodejs, BiL
 import {SiApachemaven,SiNumpy,SiPandas,SiMysql, SiDocker, SiSqlite,SiApachespark,SiApacheairflow,SiApachehive,SiApachekafka,SiBuymeacoffee} from 'react-icons/si'
 import { TbBrandSnowflake } from "react-icons/tb";
 
-import kshitij from '../../public/Kshitij_2.png';
+import kshitij from '../../public/Kshitij_Ghibli.png';
 import pizza from '../../public/pizza1.png';
 import Traffic from '../../public/Traffic.png';
 import FlySmart from '../../public/FlySmart2.png';
@@ -136,8 +136,7 @@ export default function Home() {
                   options={{
                     strings: [
                       
-                      " Celonis Data Engineer",
-                      " Web Developer",
+                      " Application Developer",
                       " ML Enthusiast",
                       " Generative AI"
                   ],
@@ -155,7 +154,7 @@ export default function Home() {
 
               {/* <h3 className='text-3xl py-2 dark:text-white md:text-3xl'>Full Stack Developer and ML Enthusiast</h3> */}
               <p className='text-lg py-5 font-burton text-center leading-8 text-gray-800 dark:text-slate-400 md:text-xl max-w-10xl mx-auto'>
-                Hey! I'm a <span className='text-teal-500'>Celonis Data Engineer</span> with a passion for <span className='text-teal-500'>Machine Learning</span><br/>
+                Hey! I'm a <span className='text-teal-500'>Application Developer @ IBM</span> with a passion for <span className='text-teal-500'>Machine Learning</span><br/>
                 and a keen interest in <span className='text-teal-500'>Generative AI </span> and <span className='text-teal-500'>LLMs.</span> <br/>
                 Take a look around to see my projects and dive into my world of tech innovation!  <br/>
               </p>
@@ -228,8 +227,8 @@ export default function Home() {
               <h3 className='text-md font-semibold py-1 md:text-lg lg:text-lg'><a className='text-slate-500 hover:text-teal-400 focus-visible:text-teal-500 dark:text-slate-400 dark:hover:text-teal-500' href='https://www.linkedin.com/company/ibm/posts/?feedView=all'>IBM India Pvt Ltd</a><span className='text-gray-800 dark:text-slate-400'> (Dec-24 to ) </span></h3>
                 <div className='text-md text-gray-800 dark:text-slate-400 p-4 md:text-lg lg:text-lg'>
                 <ul style={{ listStyleType: 'disc' }} className='text-lg text-gray-800 dark:text-slate-400'>
-                  <li className='py-1'>1 Year of experience in <span className='text-teal-500'>Celonis</span>, specializing in creating and managing data connections, building and opti-mizing data pipelines, and developing comprehensive data views and analyses.</li>
-                  <li className='py-1'>Proficient in designing and implementing <span className='text-teal-500'>custom KPIs</span>  tailored to business needs to drive data-driven decision making.</li>
+                  <li className='py-1'>1.7 Year of experience as <span className='text-teal-500'>Application Developer</span>, focusing on building and deploying automation solutions to enhance process efficiency.</li>
+                  <li className='py-1'>Involved in designing and <span className='text-teal-500'>optimizing bots</span>  to streamline repetitive tasks and <span className='text-teal-500'>improve workflows</span>.  </li>
                   <li className='py-1'>Hands-on experience with <span className='text-teal-500'>Robotic Process Automation (RPA)</span> tools, particularly <span className='text-teal-500'>Automation Anywhere</span> , to streamline processes and enhance operational efficiency.</li>
                  </ul>
                 </div>
