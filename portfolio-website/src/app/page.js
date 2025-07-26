@@ -156,8 +156,8 @@ export default function Home() {
                     strings: [
                       
                       " Application Developer",
-                      " ML Enthusiast",
-                      " Generative AI"
+                      " Machine Learning Practitioner",
+                      " Gen AI Enthusiast",
                   ],
                     autoStart: true,
                     loop: true,
@@ -173,9 +173,17 @@ export default function Home() {
 
               {/* <h3 className='text-3xl py-2 dark:text-white md:text-3xl'>Full Stack Developer and ML Enthusiast</h3> */}
               <p className='text-lg py-5 font-burton text-center leading-8 text-gray-800 dark:text-slate-400 md:text-xl max-w-10xl mx-auto'>
-                Hey! I'm a <span className='text-teal-500'>Application Developer @ IBM</span> with a passion for <span className='text-teal-500'>Machine Learning</span><br/>
+
+                Hey there! I'm an <span className='text-teal-500'>Application Developer @ IBM</span> with a passion for <span className='text-teal-500'>Machine Learning </span> 
+                and a growing interest in <br/> <span className='text-teal-500'>Generative AI</span> and <span className='text-teal-500'>Large Language Models (LLMs)</span>.<br/>
+                Explore my <span className='text-teal-500'><a href='https://github.com/Kshitij-Darwhekar' className='hover:text-teal-700'>projects</a></span> to see what I’ve been building, and don’t 
+                forget to check out my tech blogs on <span className='text-teal-500'><a href='https://medium.com/@kshitijdarwhekar' className='hover:text-teal-700'>Medium</a></span> 
+                <br/>— where I share insights, experiments, and ideas from my journey in the world of <span className='text-teal-500'>AI</span> and <span className='text-teal-500'>innovation</span>!
+
+
+                {/* Hey! I'm a <span className='text-teal-500'>Application Developer @ IBM</span> with a passion for <span className='text-teal-500'>Machine Learning</span><br/>
                 and a keen interest in <span className='text-teal-500'>Generative AI </span> and <span className='text-teal-500'>LLMs.</span> <br/>
-                Take a look around to see my projects and dive into my world of tech innovation!  <br/>
+                Take a look around to see my projects and dive into my world of tech innovation!  Don't forget to read my blogs on Medium.com<br/> */}
               </p>
               
               <div className='py-4 mb-40 text-5xl flex justify-center flex-row items-center text-gray-600 dark:text-gray-400 md:flex md:gap-10 lg:flex lg:gap-10 '>
@@ -254,9 +262,13 @@ export default function Home() {
               <h3 className='text-md font-semibold py-1 md:text-lg lg:text-lg'><a className='text-slate-500 hover:text-teal-400 focus-visible:text-teal-500 dark:text-slate-400 dark:hover:text-teal-500' href='https://www.linkedin.com/company/ibm/posts/?feedView=all'>IBM India Pvt Ltd</a><span className='text-gray-800 dark:text-slate-400'> (Dec-24 to ) </span></h3>
                 <div className='text-md text-gray-800 dark:text-slate-400 p-4 md:text-lg lg:text-lg'>
                 <ul style={{ listStyleType: 'disc' }} className='text-lg text-gray-800 dark:text-slate-400'>
-                  <li className='py-1'>1.7 Year of experience as <span className='text-teal-500'>Application Developer</span>, focusing on building and deploying automation solutions to enhance process efficiency.</li>
+                  {/* <li className='py-1'>1.7 Year of experience as <span className='text-teal-500'>Application Developer</span>, focusing on building and deploying automation solutions to enhance process efficiency.</li>
                   <li className='py-1'>Involved in designing and <span className='text-teal-500'>optimizing bots</span>  to streamline repetitive tasks and <span className='text-teal-500'>improve workflows</span>.  </li>
-                  <li className='py-1'>Hands-on experience with <span className='text-teal-500'>Robotic Process Automation (RPA)</span> tools, particularly <span className='text-teal-500'>Automation Anywhere</span> , to streamline processes and enhance operational efficiency.</li>
+                  <li className='py-1'>Hands-on experience with <span className='text-teal-500'>Robotic Process Automation (RPA)</span> tools, particularly <span className='text-teal-500'>Automation Anywhere</span> , to streamline processes and enhance operational efficiency.</li> */}
+
+                  <li className='py-1'>Working as an <span className='text-teal-500'>Application Developer</span> with 1.7 years of experience in <span className='text-teal-500'>Robotic Process Automation (RPA)</span>, primarily using <span className='text-teal-500'>Automation Anywhere</span>.</li>
+                  <li className='py-1'>Responsible for <span className='text-teal-500'>monitoring and supporting</span> production bots, <span className='text-teal-500'>identifying and resolving</span> issues to ensure smooth automation operations.</li>
+                  <li className='py-1'>Develop new bots based on user requirements and <span className='text-teal-500'>implement change requests </span> to enhance existing automation solutions.</li>
                  </ul>
                 </div>
               </div>
@@ -267,7 +279,7 @@ export default function Home() {
                 {/* <h3 className='text-lg font-semibold text-slate-500 dark:text-slate-500 py-1'>(Feb-2023 to Jul-2023)</h3> */}
                 <div className='text-md text-gray-800 dark:text-slate-400 p-4 md:text-lg lg:text-lg'>
                  <ul style={{ listStyleType: 'disc' }} className='text-lg text-gray-800 dark:text-slate-400'>
-                  <li className='py-1'>Conducted in-depth research and development for a new Kid's Smartwatch product, focusing on integrating <span className='text-teal-500'>IoT and robotics</span>  technologies to enhance functionality and user experience.</li>
+                  <li className='py-1'>Conducted in-depth research and development for a product, focusing on integrating <span className='text-teal-500'>IoT and robotics</span>  technologies to enhance functionality and user experience.</li>
                   <li className='py-1'>Assisted in organizing a company-wide hackathon, contributing to event planning, technical support, and fostering innovation among participants.</li>
                   <li className='py-1'>Explored and evaluated emerging IoT and robotics technologies to provide actionable insights for potential new product development initiatives.</li>
                  </ul>
@@ -343,14 +355,17 @@ export default function Home() {
             <div>
               <h3 className='text-5xl py-2 mb-6 dark:text-slate-400'>Portfolio</h3>
               <p className='text-lg py-2 leading-8 text-grey-800 dark:text-slate-400 text-justify'>
-                My portfolio is a collection of diverse work samples that reflect my expertise and experience in <span className='text-slate-500 hover:text-teal-500 focus-visible:text-teal-500 dark:text-slate-200 dark:hover:text-teal-500'> Full Stack development</span> <span className='text-slate-800 dark:text-slate-400'> and </span> <span className='text-slate-500 hover:text-teal-500 focus-visible:text-teal-500 dark:text-slate-200 dark:hover:text-teal-500'>  Machine Learning </span> . 
+                My portfolio is a collection of diverse work samples that reflect my expertise and experience in <span className='text-teal-500 hover:text-teal-700 focus-visible:text-teal-500 dark:text-teal-500 dark:hover:text-teal-700'> Full Stack development</span> 
+                <span className='text-slate-800 dark:text-slate-400'> and </span> 
+                <span className='text-teal-500 hover:text-teal-700 focus-visible:text-teal-500 dark:text-teal-500 dark:hover:text-teal-700'>  Machine Learning </span> . 
                 It includes a range of projects, such as 
-                <a className='text-slate-500 hover:text-teal-500 focus-visible:text-teal-500 dark:text-slate-200 dark:hover:text-teal-500' href='https://github.com/Kshitij-Darwhekar/pizzeria-react-app'> Pizzeria-react-app</a> , 
-                <a className='text-slate-500 hover:text-teal-500 focus-visible:text-teal-500 dark:text-slate-200 dark:hover:text-teal-500' href='https://github.com/WebDesgns/Flight-Management-System'> FlySmart </a>  ,  
-                <a className='text-slate-500 hover:text-teal-500 focus-visible:text-teal-500 dark:text-slate-200 dark:hover:text-teal-500' href='https://github.com/Kshitij-Darwhekar/Medical-Insurance-Premium-Prediction.git'> Medical Insurance Premium prediction </a>  ,  
-                <a className='text-slate-500 hover:text-teal-500 focus-visible:text-teal-500 dark:text-slate-200 dark:hover:text-teal-500' href='https://github.com/Kshitij-Darwhekar/Intelligent-Traffic-Managment-System-Using-Computer-Vision'> Intelligent Traffic Management System </a> ,  
-                <a className='text-slate-500 hover:text-teal-500 focus-visible:text-teal-500 dark:text-slate-200 dark:hover:text-teal-500' href='https://github.com/Kshitij-Darwhekar/kshitijdarwhekar.io'> Portfolio Website </a>
-                <a className='text-slate-500 hover:text-teal-500 focus-visible:text-teal-500 dark:text-slate-200 dark:hover:text-teal-500' href='https://github.com/Kshitij-Darwhekar/Disease_Outbreak_Prediction.git'> Disease Outbreak Prediction </a>
+                <a className='text-teal-500 hover:text-teal-700 focus-visible:text-teal-500 dark:text-teal-500 dark:hover:text-teal-700' href='https://github.com/Kshitij-Darwhekar/pizzeria-react-app'> Pizzeria-react-app</a> , 
+                <a className='text-teal-500 hover:text-teal-700 focus-visible:text-teal-500 dark:text-teal-500 dark:hover:text-teal-700' href='https://github.com/WebDesgns/Flight-Management-System'> FlySmart </a>  ,  
+                <a className='text-teal-500 hover:text-teal-700 focus-visible:text-teal-500 dark:text-teal-500 dark:hover:text-teal-700' href='https://github.com/Kshitij-Darwhekar/Medical-Insurance-Premium-Prediction.git'> Medical Insurance Premium prediction </a>  ,  
+                <a className='text-teal-500 hover:text-teal-700 focus-visible:text-teal-500 dark:text-teal-500 dark:hover:text-teal-700' href='https://github.com/Kshitij-Darwhekar/Intelligent-Traffic-Managment-System-Using-Computer-Vision'> Intelligent Traffic Management System </a> ,  
+                <a className='text-teal-500 hover:text-teal-700 focus-visible:text-teal-500 dark:text-teal-500 dark:hover:text-teal-700' href='https://github.com/Kshitij-Darwhekar/kshitijdarwhekar.io'> Portfolio Website </a>
+                <a className='text-teal
+                -500 hover:text-teal-700 focus-visible:text-teal-500 dark:text-teal-500 dark:hover:text-teal-700' href='https://github.com/Kshitij-Darwhekar/Disease_Outbreak_Prediction.git'> Disease Outbreak Prediction </a>
                  each demonstrating my creativity, problem-solving abilities, and professional growth.
               </p>
               <p className='text-lg py-2 leading-8 text-grey-800 dark:text-slate-400 mx-auto text-justify'>
@@ -365,7 +380,7 @@ export default function Home() {
             <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
 
               <div className='basis-1/3 flex-1 relative'>
-                  <h2 className='text-xl text-slate-400 dark:text-slate-200 hover:text-teal-500 dark:hover:text-teal-500 py-4 md:text-2xl lg:text-2xl'><a href='https://github.com/Kshitij-Darwhekar/pizzeria-react-app'>Pizzeria React App</a></h2>
+                  <h2 className='text-xl text-slate-800 dark:text-slate-200 hover:text-teal-500 dark:hover:text-teal-500 py-4 md:text-2xl lg:text-2xl'><a href='https://github.com/Kshitij-Darwhekar/pizzeria-react-app'>Pizzeria React App</a></h2>
                   {hover &&(
                     <p className='absolute inset-0 flex items-center justify-center text-slate-400 '>
                       Click to Chekout Github Repo
@@ -375,7 +390,7 @@ export default function Home() {
                 </a>
               </div>
               <div className='basis-1/3 flex-1 relative'>
-              <h2 className='text-xl text-slate-400 dark:text-slate-200 hover:text-teal-500 dark:hover:text-teal-500 py-4 md:text-2xl lg:text-2xl'><a href='https://github.com/Kshitij-Darwhekar/kshitijdarwhekar.io'>Portfolio Website</a></h2>
+              <h2 className='text-xl text-slate-800 dark:text-slate-200 hover:text-teal-500 dark:hover:text-teal-500 py-4 md:text-2xl lg:text-2xl'><a href='https://github.com/Kshitij-Darwhekar/kshitijdarwhekar.io'>Portfolio Website</a></h2>
                   {hover &&(
                     <p className='absolute inset-0 flex items-center justify-center text-slate-400 '>
                       Click to Chekout Github Repo
@@ -387,7 +402,7 @@ export default function Home() {
                 </a>
               </div>
               <div className='basis-1/3 flex-1 relative'>
-              <h2 className='text-xl text-slate-400 dark:text-slate-200 hover:text-teal-500 dark:hover:text-teal-500 py-4 md:text-2xl lg:text-2xl'><a href='https://github.com/WebDesgns/Flight-Management-System'>FlySmart: Flight Ticket Booking System</a></h2>
+              <h2 className='text-xl text-slate-800 dark:text-slate-200 hover:text-teal-500 dark:hover:text-teal-500 py-4 md:text-2xl lg:text-2xl'><a href='https://github.com/WebDesgns/Flight-Management-System'>FlySmart: Flight Ticket Booking System</a></h2>
                   {hover &&(
                     <p className='absolute inset-0 flex items-center justify-center text-slate-400 '>
                       Click to Checkout Github Repo
@@ -397,7 +412,7 @@ export default function Home() {
                 </a>
               </div>
               <div className='basis-1/3 flex-1 relative'>
-              <h2 className='text-xl text-slate-400 dark:text-slate-200 hover:text-teal-500 dark:hover:text-teal-500 py-4 md:text-2xl lg:text-2xl'><a href='https://github.com/Kshitij-Darwhekar/Intelligent-Traffic-Managment-System-Using-Computer-Vision'>Intelligent Traffic Management Systems using CV</a></h2>
+              <h2 className='text-xl text-slate-800 dark:text-slate-200 hover:text-teal-500 dark:hover:text-teal-500 py-4 md:text-2xl lg:text-2xl'><a href='https://github.com/Kshitij-Darwhekar/Intelligent-Traffic-Managment-System-Using-Computer-Vision'>Intelligent Traffic Management Systems using CV</a></h2>
                 {hover &&(
                     <p className='absolute inset-0 flex items-center justify-center text-slate-400 '>
                       Click to Checkout Github Repo
@@ -407,7 +422,7 @@ export default function Home() {
                 </a> 
               </div>
               <div className='basis-1/3 flex-1 relative'>
-                <h2 className='text-xl text-slate-400 dark:text-slate-200 hover:text-teal-500 dark:hover:text-teal-500 py-4 md:text-2xl lg:text-2xl'><a href='https://github.com/Kshitij-Darwhekar/E-Commerce-Website'>Radpants: E-commerce Website</a></h2>
+                <h2 className='text-xl text-slate-800 dark:text-slate-200 hover:text-teal-500 dark:hover:text-teal-500 py-4 md:text-2xl lg:text-2xl'><a href='https://github.com/Kshitij-Darwhekar/E-Commerce-Website'>Radpants: E-commerce Website</a></h2>
                 {hover &&(
                     <p className='absolute inset-0 flex items-center justify-center text-slate-400 '>
                       Click to Checkout Github Repo
@@ -417,7 +432,7 @@ export default function Home() {
                 </a> 
               </div>
               <div className='basis-1/3 flex-1 relative'>
-                <h2 className='text-xl text-slate-400 dark:text-slate-200 hover:text-teal-500 dark:hover:text-teal-500 py-4 md:text-2xl lg:text-2xl'><a href='https://github.com/Kshitij-Darwhekar/Life_Organics_Final'>Life Organics: E-Commerce Website</a></h2>
+                <h2 className='text-xl text-slate-800 dark:text-slate-200 hover:text-teal-500 dark:hover:text-teal-500 py-4 md:text-2xl lg:text-2xl'><a href='https://github.com/Kshitij-Darwhekar/Life_Organics_Final'>Life Organics: E-Commerce Website</a></h2>
                 {hover &&(
                     <p className='absolute inset-0 flex items-center justify-center text-slate-400 '>
                       Click to Checkout Github Repo
