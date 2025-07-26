@@ -10,6 +10,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 import { GoogleAnalytics } from '@next/third-parties/google'
 import { useState } from 'react';
 import { useRef } from 'react';
+import { useEffect } from 'react';
 
 import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {AiFillTwitterCircle, AiFillLinkedin,AiFillYoutube,AiFillGithub,AiFillMediumSquare,AiFillMail,AiOutlineCoffee} from 'react-icons/ai';
@@ -17,7 +18,7 @@ import {BiSolidCoffeeTogo ,BiLogoReact,BiLogoJava,BiLogoPython,BiLogoNodejs, BiL
 import {SiApachemaven,SiNumpy,SiPandas,SiMysql, SiDocker, SiSqlite,SiApachespark,SiApacheairflow,SiApachehive,SiApachekafka,SiBuymeacoffee} from 'react-icons/si'
 import { TbBrandSnowflake } from "react-icons/tb";
 
-import kshitij from '../../public/Kshitij_Ghibli.png';
+import kshitij from '../../public/Kshitij_Formal.jpg';
 import pizza from '../../public/pizza1.png';
 import Traffic from '../../public/Traffic.png';
 import FlySmart from '../../public/FlySmart2.png';
@@ -74,12 +75,30 @@ export default function Home() {
     handleSubmit(event);
   };
 
+
+
   const aboutRef = useRef(null);
   const projectRef = useRef(null);
   const skillsRef = useRef(null);
   const contactRef = useRef(null);
   const experienceRef = useRef(null);
+  const imagePaths = [
 
+    '/Kshitij_Formal.jpg',
+    // '/Kshitij_Ghibli.png',
+    // '/Kshitij_2.png',
+    // '/Kshitij.png',
+
+  ];
+    
+  const [selectedImage, setSelectedImage] = useState('');
+
+  useEffect(() => {
+    const randomIndex = Math.floor(Math.random() * imagePaths.length);
+    setSelectedImage(imagePaths[randomIndex]);
+  }, []);
+
+  if (!selectedImage) return null;
   
 
   if (state.succeeded) {
@@ -176,7 +195,15 @@ export default function Home() {
 
                 <div className='flex items-center justify-center text-center mx-auto overflow-hidden'>
                   <div className='relative mt-4 mb-4 mx-auto bg-gradient-to-b from-teal-500 rounded-full w-64 h-64 overflow-hidden md:h-96 md:w-96 lg:w-96 lg:h-96'>
-                    <Image  src={kshitij} fill={false} alt='Kshitij Image' />
+                    <Image  
+                      src={selectedImage} 
+                      fill={false} 
+                      alt='Kshitij Image' 
+                      layout='fill'
+                      style={{ objectFit: 'cover' }}
+                      objectPosition='top center'
+                      priority
+                    />
                   </div>
                 </div>
 
