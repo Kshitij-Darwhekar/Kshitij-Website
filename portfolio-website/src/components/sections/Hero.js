@@ -33,7 +33,7 @@ export default function Hero() {
         <p className="mt-6 max-w-2xl text-lg leading-8 text-gray-800 dark:text-slate-400">
           Hey, I&apos;m <b className="text-slate-900 dark:text-slate-200">Kshitij</b> — I design and build enterprise
           RPA across finance, supply chain and business operations, and own the reliability of a{' '}
-          <span className="text-teal-500">98-bot production footprint</span> across SAP and other enterprise apps.
+          <span className="text-teal-500">95+ bot production footprint</span> across SAP and other enterprise apps.
           I&apos;ve since moved beyond rule-based automation into{' '}
           <span className="text-teal-500">Python-based AI agents</span> and intelligent, context-aware workflows. I
           write about it all on{' '}

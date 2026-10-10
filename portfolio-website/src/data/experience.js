@@ -11,7 +11,7 @@ export const experience = [
       },
       {
         lead: 'RPA Development',
-        text: 'designed and built 15+ automations across finance, supply chain, and business operations; shipped dozens of change requests and now own the reliability of a 98-bot production footprint across SAP and other enterprise applications.',
+        text: 'designed and built 15+ automations across finance, supply chain, and business operations; shipped dozens of change requests and now own the reliability of a 95+ bot production footprint across SAP and other enterprise applications.',
       },
       {
         lead: 'AI-Driven Automation (current)',
