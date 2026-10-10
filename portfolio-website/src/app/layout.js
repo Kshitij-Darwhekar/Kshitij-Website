@@ -1,8 +1,11 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Manrope, Sora, JetBrains_Mono } from 'next/font/google'
 import metaimg from "../../public/Meta_Image.jpg"
+import CursorTorch from '@/components/ui/CursorTorch'
 
-const inter = Inter({ subsets: ['latin'] })
+const manrope = Manrope({ subsets: ['latin'], variable: '--font-body' })
+const sora = Sora({ subsets: ['latin'], variable: '--font-display' })
+const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-mono' })
 
 export const viewport = {
   themeColor: '#0f172a',
@@ -39,7 +42,10 @@ export default function RootLayout({ children }) {
       <head>
         <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={`${manrope.className} ${sora.variable} ${jetbrainsMono.variable}`}>
+        <CursorTorch />
+        {children}
+      </body>
     </html>
   )
 }

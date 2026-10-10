@@ -1,9 +1,9 @@
 export default function Footer() {
   return (
     <>
-      <hr className="border-slate-600" />
-      <div className="flex items-center justify-center flex-row">
-        <footer className="max-w-md pb-0 text-sm text-center text-slate-600 md:pb-3 lg:pb-3">
+      <hr className="border-slate-400/20 dark:border-slate-700/60" />
+      <div className="flex items-center justify-center flex-row px-6">
+        <footer className="max-w-md py-8 text-sm text-center text-slate-600 dark:text-slate-500">
           <p className="p-2">
             Inspired by multiple web dev portfolios, coded in{' '}
             <a href="https://code.visualstudio.com/" className="font-medium text-slate-400 hover:text-teal-500">Visual Studio Code</a>{' '}

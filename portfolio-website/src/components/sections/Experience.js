@@ -3,12 +3,21 @@ import { experience } from '@/data/experience'
 export default function Experience() {
   return (
     <section id="experience" className="p-10">
+      <p className="section-eyebrow">02 · Experience</p>
       <h2 className="text-5xl py-3 text-black dark:text-slate-400">Experience</h2>
-      <div className="mt-6">
-        {experience.map((job) => (
-          <div key={job.role + job.org} className="mb-4">
-            <h3 className="text-xl font-semibold text-teal-500 dark:text-teal-500 md:text-2xl lg:text-2xl">{job.role}</h3>
-            <h3 className="text-md font-semibold py-1 md:text-lg lg:text-lg">
+
+      <div className="timeline mt-10 max-w-4xl">
+        {experience.map((job, index) => (
+          <div key={job.role + job.org} className="relative mb-10 last:mb-0">
+            <span
+              className={`timeline-dot ring-4 ${
+                index === 0 ? 'bg-teal-500 ring-teal-500/20' : 'bg-violet-500 ring-violet-500/20'
+              }`}
+            />
+            <h3 className={`text-xl font-semibold md:text-2xl ${index === 0 ? 'text-teal-500' : 'text-violet-500'}`}>
+              {job.role}
+            </h3>
+            <h3 className="text-md font-semibold py-1 md:text-lg">
               <a
                 className="text-slate-500 hover:text-teal-400 focus-visible:text-teal-500 dark:text-slate-400 dark:hover:text-teal-500"
                 href={job.orgHref}
@@ -17,19 +26,17 @@ export default function Experience() {
               >
                 {job.org}
               </a>
-              <span className="text-gray-800 dark:text-slate-400"> ({job.period})</span>
+              <span className="font-mono text-sm text-gray-800 dark:text-slate-400"> {job.period}</span>
             </h3>
-            <div className="text-md text-gray-800 dark:text-slate-400 p-4 md:text-lg lg:text-lg">
-              <ul style={{ listStyleType: 'disc' }} className="text-lg text-gray-800 dark:text-slate-400">
-                {job.bullets.map((bullet, i) => (
-                  <li key={i} className="py-1">
-                    {bullet.lead && <span className="text-teal-500">{bullet.lead}</span>}
-                    {bullet.lead ? ' — ' : ''}
-                    {bullet.text}
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <ul className="mt-3 flex flex-col gap-2 text-md text-gray-800 dark:text-slate-400 md:text-lg">
+              {job.bullets.map((bullet, i) => (
+                <li key={i} className="list-disc marker:text-teal-500/50 ml-5">
+                  {bullet.lead && <span className="text-teal-500">{bullet.lead}</span>}
+                  {bullet.lead ? ' — ' : ''}
+                  {bullet.text}
+                </li>
+              ))}
+            </ul>
           </div>
         ))}
       </div>

@@ -4,14 +4,14 @@ import { navLinks } from '@/data/navLinks'
 
 export default function Nav() {
   return (
-    <nav className="relative p-10 mb-12 flex justify-between items-center dark:text-slate-400">
-      <h1 className="text-xl py-4 font-dancing hover:text-teal-500 dark:text-slate-400">
+    <nav className="sticky top-0 z-50 flex items-center justify-between gap-4 border-b border-slate-400/10 bg-slate-200/70 px-6 py-4 backdrop-blur-md dark:border-slate-700/40 dark:bg-slate-900/70 dark:text-slate-400 md:px-10">
+      <h1 className="text-xl font-dancing hover:text-teal-500 dark:text-slate-400">
         <a href="https://mr.wikipedia.org/wiki/%E0%A4%95%E0%A5%8D%E0%A4%B7%E0%A4%BF%E0%A4%A4%E0%A4%BF%E0%A4%9C" className="hover:text-teal-500">
           Hi, I&apos;m Kshitij
         </a>
       </h1>
 
-      <ul className="hidden lg:flex md:flex items-center justify-center flex-row px-2 py-4 lg:gap-4 md:gap-4">
+      <ul className="hidden lg:flex md:flex items-center justify-center flex-row gap-4">
         {navLinks.map((link) => (
           <li key={link.href}>
             <a href={link.href} className="hover:text-teal-500 text-lg">{link.label}</a>
@@ -29,13 +29,11 @@ export default function Nav() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="pt-1">
-              <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 mx-4 overflow-hidden text-sm font-medium text-slate-900 rounded-lg group bg-gradient-to-br from-teal-700 to-teal-500 group-hover:from-teal-500 group-hover:to-teal-500 hover:text-slate-200 dark:text-slate-200 focus:ring-4 focus:outline-none focus:ring-teal-200 dark:focus:ring-teal-800 transition-transform duration-200 hover:-translate-y-0.5">
-                <span className="relative px-5 py-2.5 transition-all ease-in duration-75 dark:text-slate-200 bg-slate-200 dark:bg-slate-900 rounded-md group-hover:bg-opacity-0">
-                  Resume
-                </span>
-              </button>
-            </div>
+            <button className="group relative ml-4 inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-teal-700 to-teal-500 p-0.5 text-sm font-medium text-slate-900 transition-transform duration-200 hover:-translate-y-0.5 hover:text-slate-200 focus:outline-none focus:ring-4 focus:ring-teal-200 dark:text-slate-200 dark:focus:ring-teal-800">
+              <span className="relative rounded-md bg-slate-200 px-5 py-2.5 transition-all duration-75 ease-in group-hover:bg-opacity-0 dark:bg-slate-900 dark:text-slate-200">
+                Resume
+              </span>
+            </button>
           </a>
         </li>
         <li>

@@ -3,6 +3,7 @@ import { certificationGroups, linkedinUrl, credlyUrl } from '@/data/certificatio
 export default function Certifications() {
   return (
     <div id="certifications" className="p-10">
+      <p className="section-eyebrow">04 · Certifications</p>
       <h1 className="text-5xl py-3 text-black dark:text-slate-400">Certifications</h1>
       <p className="max-w-3xl text-lg py-2 text-gray-800 dark:text-slate-400">
         Backing it up with coursework.{' '}
@@ -13,7 +14,7 @@ export default function Certifications() {
 
       <div className="grid gap-6 py-10 md:grid-cols-2">
         {certificationGroups.map((group) => (
-          <div key={group.title} className="rounded-xl border border-teal-500/30 p-6 transition-transform duration-200 hover:-translate-y-1">
+          <div key={group.title} className="glass-card">
             <h3 className="text-xl font-semibold text-teal-500">{group.title}</h3>
             <ul className="mt-4 flex flex-col gap-2">
               {group.items.map((item) => (

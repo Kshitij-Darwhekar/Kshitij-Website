@@ -2,10 +2,7 @@ import Image from 'next/image'
 
 export default function ProjectCard({ project }) {
   return (
-    <div className="basis-1/3 flex-1 transition-transform duration-200 hover:-translate-y-1">
-      <h2 className="text-xl text-slate-800 dark:text-slate-200 hover:text-teal-500 dark:hover:text-teal-500 py-4 md:text-2xl lg:text-2xl">
-        <a href={project.href} target="_blank" rel="noopener noreferrer">{project.title}</a>
-      </h2>
+    <div className="glass-card flex flex-col gap-4">
       <a
         href={project.href}
         target="_blank"
@@ -20,10 +17,27 @@ export default function ProjectCard({ project }) {
           alt={project.alt}
           title={project.title}
         />
-        <p className="absolute inset-0 flex items-center justify-center text-slate-200 opacity-0 transition-opacity duration-150 group-hover:opacity-100">
+        <p className="absolute inset-0 flex items-center justify-center text-center text-sm text-slate-200 opacity-0 transition-opacity duration-150 group-hover:opacity-100">
           Click to check out GitHub repo
         </p>
       </a>
+
+      <h2 className="text-lg text-slate-800 hover:text-teal-500 dark:text-slate-200 dark:hover:text-teal-500">
+        <a href={project.href} target="_blank" rel="noopener noreferrer">{project.title}</a>
+      </h2>
+
+      {project.tags && (
+        <div className="flex flex-wrap gap-2">
+          {project.tags.map((tag) => (
+            <span
+              key={tag}
+              className="rounded-md bg-teal-500/10 px-2 py-1 font-mono text-xs text-teal-500"
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
+      )}
     </div>
   )
 }

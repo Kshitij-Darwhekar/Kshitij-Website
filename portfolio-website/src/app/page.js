@@ -19,9 +19,9 @@ export default function Home() {
 
   return (
     <>
-      <main className="bg-slate-200 text-slate-900 dark:bg-slate-900 dark:text-slate-400 antialiased leading-relaxed font-poppins selection:bg-teal-500 selection:text-teal-700">
+      <main className="bg-slate-200 text-slate-900 dark:bg-slate-900 dark:text-slate-400 antialiased leading-relaxed selection:bg-teal-500 selection:text-teal-700">
+        <Nav />
         <section className="min-h-screen">
-          <Nav />
           <Hero />
           <Reveal><About /></Reveal>
         </section>

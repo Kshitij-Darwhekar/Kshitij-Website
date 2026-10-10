@@ -3,6 +3,7 @@ import { skillGroups, processMining, alsoWorkedWith } from '@/data/skills'
 export default function Skills() {
   return (
     <div id="skills" className="p-10">
+      <p className="section-eyebrow">03 · Skills</p>
       <h1 className="text-5xl py-3 text-black dark:text-slate-400">My Skills</h1>
       <p className="text-lg py-2 text-gray-800 dark:text-slate-400 max-w-3xl">
         What I actually work with day to day.
@@ -10,7 +11,7 @@ export default function Skills() {
 
       <div className="grid gap-6 py-10 md:grid-cols-2">
         {skillGroups.map((group) => (
-          <div key={group.title} className="rounded-xl border border-teal-500/30 p-6 transition-transform duration-200 hover:-translate-y-1">
+          <div key={group.title} className="glass-card">
             <h3 className="text-xl font-semibold text-teal-500">{group.title}</h3>
             <div className="mt-4 flex flex-wrap gap-2">
               {group.chips.map((chip) => (
@@ -29,7 +30,7 @@ export default function Skills() {
           </div>
         ))}
 
-        <div className="rounded-xl border border-dashed border-slate-400/40 p-6 transition-transform duration-200 hover:-translate-y-1">
+        <div className="glass-card border-dashed">
           <h3 className="text-xl font-semibold text-teal-500">{processMining.title}</h3>
           <div className="mt-4 flex flex-wrap gap-2">
             <span className="text-sm px-3 py-1.5 rounded-full border border-dashed border-slate-400/40 text-gray-800 dark:text-slate-400">

@@ -1,19 +1,10 @@
-import { AiFillTwitterCircle, AiFillLinkedin, AiFillGithub, AiFillMediumSquare, AiFillMail } from 'react-icons/ai'
 import { socialLinks } from '@/data/social'
-
-const ICONS = {
-  twitter: AiFillTwitterCircle,
-  linkedin: AiFillLinkedin,
-  github: AiFillGithub,
-  medium: AiFillMediumSquare,
-  mail: AiFillMail,
-}
+import SocialIcon from './SocialIcon'
 
 export default function SocialLinks({ className = '' }) {
   return (
     <div className={className}>
       {socialLinks.map((link) => {
-        const Icon = ICONS[link.icon]
         const isMail = link.icon === 'mail'
         return (
           <a
@@ -22,9 +13,9 @@ export default function SocialLinks({ className = '' }) {
             target={isMail ? undefined : '_blank'}
             rel={isMail ? undefined : 'noopener noreferrer'}
             aria-label={link.label}
-            className="hover:text-teal-500"
+            className="flex h-11 w-11 items-center justify-center rounded-full border border-slate-400/30 transition-colors duration-200 hover:border-teal-500 hover:text-teal-500 dark:border-slate-600/50"
           >
-            <Icon />
+            <SocialIcon name={link.icon} />
           </a>
         )
       })}

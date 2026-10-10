@@ -4,7 +4,7 @@ export default function ArticleCard({ article }) {
       href={article.link}
       target="_blank"
       rel="noopener noreferrer"
-      className="group flex flex-col gap-2 rounded-xl border border-teal-500/30 p-5 transition-all duration-200 hover:-translate-y-1 hover:border-teal-500"
+      className="glass-card group flex flex-col gap-2 hover:border-teal-500"
     >
       <span className="font-mono text-xs text-gray-500 dark:text-slate-500">{article.date}</span>
       <h3 className="text-lg font-semibold text-slate-800 group-hover:text-teal-500 dark:text-slate-200 dark:group-hover:text-teal-500">
