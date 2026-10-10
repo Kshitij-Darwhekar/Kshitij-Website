@@ -8,13 +8,7 @@ export default async function Articles() {
     <section id="articles" className="p-10">
       <div className="content-wrap">
         <p className="section-eyebrow">06 · Articles</p>
-        <h2 className="text-5xl py-3 text-black dark:text-slate-400">Articles</h2>
-        <p className="max-w-3xl text-lg py-2 text-gray-800 dark:text-slate-400">
-          Latest posts from{' '}
-          <a href="https://medium.com/@kshitijdarwhekar" target="_blank" rel="noopener noreferrer" className="text-teal-500 hover:text-teal-700">
-            Medium
-          </a>.
-        </p>
+        <h2 className="text-4xl py-3 text-black dark:text-slate-200 md:text-5xl">Latest from Medium.</h2>
         {!error && articles.length > 0 && (
           <div className="mt-3 inline-flex items-center gap-2 rounded-full border border-emerald-500/40 px-3 py-1 font-mono text-xs text-emerald-500">
             <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse motion-reduce:animate-none" />

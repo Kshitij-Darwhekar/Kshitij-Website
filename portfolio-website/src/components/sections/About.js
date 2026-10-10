@@ -19,7 +19,11 @@ export default function About() {
         </div>
       </div>
 
-      <h2 className="text-5xl py-3 text-black dark:text-slate-400">About Me</h2>
+      <h2 className="text-4xl py-3 text-black dark:text-slate-200 md:text-5xl">
+        From a summer-break website
+        <br />
+        to automation, data &amp; agents.
+      </h2>
 
       <div className="glass-panel mx-auto flex max-w-4xl flex-col gap-5 p-8 text-left md:p-10">
         <p className="text-lg leading-8 text-gray-800 dark:text-slate-400 md:text-xl">

@@ -5,9 +5,8 @@ export default function Certifications() {
     <div id="certifications" className="p-10">
       <div className="content-wrap">
         <p className="section-eyebrow">04 · Certifications</p>
-        <h1 className="text-5xl py-3 text-black dark:text-slate-400">Certifications</h1>
+        <h1 className="text-4xl py-3 text-black dark:text-slate-200 md:text-5xl">Backing it up with coursework.</h1>
         <p className="max-w-3xl text-lg py-2 text-gray-800 dark:text-slate-400">
-          Backing it up with coursework.{' '}
           <a href={credlyUrl} target="_blank" rel="noopener noreferrer" className="text-teal-500 hover:text-teal-700">
             View verified badges on Credly ↗
           </a>

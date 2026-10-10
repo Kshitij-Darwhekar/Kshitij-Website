@@ -11,7 +11,10 @@ export const viewport = {
   themeColor: '#0f172a',
 }
 
-const THEME_INIT_SCRIPT = `(function(){try{var t=localStorage.getItem('theme');if(t==='dark'){document.documentElement.classList.add('dark')}else if(t!=='light'&&window.matchMedia('(prefers-color-scheme: dark)').matches){document.documentElement.classList.add('dark')}}catch(e){}})();`
+// Dark is the default for every first-time visitor, regardless of OS
+// preference; the only way to see light mode is to explicitly toggle it
+// (saved to localStorage so the choice persists across visits).
+const THEME_INIT_SCRIPT = `(function(){var dark=true;try{if(localStorage.getItem('theme')==='light'){dark=false}}catch(e){}if(dark){document.documentElement.classList.add('dark')}})();`
 
 const description = "Kshitij Darwhekar is an Automation & AI-focused engineer at IBM, building RPA automations, agentic AI workflows, and intelligent automation on top of Automation Anywhere 360 — with hands-on experience in Celonis process mining, Python-based AI agents, and SAP automation at enterprise scale."
 

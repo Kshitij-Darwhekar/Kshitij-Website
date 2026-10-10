@@ -5,7 +5,7 @@ export default function Experience() {
     <section id="experience" className="p-10">
       <div className="content-wrap">
         <p className="section-eyebrow">02 · Experience</p>
-        <h2 className="text-5xl py-3 text-black dark:text-slate-400">Experience</h2>
+        <h2 className="text-4xl py-3 text-black dark:text-slate-200 md:text-5xl">Where I&apos;ve worked.</h2>
 
         <div className="timeline mt-10 max-w-4xl">
           {experience.map((job, index) => (

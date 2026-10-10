@@ -5,10 +5,7 @@ export default function Skills() {
     <div id="skills" className="p-10">
       <div className="content-wrap">
         <p className="section-eyebrow">03 · Skills</p>
-        <h1 className="text-5xl py-3 text-black dark:text-slate-400">My Skills</h1>
-        <p className="text-lg py-2 text-gray-800 dark:text-slate-400 max-w-3xl">
-          What I actually work with day to day.
-        </p>
+        <h1 className="text-4xl py-3 text-black dark:text-slate-200 md:text-5xl">What I actually work with day to day.</h1>
 
         <div className="grid gap-6 py-10 md:grid-cols-2">
           {skillGroups.map((group) => (
