@@ -3,7 +3,7 @@ import SocialLinks from '@/components/layout/SocialLinks'
 
 export default function Hero() {
   return (
-    <div className="relative overflow-hidden p-10">
+    <div className="relative flex min-h-screen items-center overflow-hidden p-10">
       <div
         aria-hidden="true"
         className="absolute -top-32 -right-20 h-80 w-80 rounded-full bg-gradient-radial from-teal-400/40 to-transparent blur-3xl dark:from-teal-500/30"

@@ -21,10 +21,8 @@ export default function Home() {
     <>
       <main className="bg-slate-200 text-slate-900 dark:bg-slate-900 dark:text-slate-400 antialiased leading-relaxed selection:bg-teal-500 selection:text-teal-700">
         <Nav />
-        <section className="min-h-screen">
-          <Hero />
-          <Reveal><About /></Reveal>
-        </section>
+        <Hero />
+        <Reveal><About /></Reveal>
 
         <Reveal><Experience /></Reveal>
         <Reveal><Skills /></Reveal>
