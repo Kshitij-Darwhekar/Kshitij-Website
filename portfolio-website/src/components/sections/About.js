@@ -38,7 +38,7 @@ export default function About() {
           enterprise processes were breaking down, then moved into <span className="text-teal-500">RPA
           development</span> — building 15+ bots end-to-end, shipping dozens of change requests across the existing
           portfolio, and now owning the reliability of a 95+ bot production footprint across{' '}
-          <span className="text-teal-500">SAP</span> and other enterprise systems, spanning finance, supply chain,
+          <span className="text-teal-500">SAP</span> and other enterprise systems, spanning finance, HR, cybersecurity,
           and business operations.
         </p>
 
