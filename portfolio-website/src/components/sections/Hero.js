@@ -26,9 +26,9 @@ export default function Hero() {
           .
         </h1>
 
-        <p className="mt-4 min-h-[1.6em] font-mono text-lg text-gray-600 dark:text-slate-400 md:text-xl">
+        <div className="mt-4 min-h-[1.6em] font-mono text-lg text-gray-600 dark:text-slate-400 md:text-xl">
           <RotatingTitle />
-        </p>
+        </div>
 
         <p className="mt-6 max-w-2xl text-lg leading-8 text-gray-800 dark:text-slate-400">
           Hey, I&apos;m <b className="text-slate-900 dark:text-slate-200">Kshitij</b> — I design and build enterprise
