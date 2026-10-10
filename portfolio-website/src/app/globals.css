@@ -79,6 +79,13 @@ h1, h2, h3 {
   font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
 }
 
+/* page-wide reading column — every section's content sits inside this so
+   the page stays centered on wide screens instead of stretching edge to
+   edge or leaving a box stuck against one side */
+.content-wrap {
+  @apply mx-auto max-w-6xl;
+}
+
 .section-eyebrow {
   @apply inline-flex items-center gap-2 text-xs uppercase tracking-widest text-teal-500;
   font-family: var(--font-mono), ui-monospace, monospace;

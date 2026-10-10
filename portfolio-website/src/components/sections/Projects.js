@@ -4,7 +4,7 @@ import { projects } from '@/data/projects'
 export default function Projects() {
   return (
     <section className="p-10" id="projects">
-      <div>
+      <div className="content-wrap">
         <p className="section-eyebrow">05 · Portfolio</p>
         <h3 className="text-5xl py-2 mb-6 dark:text-slate-400">Portfolio</h3>
         <p className="max-w-4xl text-lg py-2 leading-8 text-grey-800 dark:text-slate-400 text-justify">
@@ -30,12 +30,12 @@ export default function Projects() {
           Through my portfolio, I aim to present the quality of my work and provide potential employers, clients, or
           collaborators with a comprehensive understanding of my capabilities and professional growth.
         </p>
-      </div>
 
-      <div className="grid gap-6 py-10 md:grid-cols-2 lg:grid-cols-3">
-        {projects.map((project) => (
-          <ProjectCard key={project.title} project={project} />
-        ))}
+        <div className="grid gap-6 py-10 md:grid-cols-2 lg:grid-cols-3">
+          {projects.map((project) => (
+            <ProjectCard key={project.title} project={project} />
+          ))}
+        </div>
       </div>
     </section>
   )

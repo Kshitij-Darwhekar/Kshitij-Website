@@ -7,10 +7,10 @@ export default function RotatingTitle() {
     <Typewriter
       options={{
         strings: [
-          ' RPA at Enterprise Scale',
-          ' Python-Based AI Automation',
-          ' Agentic AI & AI Agents',
-          ' Process Mining with Celonis',
+          'RPA at Enterprise Scale',
+          'Python-Based AI Automation',
+          'Agentic AI & AI Agents',
+          'Process Mining with Celonis',
         ],
         autoStart: true,
         loop: true,

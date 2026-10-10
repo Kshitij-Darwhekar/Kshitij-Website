@@ -13,13 +13,10 @@ export default function ProjectCard({ project }) {
           src={project.image}
           fill
           sizes="(min-width: 1024px) 33vw, 100vw"
-          className="object-cover transition-opacity duration-300 group-hover:opacity-50"
+          className="object-cover transition-opacity duration-300 group-hover:opacity-80"
           alt={project.alt}
           title={project.title}
         />
-        <p className="absolute inset-0 flex items-center justify-center text-center text-sm text-slate-200 opacity-0 transition-opacity duration-150 group-hover:opacity-100">
-          Click to check out GitHub repo
-        </p>
       </a>
 
       <h2 className="text-lg text-slate-800 hover:text-teal-500 dark:text-slate-200 dark:hover:text-teal-500">
