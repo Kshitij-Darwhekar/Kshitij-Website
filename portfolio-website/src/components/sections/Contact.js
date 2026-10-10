@@ -69,7 +69,7 @@ export default function Contact() {
           <button
             type="submit"
             disabled={state.submitting}
-            className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-teal-700 to-teal-500 group-hover:from-cyan-500 group-hover:to-cyan-500 hover:text-slate-200 dark:text-slate-200 focus:ring-4 focus:outline-none focus:ring-teal-200 dark:focus:ring-teal-800"
+            className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-teal-700 to-teal-500 group-hover:from-cyan-500 group-hover:to-cyan-500 hover:text-slate-200 dark:text-slate-200 focus:ring-4 focus:outline-none focus:ring-teal-200 dark:focus:ring-teal-800 transition-transform duration-200 hover:-translate-y-0.5"
           >
             <span className="relative px-5 py-2.5 transition-all ease-in duration-75 dark:text-slate-200 bg-slate-200 dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
               Submit

@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function ProjectCard({ project }) {
   return (
-    <div className="basis-1/3 flex-1">
+    <div className="basis-1/3 flex-1 transition-transform duration-200 hover:-translate-y-1">
       <h2 className="text-xl text-slate-800 dark:text-slate-200 hover:text-teal-500 dark:hover:text-teal-500 py-4 md:text-2xl lg:text-2xl">
         <a href={project.href} target="_blank" rel="noopener noreferrer">{project.title}</a>
       </h2>

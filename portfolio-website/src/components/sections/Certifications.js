@@ -13,7 +13,7 @@ export default function Certifications() {
 
       <div className="grid gap-6 py-10 md:grid-cols-2">
         {certificationGroups.map((group) => (
-          <div key={group.title} className="rounded-xl border border-teal-500/30 p-6">
+          <div key={group.title} className="rounded-xl border border-teal-500/30 p-6 transition-transform duration-200 hover:-translate-y-1">
             <h3 className="text-xl font-semibold text-teal-500">{group.title}</h3>
             <ul className="mt-4 flex flex-col gap-2">
               {group.items.map((item) => (

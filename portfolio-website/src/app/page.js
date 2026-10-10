@@ -12,6 +12,7 @@ import Certifications from '@/components/sections/Certifications'
 import Projects from '@/components/sections/Projects'
 import Articles from '@/components/sections/Articles'
 import Contact from '@/components/sections/Contact'
+import Reveal from '@/components/ui/Reveal'
 
 export default function Home() {
   const gaId = process.env.NEXT_PUBLIC_GA_ID
@@ -22,15 +23,15 @@ export default function Home() {
         <section className="min-h-screen">
           <Nav />
           <Hero />
-          <About />
+          <Reveal><About /></Reveal>
         </section>
 
-        <Experience />
-        <Skills />
-        <Certifications />
-        <Projects />
-        <Articles />
-        <Contact />
+        <Reveal><Experience /></Reveal>
+        <Reveal><Skills /></Reveal>
+        <Reveal><Certifications /></Reveal>
+        <Reveal><Projects /></Reveal>
+        <Reveal><Articles /></Reveal>
+        <Reveal><Contact /></Reveal>
         <Footer />
       </main>
       <Analytics />
