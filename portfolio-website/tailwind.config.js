@@ -1,5 +1,3 @@
-const { Poppins } = require('next/font/google');
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: 'class',
