@@ -23,8 +23,8 @@ export default function MobileNav() {
         <ul className="absolute left-0 right-0 top-full z-50 flex flex-col items-center gap-4 border-b border-slate-400/10 bg-slate-200/95 py-6 shadow-lg backdrop-blur-md dark:border-slate-700/40 dark:bg-slate-900/95">
           {navLinks.map((link) => (
             <li key={link.href}>
-              <a href={link.href} onClick={() => setOpen(false)} className="text-lg hover:text-teal-500">
-                {link.label}
+              <a href={link.href} onClick={() => setOpen(false)} className="font-mono text-lg hover:text-teal-500">
+                <span className="text-teal-500">//</span>{link.label.toLowerCase()}
               </a>
             </li>
           ))}

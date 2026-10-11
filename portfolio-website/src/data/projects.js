@@ -12,6 +12,7 @@ export const projects = [
     image: pizza,
     alt: 'Screenshot of Pizzeria Website',
     tags: ['React', 'Frontend'],
+    urlLabel: 'pizzeria-react-app',
   },
   {
     title: 'Portfolio Website (v1)',
@@ -19,6 +20,7 @@ export const projects = [
     image: portfolio,
     alt: 'Screenshot of Portfolio Website',
     tags: ['Next.js', 'Tailwind CSS'],
+    urlLabel: 'kshitijdarwhekar.io',
   },
   {
     title: 'FlySmart: Flight Ticket Booking System',
@@ -26,6 +28,7 @@ export const projects = [
     image: FlySmart,
     alt: 'Screenshot of Flight Ticket Booking Website',
     tags: ['Full Stack', 'Java'],
+    urlLabel: 'FlySmart-Flight-Management-System',
   },
   {
     title: 'Intelligent Traffic Management Systems using CV',
@@ -33,6 +36,7 @@ export const projects = [
     image: Traffic,
     alt: 'Screenshot of Intelligent Traffic Management Project UI',
     tags: ['Python', 'Computer Vision', 'ML'],
+    urlLabel: 'Intelligent-Traffic-Management-System',
   },
   {
     title: 'Radplants: E-commerce Website',
@@ -40,6 +44,7 @@ export const projects = [
     image: radplants,
     alt: 'Screenshot of E-commerce Website (radplants)',
     tags: ['React', 'E-commerce'],
+    urlLabel: 'Radplants-E-Commerce-Website',
   },
   {
     title: 'Life Organics: E-Commerce Website',
@@ -47,5 +52,6 @@ export const projects = [
     image: lifeorganics,
     alt: 'Screenshot of E-commerce Website (Life Organics)',
     tags: ['Full Stack', 'E-commerce'],
+    urlLabel: 'Life-Organics-E-Commerce',
   },
 ]

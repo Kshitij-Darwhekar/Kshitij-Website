@@ -7,7 +7,7 @@ export default function Nav() {
     <nav className="sticky top-0 z-50 border-b border-slate-400/10 bg-slate-200/70 px-6 py-4 backdrop-blur-md dark:border-slate-700/40 dark:bg-slate-900/70 dark:text-slate-400 md:px-10">
       <div className="content-wrap flex items-center justify-between gap-4">
         <h1 className="text-xl font-mono font-semibold text-slate-900 hover:text-teal-500 dark:text-slate-200">
-          <a href="https://mr.wikipedia.org/wiki/%E0%A4%95%E0%A5%8D%E0%A4%B7%E0%A4%BF%E0%A4%A4%E0%A4%BF%E0%A4%9C" className="hover:text-teal-500">
+          <a href="#" className="hover:text-teal-500">
             <span className="text-teal-500">~/</span>kshit<span className="blink-cursor text-teal-500">_</span>
           </a>
         </h1>
@@ -15,7 +15,9 @@ export default function Nav() {
         <ul className="hidden lg:flex md:flex items-center justify-center flex-row gap-4">
           {navLinks.map((link) => (
             <li key={link.href}>
-              <a href={link.href} className="hover:text-teal-500 text-lg">{link.label}</a>
+              <a href={link.href} className="font-mono text-base text-slate-700 hover:text-teal-500 dark:text-slate-400 dark:hover:text-teal-500">
+                <span className="text-teal-500">//</span>{link.label.toLowerCase()}
+              </a>
             </li>
           ))}
         </ul>
