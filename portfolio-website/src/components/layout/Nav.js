@@ -32,7 +32,7 @@ export default function Nav() {
             >
               <button className="group relative ml-4 inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-teal-700 to-teal-500 p-0.5 text-sm font-medium text-slate-900 transition-transform duration-200 hover:-translate-y-0.5 hover:text-slate-200 focus:outline-none focus:ring-4 focus:ring-teal-200 dark:text-slate-200 dark:focus:ring-teal-800">
                 <span className="relative rounded-md bg-slate-200 px-5 py-2.5 transition-all duration-75 ease-in group-hover:bg-opacity-0 dark:bg-slate-900 dark:text-slate-200">
-                  Resume
+                  Résumé
                 </span>
               </button>
             </a>
