@@ -12,11 +12,13 @@ export default function ThemeToggleButton() {
   }
 
   return (
-    <BsFillMoonStarsFill
+    <button
+      type="button"
       onClick={toggle}
       aria-label="Toggle color theme"
-      role="button"
-      className="cursor-pointer mr-5 text-2xl text-slate-900 dark:text-slate-400 hover:text-teal-500 dark:hover:text-teal-500"
-    />
+      className="mr-5 flex text-2xl text-slate-900 dark:text-slate-400 hover:text-teal-500 dark:hover:text-teal-500"
+    >
+      <BsFillMoonStarsFill />
+    </button>
   )
 }

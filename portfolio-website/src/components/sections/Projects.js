@@ -5,7 +5,7 @@ export default function Projects() {
   return (
     <section className="p-10" id="projects">
       <div className="content-wrap">
-        <p className="section-eyebrow">05 · Portfolio</p>
+        <p className="section-eyebrow">05 · Projects</p>
         <h3 className="text-4xl py-2 mb-6 text-black dark:text-slate-200 md:text-5xl">A sample of what I&apos;ve built.</h3>
         <p className="max-w-4xl text-lg py-2 leading-8 text-grey-800 dark:text-slate-400 text-justify">
           My portfolio is a collection of work samples that reflect my experience in{' '}
