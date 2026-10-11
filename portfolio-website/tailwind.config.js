@@ -11,8 +11,8 @@ module.exports = {
       fontFamily: {
         burtons: ['burtons'],
         dancing: ['dancing'],
-        poppins: ['poppins']
-
+        poppins: ['poppins'],
+        mono: ['var(--font-mono)', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'monospace'],
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

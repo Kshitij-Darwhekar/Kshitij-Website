@@ -98,6 +98,16 @@ h1, h2, h3 {
   background: currentColor;
 }
 
+@keyframes blink-cursor {
+  50% { opacity: 0; }
+}
+.blink-cursor {
+  animation: blink-cursor 1s step-end infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .blink-cursor { animation: none; }
+}
+
 .glass-panel {
   @apply relative rounded-2xl border border-teal-500/20 bg-white/60 p-6 shadow-sm backdrop-blur-sm dark:border-teal-400/20 dark:bg-slate-800/40 dark:shadow-none;
 }

@@ -6,9 +6,9 @@ export default function Nav() {
   return (
     <nav className="sticky top-0 z-50 border-b border-slate-400/10 bg-slate-200/70 px-6 py-4 backdrop-blur-md dark:border-slate-700/40 dark:bg-slate-900/70 dark:text-slate-400 md:px-10">
       <div className="content-wrap flex items-center justify-between gap-4">
-        <h1 className="text-xl font-dancing hover:text-teal-500 dark:text-slate-400">
+        <h1 className="text-xl font-mono font-semibold text-slate-900 hover:text-teal-500 dark:text-slate-200">
           <a href="https://mr.wikipedia.org/wiki/%E0%A4%95%E0%A5%8D%E0%A4%B7%E0%A4%BF%E0%A4%A4%E0%A4%BF%E0%A4%9C" className="hover:text-teal-500">
-            Hi, I&apos;m Kshitij
+            <span className="text-teal-500">~/</span>kshit<span className="blink-cursor text-teal-500">_</span>
           </a>
         </h1>
 
