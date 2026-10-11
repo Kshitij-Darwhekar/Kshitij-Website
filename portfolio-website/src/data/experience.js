@@ -7,7 +7,7 @@ export const experience = [
     bullets: [
       {
         lead: 'Celonis Data Engineer',
-        text: 'started in this role using Celonis to identify process inefficiencies and automation opportunities across business operations.',
+        text: 'built and maintained Celonis data pipelines and models — including Object-Centric Process Models (OCPM) — connecting to SAP and other ERP systems, writing SQL/Python transformations to shape activity and case tables that powered Celonis Studio analyses and dashboards used by business analysts and process owners.',
       },
       {
         lead: 'RPA Development',
