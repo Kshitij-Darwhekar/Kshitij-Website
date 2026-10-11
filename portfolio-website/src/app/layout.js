@@ -16,16 +16,17 @@ export const viewport = {
 // (saved to localStorage so the choice persists across visits).
 const THEME_INIT_SCRIPT = `(function(){var dark=true;try{if(localStorage.getItem('theme')==='light'){dark=false}}catch(e){}if(dark){document.documentElement.classList.add('dark')}})();`
 
+const title = "Kshitij Darwhekar — Automation & AI Engineer"
 const description = "Kshitij Darwhekar is an Automation & AI-focused engineer at IBM, building RPA automations, agentic AI workflows, and intelligent automation on top of Automation Anywhere 360 — with hands-on experience in Celonis process mining, Python-based AI agents, and SAP automation at enterprise scale."
 
 export const metadata = {
   metadataBase: new URL("https://kshitijdarwhekar.com"),
-  title: " Kshitij's Portfolio ",
+  title,
   description,
   keywords: ["Kshitij Darwhekar", "RPA", "Robotic Process Automation", "Automation Anywhere", "Agentic AI", "AI Agents", "Generative AI", "Celonis", "Process Mining", "Intelligent Automation", "Python", "SAP Automation", "IBM", "Portfolio"],
   authors: [{ name: "Kshitij Darwhekar" }],
   openGraph: {
-    title: " Kshitij's Portfolio ",
+    title,
     description,
     url: "https://kshitijdarwhekar.com",
     images: [{ url: metaimg.src, width: metaimg.width, height: metaimg.height, alt: "Kshitij Darwhekar" }],
@@ -33,7 +34,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     creator: "@KshitijDarwhekr",
-    title: "Kshitij's Portfolio",
+    title,
     description,
     images: [metaimg.src],
   },
