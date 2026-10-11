@@ -6,8 +6,8 @@ export const experience = [
     period: 'Dec 2023 — Present',
     bullets: [
       {
-        lead: 'Process Mining (Celonis)',
-        text: 'started out using Celonis to identify process inefficiencies and automation opportunities across business operations.',
+        lead: 'Celonis Data Engineer',
+        text: 'started in this role using Celonis to identify process inefficiencies and automation opportunities across business operations.',
       },
       {
         lead: 'RPA Development',
