@@ -43,3 +43,104 @@
   font-family: "poppins";
   src: url('../../public/Poppins/Poppins-Regular.ttf');
 }
+
+/* ---------- design tokens: cursor-torch glow ----------
+   Light (default) is a soft, low-opacity normal-blend tint; dark uses an
+   additive screen-blend glow (can only lighten, never darken). Both fade
+   fully to transparent outside their radius — never a page-wide vignette —
+   so the page stays readable everywhere regardless of cursor position. */
+:root {
+  --spotlight-blend: normal;
+  --spotlight-color: rgb(13 148 136 / 9%);
+  --spotlight-radius: 260px;
+}
+.dark {
+  --spotlight-blend: screen;
+  --spotlight-color: rgb(45 212 191 / 16%);
+  --spotlight-radius: 340px;
+}
+
+.cursor-torch {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  mix-blend-mode: var(--spotlight-blend);
+  background: radial-gradient(circle var(--spotlight-radius) at var(--mx, 50%) var(--my, 50%), var(--spotlight-color) 0%, transparent 70%);
+}
+.cursor-torch-active {
+  opacity: 1;
+}
+
+/* ---------- shared "modern dark tech" building blocks ---------- */
+h1, h2, h3 {
+  font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+}
+
+/* page-wide reading column — every section's content sits inside this so
+   the page stays centered on wide screens instead of stretching edge to
+   edge or leaving a box stuck against one side */
+.content-wrap {
+  @apply mx-auto max-w-6xl;
+}
+
+.section-eyebrow {
+  @apply inline-flex items-center gap-2 text-xs uppercase tracking-widest text-teal-500;
+  font-family: var(--font-mono), ui-monospace, monospace;
+}
+.section-eyebrow::before {
+  content: '';
+  display: inline-block;
+  width: 1.1rem;
+  height: 1px;
+  background: currentColor;
+}
+
+@keyframes blink-cursor {
+  50% { opacity: 0; }
+}
+.blink-cursor {
+  animation: blink-cursor 1s step-end infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .blink-cursor { animation: none; }
+}
+
+.glass-panel {
+  @apply relative rounded-2xl border border-teal-500/20 bg-white/60 p-6 shadow-sm backdrop-blur-sm dark:border-teal-400/20 dark:bg-slate-800/40 dark:shadow-none;
+}
+
+/* interactive variant — only for discrete, clickable/hoverable cards
+   (skills/certs/projects grids), never for long static text panels */
+.glass-card {
+  @apply relative rounded-2xl border border-teal-500/20 bg-white/60 p-6 shadow-sm backdrop-blur-sm transition-transform duration-200 dark:border-teal-400/20 dark:bg-slate-800/40 dark:shadow-none;
+}
+.glass-card:hover {
+  @apply -translate-y-1 border-teal-500/50 dark:border-teal-400/40;
+}
+
+/* experience timeline — .timeline-item needs `relative` in markup so its
+   dot (left:-23px) lines up with the vertical rule at .timeline's left:5px */
+.timeline {
+  position: relative;
+  padding-left: 28px;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 6px;
+  bottom: 6px;
+  width: 1px;
+  background: rgb(148 163 184 / 0.3);
+}
+.timeline-dot {
+  position: absolute;
+  left: -23px;
+  top: 6px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+}
