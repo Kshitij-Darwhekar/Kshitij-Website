@@ -3,15 +3,11 @@ import SocialLinks from '@/components/layout/SocialLinks'
 
 export default function Hero() {
   return (
-    <div className="relative flex min-h-screen items-center overflow-hidden p-10">
-      <div
-        aria-hidden="true"
-        className="absolute -top-32 -right-20 h-80 w-80 rounded-full bg-gradient-radial from-teal-400/40 to-transparent blur-3xl dark:from-teal-500/30"
-      />
-      <div
-        aria-hidden="true"
-        className="absolute -bottom-32 -left-20 h-72 w-72 rounded-full bg-gradient-radial from-violet-400/30 to-transparent blur-3xl dark:from-violet-500/30"
-      />
+    <div className="relative flex min-h-screen items-center p-10">
+      <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
+        <div className="absolute -top-32 -right-20 h-80 w-80 rounded-full bg-gradient-radial from-teal-400/40 to-transparent blur-3xl dark:from-teal-500/30" />
+        <div className="absolute -bottom-32 -left-20 h-72 w-72 rounded-full bg-gradient-radial from-violet-400/30 to-transparent blur-3xl dark:from-violet-500/30" />
+      </div>
 
       <div className="content-wrap glass-panel relative" style={{ padding: '40px' }}>
         <p className="section-eyebrow">Automation &amp; AI-Focused Engineer @ IBM</p>
