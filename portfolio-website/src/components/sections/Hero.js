@@ -3,13 +3,13 @@ import SocialLinks from '@/components/layout/SocialLinks'
 
 export default function Hero() {
   return (
-    <div className="relative flex min-h-screen items-center p-10">
+    <div className="relative flex min-h-screen items-center p-5 sm:p-10">
       <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
         <div className="absolute -top-32 -right-20 h-80 w-80 rounded-full bg-gradient-radial from-teal-400/40 to-transparent blur-3xl dark:from-teal-500/30" />
         <div className="absolute -bottom-32 -left-20 h-72 w-72 rounded-full bg-gradient-radial from-violet-400/30 to-transparent blur-3xl dark:from-violet-500/30" />
       </div>
 
-      <div className="content-wrap glass-panel relative" style={{ padding: '40px' }}>
+      <div className="content-wrap glass-panel glass-panel-padding-responsive relative w-full max-w-full">
         <p className="section-eyebrow">Automation &amp; AI-Focused Engineer @ IBM</p>
 
         <h1 className="mt-4 text-4xl font-medium leading-tight text-slate-900 dark:text-slate-200 md:text-6xl">
@@ -22,7 +22,7 @@ export default function Hero() {
           .
         </h1>
 
-        <div className="mt-4 min-h-[1.6em] font-mono text-lg text-gray-600 dark:text-slate-400 md:text-xl">
+        <div className="mt-4 min-h-[1.6em] max-w-full font-mono text-lg text-gray-600 [overflow-wrap:anywhere] dark:text-slate-400 md:text-xl">
           <RotatingTitle />
         </div>
 
@@ -38,7 +38,7 @@ export default function Hero() {
           </a>.
         </p>
 
-        <SocialLinks className="mt-8 flex flex-row items-center gap-4 text-gray-600 dark:text-gray-400" />
+        <SocialLinks className="mt-8 flex flex-row flex-wrap items-center gap-3 sm:gap-4 text-gray-600 dark:text-gray-400" />
       </div>
     </div>
   )

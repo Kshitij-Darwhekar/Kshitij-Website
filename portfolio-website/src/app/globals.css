@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Defensive safety net: nothing on the page should ever be wide enough to
+   cause horizontal scroll, but if something slightly is (a few px of
+   rounding, a non-wrapping string, etc.), this stops it from being visible
+   instead of peeking past the right edge. Using `clip` rather than `hidden`
+   deliberately: setting only one overflow axis to `hidden` forces the
+   other axis to compute as `auto` (can't mix `visible` with a non-visible
+   value), which would turn <html> into a distinct scroll container and
+   break every position:sticky element on the page (the nav). `clip` does
+   not establish a scroll container, so sticky positioning is unaffected. */
+html {
+  overflow-x: clip;
+}
+
 :root {
   /* --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -110,6 +123,22 @@ h1, h2, h3 {
 
 .glass-panel {
   @apply relative rounded-2xl border border-teal-500/20 bg-white/60 p-6 shadow-sm backdrop-blur-sm dark:border-teal-400/20 dark:bg-slate-800/40 dark:shadow-none;
+}
+
+/* Responsive padding override for glass-panel usages that need it (e.g.
+   Hero). Placed after .glass-panel so it reliably wins the cascade tie —
+   .glass-panel's own padding is baked in via @apply, which compiles to a
+   plain rule positioned here in source order, so it beats any Tailwind
+   padding *utility* class (those are injected earlier, at @tailwind
+   utilities) applied alongside it. A plain custom class defined after it,
+   like this one, wins instead. */
+.glass-panel-padding-responsive {
+  padding: 20px;
+}
+@media (min-width: 640px) {
+  .glass-panel-padding-responsive {
+    padding: 40px;
+  }
 }
 
 /* interactive variant — only for discrete, clickable/hoverable cards
