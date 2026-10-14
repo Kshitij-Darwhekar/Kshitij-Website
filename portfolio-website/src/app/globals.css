@@ -108,8 +108,14 @@ h1, h2, h3 {
   .blink-cursor { animation: none; }
 }
 
+/* No backdrop-blur here deliberately: it was the common ingredient in
+   every mobile Chrome rendering bug we hit (Hero's border not enclosing
+   properly, Hero content overflow, Projects cards showing ghosted/peeking
+   edges) across several different ancestor/layout contexts. Dropping it
+   removes that whole bug category; the semi-transparent background +
+   border + shadow alone still reads clearly as a distinct "glass" surface. */
 .glass-panel {
-  @apply relative rounded-2xl border border-teal-500/20 bg-white/60 p-6 shadow-sm backdrop-blur-sm dark:border-teal-400/20 dark:bg-slate-800/40 dark:shadow-none;
+  @apply relative rounded-2xl border border-teal-500/20 bg-white/80 p-6 shadow-sm dark:border-teal-400/20 dark:bg-slate-800/70 dark:shadow-none;
 }
 
 /* Responsive padding override for glass-panel usages that need it (e.g.
@@ -131,7 +137,7 @@ h1, h2, h3 {
 /* interactive variant — only for discrete, clickable/hoverable cards
    (skills/certs/projects grids), never for long static text panels */
 .glass-card {
-  @apply relative rounded-2xl border border-teal-500/20 bg-white/60 p-6 shadow-sm backdrop-blur-sm transition-transform duration-200 dark:border-teal-400/20 dark:bg-slate-800/40 dark:shadow-none;
+  @apply relative rounded-2xl border border-teal-500/20 bg-white/80 p-6 shadow-sm transition-transform duration-200 dark:border-teal-400/20 dark:bg-slate-800/70 dark:shadow-none;
 }
 .glass-card:hover {
   @apply -translate-y-1 border-teal-500/50 dark:border-teal-400/40;

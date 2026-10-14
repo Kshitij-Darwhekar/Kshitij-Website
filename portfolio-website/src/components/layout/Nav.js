@@ -4,7 +4,7 @@ import { navLinks } from '@/data/navLinks'
 
 export default function Nav() {
   return (
-    <nav className="sticky top-0 z-50 border-b border-slate-400/10 bg-slate-200/70 px-6 py-4 backdrop-blur-md dark:border-slate-700/40 dark:bg-slate-900/70 dark:text-slate-400 md:px-10">
+    <nav className="sticky top-0 z-50 border-b border-slate-400/10 bg-slate-200/90 px-6 py-4 dark:border-slate-700/40 dark:bg-slate-900/90 dark:text-slate-400 md:px-10">
       <div className="content-wrap flex items-center justify-between gap-4">
         <h1 className="text-xl font-mono font-semibold text-slate-900 hover:text-teal-500 dark:text-slate-200">
           <a href="#" className="hover:text-teal-500">
