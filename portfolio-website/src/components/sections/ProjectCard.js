@@ -13,7 +13,7 @@ export default function ProjectCard({ project }) {
           <span className="h-2 w-2 rounded-full bg-[#ff5f57]" />
           <span className="h-2 w-2 rounded-full bg-[#febc2e]" />
           <span className="h-2 w-2 rounded-full bg-[#28c840]" />
-          <span className="ml-2 flex-1 truncate rounded bg-slate-200/70 px-2 py-0.5 font-mono text-[0.65rem] text-gray-600 dark:bg-slate-900/70 dark:text-slate-400">
+          <span className="ml-2 min-w-0 flex-1 truncate rounded bg-slate-200/70 px-2 py-0.5 font-mono text-[0.65rem] text-gray-600 dark:bg-slate-900/70 dark:text-slate-400">
             {project.urlLabel}
           </span>
         </div>
