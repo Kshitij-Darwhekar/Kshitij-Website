@@ -25,7 +25,7 @@ export default function About() {
         to automation, data &amp; agents.
       </h2>
 
-      <div className="glass-panel mx-auto flex max-w-4xl flex-col gap-5 p-8 text-left md:p-10">
+      <div className="glass-panel mx-auto flex max-w-2xl flex-col gap-5 p-8 text-left md:p-10">
         <p className="text-lg leading-8 text-gray-800 dark:text-slate-400 md:text-xl">
           Back in high school, after finishing my 12th grade and looking for something to do during a long summer
           break, I decided to try my hand at building a website. That project sparked a passion for building things

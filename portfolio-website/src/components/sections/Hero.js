@@ -9,7 +9,7 @@ export default function Hero() {
         <div className="absolute -bottom-32 -left-20 h-72 w-72 rounded-full bg-gradient-radial from-violet-400/30 to-transparent blur-3xl dark:from-violet-500/30" />
       </div>
 
-      <div className="content-wrap glass-panel glass-panel-padding-responsive relative w-full max-w-full">
+      <div className="content-wrap glass-panel glass-panel-padding-responsive relative max-w-full">
         <p className="section-eyebrow">Automation &amp; AI-Focused Engineer @ IBM</p>
 
         <h1 className="mt-4 text-4xl font-medium leading-tight text-slate-900 dark:text-slate-200 md:text-6xl">
