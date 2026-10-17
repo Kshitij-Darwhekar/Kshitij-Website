@@ -134,6 +134,15 @@ h1, h2, h3 {
   }
 }
 
+/* Same cascade-tie problem as the padding override above: .glass-panel's
+   own max-w-full (from @apply) always beats a Tailwind max-w-* utility on
+   the same element, since both compile to equal-specificity rules and
+   .glass-panel is defined later in the stylesheet. Give a narrower panel
+   (e.g. About) its own class, defined after .glass-panel, to win reliably. */
+.glass-panel-narrow {
+  max-width: 42rem; /* matches Tailwind's max-w-2xl */
+}
+
 /* interactive variant — only for discrete, clickable/hoverable cards
    (skills/certs/projects grids), never for long static text panels */
 .glass-card {

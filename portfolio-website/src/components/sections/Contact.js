@@ -33,7 +33,7 @@ export default function Contact() {
   }
 
   const inputClasses =
-    'my-2 w-full rounded-lg border-2 border-teal-500/40 bg-white/85 p-2 caret-teal-500 transition-colors focus:border-teal-500 focus:outline-none focus:ring-2 focus:ring-teal-500/30 dark:border-teal-500/30 dark:bg-slate-900/85 dark:text-slate-200'
+    'my-2 w-full rounded-lg border-2 border-teal-500/40 bg-slate-200 p-2 text-slate-900 caret-teal-500 transition-colors focus:border-teal-500 focus:outline-none focus:ring-2 focus:ring-teal-500/30 dark:border-teal-500/30 dark:bg-slate-900 dark:text-slate-200'
 
   return (
     <section className="px-10 pb-10" id="contact">
