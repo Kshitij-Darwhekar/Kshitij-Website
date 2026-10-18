@@ -1,6 +1,5 @@
 import './globals.css'
 import { Manrope, Sora, JetBrains_Mono } from 'next/font/google'
-import metaimg from "../../public/Meta_Image.jpg"
 import CursorTorch from '@/components/ui/CursorTorch'
 
 const manrope = Manrope({ subsets: ['latin'], variable: '--font-body' })
@@ -29,14 +28,12 @@ export const metadata = {
     title,
     description,
     url: "https://kshitijdarwhekar.com",
-    images: [{ url: metaimg.src, width: metaimg.width, height: metaimg.height, alt: "Kshitij Darwhekar" }],
   },
   twitter: {
     card: "summary_large_image",
     creator: "@KshitijDarwhekr",
     title,
     description,
-    images: [metaimg.src],
   },
 }
 
