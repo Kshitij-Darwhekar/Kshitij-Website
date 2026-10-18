@@ -28,6 +28,8 @@ export const metadata = {
     title,
     description,
     url: "https://kshitijdarwhekar.com",
+    type: "website",
+    siteName: "Kshitij Darwhekar",
   },
   twitter: {
     card: "summary_large_image",
