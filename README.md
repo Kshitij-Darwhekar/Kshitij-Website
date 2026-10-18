@@ -3,7 +3,7 @@
 My personal portfolio — built with Next.js and Tailwind CSS, showcasing my experience in RPA/automation and Agentic AI, projects, certifications, and a live feed of my Medium articles.
 
 - 🌐 **Live site:** https://kshitijdarwhekar.com
-- 📝 **Blog:** https://medium.com/@kshitijdarwhekar
+- 📝 **Blog:** https://medium.com/@kshitijdarwhekar/introduction-626e131561ee?sharedUserId=kshitijdarwhekar
 
 ## Table of Contents
 
